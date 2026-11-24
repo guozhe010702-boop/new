@@ -1,8 +1,5 @@
-# Generated camera data, full logs and temporary state stay local.
-data/**
-!data/dataset.json
-results/**
-!results/README.md
+# Camera data and complete experiment results are versioned with Git LFS.
+# Runtime state and credentials stay local.
 state/
 __pycache__/
 *.pyc
@@ -11,11 +8,6 @@ __pycache__/
 *.rknn
 *.pth
 *.pt
-*.f32
-*.npy
-*.tgz
-*.tar.gz
-*.zip
 .env
 .env.*
 .ssh/

@@ -1,7 +1,18 @@
-# 已公开的测试记录
+# 完整实验资料与Git LFS
 
-仓库保留经过筛选的JSON、CSV、逐层性能表和恢复记录，用于核对报告数值。完整相机图片、预览、原始浮点张量、内核大日志与压缩备份保留在原Windows/开发板目录，没有提交到Git。
+本目录与data目录已按用户要求同步Windows中现有的完整相机图片、数据集、实验记录、原始浮点张量、日志和压缩备份。大型与二进制文件使用Git LFS，JSON/CSV等小型元数据保留为普通Git文件。
 
-`npu-bottleneck-v1`为第三轮NPU定位及超分图优化，`optimization-v2`为第二轮CPU与显示优化。`qualification-20261124/job.json`保留原完整验收的意外重启中断状态；本仓库不声明三项目已完成长时间稳定性验收。
+```bash
+git lfs install
+git lfs pull
 
-`data/dataset.json`只保存校准/验证图片的来源说明与散列，验证集图片本身没有公开。独立性能分析可通过`tools/npu_benchmark.py --image`传入自己准备的对应模型尺寸图片；重做完整50图对比需要原验证集。
+# 也可只下载一类资料
+git lfs pull --include="data/**"
+git lfs pull --include="results/**"
+```
+
+仅运行实时算法时，可用GIT_LFS_SKIP_SMUDGE=1克隆；默认部署模型和程序仍为普通Git文件。使用仓库中的验证图片前，需要先拉取对应LFS对象。
+
+文件清单和SHA256见[完整资料清单](../docs/full-data-manifest.json)。本次以Windows已保存资料为准，开发板192.168.2.221在同步时SSH超时，未核对或补充板端独有文件。
+
+npu-bottleneck-v1是第三轮NPU定位及超分优化；optimization-v2是第二轮优化。qualification-20261124/job.json保留原完整验收的意外重启中断状态，上传原始资料不会将该状态改为通过。

@@ -1,0 +1,30 @@
+--- board/tools/convert.py
++++ windows/tools/convert.py
+@@ -39,6 +39,11 @@
+             size=518;weight=folder/'depth_anything_v2_vits.pth';model=DepthAnythingV2(encoder='vits',features=64,out_channels=[48,96,192,384]);model.load_state_dict(torch.load(weight,map_location='cpu'),strict=True);model.eval()
+             mean=[123.675,116.28,103.53];std=[58.395,57.12,57.375]
+         path=folder/'model.onnx';x=torch.rand(1,3,size,size)
++        if path.exists():
++            prior=folder/'conversion-fp16.json'
++            if not prior.exists():raise ValueError('Cached ONNX needs its original conversion receipt; use a fresh model folder')
++            cached=json.loads(prior.read_text())
++            if cached.get('source_sha256')!=digest(weight) or cached.get('onnx_sha256')!=digest(path):raise ValueError('Cached ONNX/checkpoint changed; preserve old artifacts and export to a fresh model folder')
+         if not path.exists():
+             with torch.inference_mode():reference=model(x)
+             if isinstance(reference,torch.Tensor):reference=[reference]
+@@ -59,11 +64,13 @@
+             dataset=ROOT/'data'/('calibration-'+a.project+'.txt')
+             if a.precision=='int8' and not dataset.is_file():raise ValueError('Missing representative calibration set; no random-image INT8 substitute')
+             assert rk.build(do_quantization=a.precision=='int8',dataset=str(dataset) if a.precision=='int8' else None)==0
+-            artifact=folder/(a.precision+'.rknn');assert rk.export_rknn(str(artifact))==0
++            artifact=folder/(a.precision+'.rknn');temporary=folder/(a.precision+'.pending.rknn');assert rk.export_rknn(str(temporary))==0;temporary.replace(artifact)
+             report.update(stage='converted_not_board_validated',rknn_sha256=digest(artifact))
+         finally:rk.release()
+     except BaseException as e:
+         report.update(stage='failed',error=str(e),traceback=traceback.format_exc());raise
+     finally:
+-        report['seconds']=time.monotonic()-start;log.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report),flush=True)
++        report['seconds']=time.monotonic()-start
++        destination=folder/('conversion-'+a.precision+'-failed-'+str(time.time_ns())+'.json') if report.get('stage')=='failed' and log.exists() else log
++        destination.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report),flush=True)
+ if __name__=='__main__':main()

@@ -2,7 +2,7 @@
 
 基于 **RK3588 + IMX415** 的 C++ 视觉推理工程，集成 **Depth Anything V2 单目深度估计、Real-ESRGAN 图像超分辨率、YOLO11 + ByteTrack 多目标跟踪计数**。提供相机采集、RGA预处理、RKNN NPU推理、HDMI显示与手动运行管理。
 
-仓库包含源码、默认RKNN模型、已测试的ARM64程序、项目私有运行库，以及可核对的性能报告和测试记录。当前定位为可运行的算法实验与部署工程，**长期稳定性验收仍未完成**。
+仓库包含源码、默认RKNN模型、已测试的ARM64程序、项目私有运行库、完整本地数据与日志，以及可核对的性能报告和测试记录。当前定位为可运行的算法实验与部署工程，**长期稳定性验收仍未完成**。
 
 [快速开始](#快速开始) · [实测性能](#实测性能) · [目录与核心程序](#目录与核心程序) · [详细文档](#详细文档)
 
@@ -77,7 +77,7 @@ HDMI画面左上角显示处理帧率、推理耗时、内部帧龄、CPU占用�
 
 ```bash
 mkdir -p /userdata/av_dev
-git clone https://github.com/guozhe010702-boop/new.git \
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/guozhe010702-boop/new.git \
   "/userdata/av_dev/advanced algorithms"
 cd "/userdata/av_dev/advanced algorithms"
 
@@ -187,8 +187,8 @@ vendor/                  第三方源码、来源及许可证
 tools/                   监督控制、构建、转换、测量与验证
 build/                   已测试的ARM64可执行文件
 docs/                    流程、部署、实测报告与散列清单
-results/                 筛选后的测试记录；本机运行时也在此生成结果
-data/dataset.json        校准/验证图片来源和散列，不含原图
+results/                 完整本地实验资料、日志、张量及备份（大文件使用LFS）
+data/                    原始相机采样、COCO128、准备后的校准/验证集（图片使用LFS）
 ```
 
 | 程序 | 作用 |
@@ -208,7 +208,24 @@ data/dataset.json        校准/验证图片来源和散列，不含原图
 
 仓库已提供4个部署模型：YOLO INT8、深度FP16、超分FP16卷积图及原完整超分FP16模型。默认运行不需要重新转换。原始权重可用`tools/fetch_models.py`按固定SHA256下载；ONNX/RKNN转换分别由`tools/convert.py`、`tools/convert_sr_trunk.py`完成。
 
-当前转换记录基于已有x86_64 Docker镜像`uav-yolo11-converter:2.3.2`；该镜像未随本仓库发布。重新转换需要准备对应环境，INT8校准需要代表性数据。相机图片、原验证集、原始浮点张量和大体积日志保留在本地，公开记录范围见[results说明](results/README.md)。
+当前转换记录基于已有x86_64 Docker镜像`uav-yolo11-converter:2.3.2`；该镜像未随本仓库发布。重新转换需要准备对应环境，INT8校准需要代表性数据。Windows中已保存的相机图片、校准/验证数据、原始浮点张量及完整日志已使用Git LFS同步，清单见[完整资料清单](docs/full-data-manifest.json)，下载方法见[results说明](results/README.md)。
+
+## 相机图片、数据集与完整日志
+
+已同步Windows中的data/和results/，共2775个文件，约3.22GiB。图片、浮点张量、压缩包及日志等使用Git LFS，小型JSON/CSV仍可直接浏览。完整清单包含每个文件的SHA256；本次开发板SSH不可达，板端独有文件尚未核对。
+
+快速开始默认跳过大文件下载，仍可运行相机实时推理。需要图片或原始实验资料时，安装Git LFS后执行：
+
+```bash
+git lfs install
+git lfs pull
+
+# 按需仅下载数据集或实验结果
+git lfs pull --include="data/**"
+git lfs pull --include="results/**"
+```
+
+普通git clone在启用LFS的环境会下载相应对象；网页或未启用LFS的下载方式可能只得到指针，需用git lfs pull补全。上传原始数据不改变既有测试结论，实验中断和未完成验收状态继续保留。
 
 ## 验证范围
 

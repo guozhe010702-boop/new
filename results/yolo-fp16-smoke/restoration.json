@@ -1,0 +1,26 @@
+{
+  "output": "/userdata/av_dev/advanced-algorithms-stage/results/yolo-fp16-smoke",
+  "format": "width=3840,height=2160,pixelformat=NV12",
+  "desktop": "gdm.service",
+  "desktop_active": true,
+  "layout": [
+    "--output",
+    "HDMI-1",
+    "--mode",
+    "1920x1080",
+    "--pos",
+    "0x0",
+    "--primary",
+    "--output",
+    "DSI-1",
+    "--mode",
+    "800x1280",
+    "--pos",
+    "1920x0"
+  ],
+  "boot_id": "ee411906-ff53-4e09-a4da-86d9db199a65",
+  "supervisor_pid": 6467,
+  "restored": true,
+  "native_pid": 6506,
+  "restored_at": 1795489707.4619794
+}
