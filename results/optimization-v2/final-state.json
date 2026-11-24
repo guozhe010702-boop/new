@@ -1,0 +1,16 @@
+{
+  "boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "same_boot": true,
+  "gdm_active": "active",
+  "camera_users": "",
+  "algorithm_service": "inactive",
+  "qualification_service": "inactive",
+  "binary_sha256": "d3fac3150519f061d1b862dd919a7d382e8e7d6ac3e248aaf3401424bc0bfac5",
+  "baseline_binary_sha256": "8c12a4505d4df662579d8923d8c1589081edcea685b28b8a37467651e09a7e26",
+  "source_manifest_pass": true,
+  "source_files_verified": 87,
+  "native_users": [],
+  "kernel_test_interval_lines": 28314,
+  "kernel_test_interval_rga_map_errors": 14,
+  "test_evidence": "results/optimization-v2/ctest.log"
+}

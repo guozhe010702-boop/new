@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/guozhe010702-boop/new",
+  "branch": "main",
+  "snapshot_date": "2026-11-24",
+  "scope": "Source, tested ARM64 runtime, default RKNN models plus original SR fallback, documentation and compact measurement receipts. Camera images, datasets, raw tensors and large logs stay local.",
+  "long_stability_qualified": false,
+  "staged_files_before_this_manifest": 326,
+  "bytes_before_this_manifest": 89741689,
+  "source_manifest_verified_files": 94,
+  "runtime_sha256": {
+    "build/advanced_vision": "ea46597445e209b4ce30f42a933fe9d87ff0a2e8798918631548e2dfb13c466b",
+    "build/core_tests": "50a90e576074387bf7d2efc1a0321ef97d9dd71fc66e70576c04188d331226d7",
+    "build/hardware_tests": "8f275eb654fed9713089c205e4c3ce8499183f6c9dac16a129a68c00d96ec14c",
+    "build/model_batch": "b7058f95b0140dceac386848e70ed47aae2f9974ddb012dc93d36a5b578d1ac2",
+    "build/npu_profile": "1cf71120f02d040ab9d0c47b21b5c269968f37ded7ae690b087f352bd9a3f5a9",
+    "build/render_tests": "9d0210be5a47a2938a58824ad3118f911c098cf536e7b8eab4a892082c895f7b",
+    "build/sr_tail_check": "498dfd6cac923cc592e9100222dca2f16625c99fb9d01651396ac54691d44d6a",
+    "build/sr_tiled": "ae3a34ee3b2dbb2589dc386575949b3ed08368f937f3755599f9ac649e7d478f",
+    "depth_anything_v2/models/fp16.rknn": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+    "real_esrgan/models/fp16-trunk.rknn": "ba249c2493fef1149ce1f389e1fab7f88a0f2d58916128937c1d240d3577f26a",
+    "real_esrgan/models/fp16.rknn": "150bb014441e7ae39775368f7a4dfe186514ca294a3d59529f826ede513d63d1",
+    "runtime/lib/librga.so": "7cf9985d217dfe2d0bb5270e23f715aa7a6b7e084fcf27fa8b96829e9ad41f0c",
+    "runtime/lib/librga.so.2": "7cf9985d217dfe2d0bb5270e23f715aa7a6b7e084fcf27fa8b96829e9ad41f0c",
+    "runtime/lib/librknnrt.so": "d31fc19c85b85f6091b2bd0f6af9d962d5264a4e410bfb536402ec92bac738e8",
+    "yolo11_bytetrack/models/int8.rknn": "e868348686d74563683f4c81b91058e33ea548d43fb2562fb9b2be5bb094232e"
+  }
+}

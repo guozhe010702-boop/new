@@ -1,0 +1,60 @@
+{
+  "real_esrgan": {
+    "precision": "fp16",
+    "workers": 1,
+    "mask": 7,
+    "render": "vector",
+    "qualification": "results/optimization-v2/stability",
+    "binary_sha256": "d3fac3150519f061d1b862dd919a7d382e8e7d6ac3e248aaf3401424bc0bfac5",
+    "bounded_test_seconds_requested": 180,
+    "measured_fps": 7.900619972118534,
+    "age_p95_ms": 236.6,
+    "stability_validated": false,
+    "current_version_long_test": false,
+    "target_fps": 25,
+    "performance_target_met": false,
+    "reason": "Conservative single context after unexplained board reboot; bounded regression only.",
+    "target_scope": "25FPS is the live 256 ROI throughput target; original 40ms reference was pure inference, not this throughput metric."
+  },
+  "depth_anything_v2": {
+    "precision": "fp16",
+    "workers": 1,
+    "mask": 7,
+    "render": "vector",
+    "qualification": "results/optimization-v2/depth-regression",
+    "binary_sha256": "d3fac3150519f061d1b862dd919a7d382e8e7d6ac3e248aaf3401424bc0bfac5",
+    "bounded_test_seconds_requested": 30,
+    "measured_fps": 1.4112936231866993,
+    "age_p95_ms": 1086.1,
+    "stability_validated": false,
+    "current_version_long_test": false,
+    "target_fps": 20,
+    "performance_target_met": false,
+    "reason": "Conservative single context after unexplained board reboot; bounded regression only."
+  },
+  "yolo11_bytetrack": {
+    "precision": "int8",
+    "workers": 1,
+    "mask": 7,
+    "render": "vector",
+    "qualification": "results/optimization-v2/yolo-regression",
+    "binary_sha256": "d3fac3150519f061d1b862dd919a7d382e8e7d6ac3e248aaf3401424bc0bfac5",
+    "bounded_test_seconds_requested": 30,
+    "measured_fps": 29.998434846761754,
+    "age_p95_ms": 85.4,
+    "stability_validated": false,
+    "current_version_long_test": false,
+    "target_fps": 30,
+    "performance_target_met": true,
+    "reason": "Conservative single context after unexplained board reboot; bounded regression only.",
+    "previous_version_validation": {
+      "record": "results/qualification-20261124/job.json",
+      "case": "yolo11_bytetrack-endurance",
+      "seconds": 1800,
+      "workers": 3,
+      "stability_validated": true,
+      "measured_fps": 29.98732333292334,
+      "scope": "Prior executable; not a long-run qualification of the current binary."
+    }
+  }
+}

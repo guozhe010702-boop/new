@@ -1,0 +1,11 @@
+{
+    "images": 50,
+    "mean_psnr_db": 200.0,
+    "min_psnr_db": 200.0,
+    "mean_ssim": 9.9999999329983280e-01,
+    "min_ssim": 9.9999998389311828e-01,
+    "max_float_difference": 0.0,
+    "max_gray_difference": 0.0,
+    "passed": 1,
+    "scope": "CPU tail candidate versus validated FP16 full RKNN on the fixed held-out validation set"
+}

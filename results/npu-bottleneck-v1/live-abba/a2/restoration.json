@@ -1,0 +1,27 @@
+{
+  "output": "/userdata/av_dev/advanced algorithms/results/npu-bottleneck-v1/live-abba/a2",
+  "format": "width=3840,height=2160,pixelformat=NV12",
+  "desktop": "gdm.service",
+  "desktop_active": true,
+  "layout": [
+    "--output",
+    "HDMI-1",
+    "--mode",
+    "1920x1080",
+    "--pos",
+    "0x0",
+    "--primary",
+    "--output",
+    "DSI-1",
+    "--mode",
+    "800x1280",
+    "--pos",
+    "1920x0"
+  ],
+  "boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "supervisor_pid": 10092,
+  "restored": true,
+  "native_pid": 10191,
+  "telemetry_file": "/userdata/av_dev/advanced algorithms/state/telemetry-m0suw0ok.jsonl",
+  "restored_at": 1795505974.449394
+}

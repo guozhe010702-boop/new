@@ -1,0 +1,35 @@
+[
+  {
+    "name": "injected-display-failure",
+    "passed": true,
+    "returncode": 1
+  },
+  {
+    "name": "manual-start-0",
+    "passed": true,
+    "stdout": "Running as unit: advanced-algorithms.service\n\n",
+    "stderr": ""
+  },
+  {
+    "name": "duplicate-start-rejected",
+    "passed": true
+  },
+  {
+    "name": "manual-stop-0",
+    "passed": true
+  },
+  {
+    "name": "manual-start-1",
+    "passed": true,
+    "stdout": "Running as unit: advanced-algorithms.service\n\n",
+    "stderr": ""
+  },
+  {
+    "name": "manual-stop-1",
+    "passed": true
+  },
+  {
+    "name": "supervisor-sigkill-restored",
+    "passed": true
+  }
+]

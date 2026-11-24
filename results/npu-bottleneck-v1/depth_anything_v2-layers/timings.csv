@@ -1,0 +1,3 @@
+iteration,warmup,inputs_set_ms,run_ms,allocate_ms,outputs_get_ms,copy_ms,release_ms,total_ms,driver_run_ms
+-1,1,8.93,645.301,0,0.861,0.411,0.001,655.504,645.298
+0,0,7.276,649.458,0,0.635,0.127,0.001,657.497,649.456

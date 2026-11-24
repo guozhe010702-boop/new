@@ -1,0 +1,321 @@
+{
+  "stage": "complete",
+  "started": 1795498227.424584,
+  "boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "cases": [
+    {
+      "name": "real_esrgan-baseline-a",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "38846",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 77%, Core1: 48%, Core2: 48%,"
+      },
+      "median": {
+        "inputs_set_ms": 1.596,
+        "run_ms": 105.354,
+        "allocate_ms": 0.0005,
+        "outputs_get_ms": 11.016,
+        "copy_ms": 4.9055,
+        "release_ms": 0.002,
+        "total_ms": 123.959,
+        "driver_run_ms": 105.352
+      },
+      "output_sha256": "65d3308d8d0b2ad22dc07b05c03b12dd6682bb021caf13f8f729c34055a18139"
+    },
+    {
+      "name": "real_esrgan-prealloc",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 77%, Core1: 48%, Core2: 48%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 81%, Core1: 54%, Core2: 54%,"
+      },
+      "median": {
+        "inputs_set_ms": 6.9585,
+        "run_ms": 106.304,
+        "allocate_ms": 3.5695,
+        "outputs_get_ms": 19.957,
+        "copy_ms": 0.001,
+        "release_ms": 0.0015,
+        "total_ms": 136.88299999999998,
+        "driver_run_ms": 106.301
+      },
+      "output_sha256": "65d3308d8d0b2ad22dc07b05c03b12dd6682bb021caf13f8f729c34055a18139"
+    },
+    {
+      "name": "real_esrgan-sram",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "40692",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 81%, Core1: 54%, Core2: 54%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 75%, Core1: 48%, Core2: 48%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.0215,
+        "run_ms": 106.4425,
+        "allocate_ms": 3.5815,
+        "outputs_get_ms": 20.133499999999998,
+        "copy_ms": 0.001,
+        "release_ms": 0.002,
+        "total_ms": 137.3055,
+        "driver_run_ms": 106.439
+      },
+      "output_sha256": "65d3308d8d0b2ad22dc07b05c03b12dd6682bb021caf13f8f729c34055a18139"
+    },
+    {
+      "name": "real_esrgan-baseline-b",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "40692",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 75%, Core1: 48%, Core2: 48%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 78%, Core1: 48%, Core2: 48%,"
+      },
+      "median": {
+        "inputs_set_ms": 1.593,
+        "run_ms": 105.49600000000001,
+        "allocate_ms": 0.0005,
+        "outputs_get_ms": 11.255,
+        "copy_ms": 5.0355,
+        "release_ms": 0.003,
+        "total_ms": 123.2795,
+        "driver_run_ms": 105.49350000000001
+      },
+      "output_sha256": "65d3308d8d0b2ad22dc07b05c03b12dd6682bb021caf13f8f729c34055a18139"
+    },
+    {
+      "name": "real_esrgan-single-core",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "40692",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 78%, Core1: 48%, Core2: 48%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 95%, Core1:  0%, Core2:  0%,"
+      },
+      "median": {
+        "inputs_set_ms": 1.5710000000000002,
+        "run_ms": 226.65699999999998,
+        "allocate_ms": 2.738,
+        "outputs_get_ms": 7.096,
+        "copy_ms": 0.0,
+        "release_ms": 0.001,
+        "total_ms": 238.0815,
+        "driver_run_ms": 226.6555
+      },
+      "output_sha256": "65d3308d8d0b2ad22dc07b05c03b12dd6682bb021caf13f8f729c34055a18139"
+    },
+    {
+      "name": "real_esrgan-layers",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "40692",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 95%, Core1:  0%, Core2:  0%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 52%, Core1: 13%, Core2: 13%,"
+      },
+      "median": {
+        "inputs_set_ms": 1.623,
+        "run_ms": 108.828,
+        "allocate_ms": 0.001,
+        "outputs_get_ms": 28.458,
+        "copy_ms": 9.904,
+        "release_ms": 0.006,
+        "total_ms": 148.82,
+        "driver_run_ms": 108.826
+      },
+      "output_sha256": "65d3308d8d0b2ad22dc07b05c03b12dd6682bb021caf13f8f729c34055a18139"
+    },
+    {
+      "name": "depth_anything_v2-baseline-a",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 52%, Core1: 13%, Core2: 13%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 84%, Core1:  9%, Core2:  9%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.164999999999999,
+        "run_ms": 643.092,
+        "allocate_ms": 0.0,
+        "outputs_get_ms": 0.6214999999999999,
+        "copy_ms": 0.091,
+        "release_ms": 0.001,
+        "total_ms": 650.9549999999999,
+        "driver_run_ms": 643.0889999999999
+      },
+      "output_sha256": "97c81ea8bc166539a2390fdbcf654a6acaad56e18c748ad7f22302d89aa8e416"
+    },
+    {
+      "name": "depth_anything_v2-prealloc",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 84%, Core1:  9%, Core2:  9%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 82%, Core1:  8%, Core2:  8%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.145,
+        "run_ms": 641.1949999999999,
+        "allocate_ms": 0.234,
+        "outputs_get_ms": 0.6225,
+        "copy_ms": 0.0,
+        "release_ms": 0.001,
+        "total_ms": 649.1659999999999,
+        "driver_run_ms": 641.1925
+      },
+      "output_sha256": "97c81ea8bc166539a2390fdbcf654a6acaad56e18c748ad7f22302d89aa8e416"
+    },
+    {
+      "name": "depth_anything_v2-sram",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 82%, Core1:  8%, Core2:  8%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 85%, Core1:  9%, Core2:  9%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.169,
+        "run_ms": 641.1995,
+        "allocate_ms": 0.234,
+        "outputs_get_ms": 0.6165,
+        "copy_ms": 0.0,
+        "release_ms": 0.0,
+        "total_ms": 649.2295,
+        "driver_run_ms": 641.1975
+      },
+      "output_sha256": "97c81ea8bc166539a2390fdbcf654a6acaad56e18c748ad7f22302d89aa8e416"
+    },
+    {
+      "name": "depth_anything_v2-baseline-b",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 85%, Core1:  9%, Core2:  9%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 68%, Core1:  7%, Core2:  7%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.191,
+        "run_ms": 642.7345,
+        "allocate_ms": 0.0,
+        "outputs_get_ms": 0.6205,
+        "copy_ms": 0.09,
+        "release_ms": 0.001,
+        "total_ms": 650.6795,
+        "driver_run_ms": 642.732
+      },
+      "output_sha256": "97c81ea8bc166539a2390fdbcf654a6acaad56e18c748ad7f22302d89aa8e416"
+    },
+    {
+      "name": "depth_anything_v2-single-core",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 68%, Core1:  7%, Core2:  7%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 89%, Core1:  0%, Core2:  0%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.1605,
+        "run_ms": 714.2715000000001,
+        "allocate_ms": 0.234,
+        "outputs_get_ms": 0.621,
+        "copy_ms": 0.0,
+        "release_ms": 0.001,
+        "total_ms": 722.3845,
+        "driver_run_ms": 714.268
+      },
+      "output_sha256": "97c81ea8bc166539a2390fdbcf654a6acaad56e18c748ad7f22302d89aa8e416"
+    },
+    {
+      "name": "depth_anything_v2-layers",
+      "before": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 89%, Core1:  0%, Core2:  0%,"
+      },
+      "after": {
+        "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+        "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+        "/sys/class/thermal/thermal_zone0/temp": "39769",
+        "/sys/kernel/debug/rknpu/load": "NPU load:  Core0: 51%, Core1:  4%, Core2:  4%,"
+      },
+      "median": {
+        "inputs_set_ms": 7.276,
+        "run_ms": 649.458,
+        "allocate_ms": 0.0,
+        "outputs_get_ms": 0.635,
+        "copy_ms": 0.127,
+        "release_ms": 0.001,
+        "total_ms": 657.497,
+        "driver_run_ms": 649.456
+      },
+      "output_sha256": "97c81ea8bc166539a2390fdbcf654a6acaad56e18c748ad7f22302d89aa8e416"
+    }
+  ],
+  "current": "depth_anything_v2-layers",
+  "finished": 1795498292.1798918
+}

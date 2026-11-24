@@ -1,0 +1,41 @@
+{
+  "total_rga_map_error_lines": 14,
+  "windows_seconds": 2,
+  "events": [
+    {
+      "case": "a1",
+      "restored_at": 1795497046.8430345,
+      "rga_errors_within_two_seconds": 2
+    },
+    {
+      "case": "b1",
+      "restored_at": 1795497092.423894,
+      "rga_errors_within_two_seconds": 2
+    },
+    {
+      "case": "b2",
+      "restored_at": 1795497137.8960245,
+      "rga_errors_within_two_seconds": 2
+    },
+    {
+      "case": "a2",
+      "restored_at": 1795497183.3872013,
+      "rga_errors_within_two_seconds": 2
+    },
+    {
+      "case": "stability",
+      "restored_at": 1795497368.8910785,
+      "rga_errors_within_two_seconds": 2
+    },
+    {
+      "case": "yolo-regression",
+      "restored_at": 1795497404.21746,
+      "rga_errors_within_two_seconds": 2
+    },
+    {
+      "case": "depth-regression",
+      "restored_at": 1795497440.5587583,
+      "rga_errors_within_two_seconds": 2
+    }
+  ]
+}

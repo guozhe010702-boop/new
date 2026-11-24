@@ -1,0 +1,363 @@
+{
+  "project": "real_esrgan",
+  "validation_images": 50,
+  "expected_images": 50,
+  "rows": [
+    {
+      "image": "0000.png",
+      "fp16_vs_onnx_max_absolute": 0.004958510398864746,
+      "fp16_vs_onnx_psnr_db": 72.6517915725708,
+      "psnr_db": 33.61384868621826,
+      "ssim": 0.9229135674933814
+    },
+    {
+      "image": "0001.png",
+      "fp16_vs_onnx_max_absolute": 0.012550204992294312,
+      "fp16_vs_onnx_psnr_db": 71.69246196746826,
+      "psnr_db": 34.39208269119263,
+      "ssim": 0.9098796321751598
+    },
+    {
+      "image": "0002.png",
+      "fp16_vs_onnx_max_absolute": 0.005095496773719788,
+      "fp16_vs_onnx_psnr_db": 73.28217506408691,
+      "psnr_db": 33.291451930999756,
+      "ssim": 0.9136325752754991
+    },
+    {
+      "image": "0003.png",
+      "fp16_vs_onnx_max_absolute": 0.01572030782699585,
+      "fp16_vs_onnx_psnr_db": 73.62948894500732,
+      "psnr_db": 35.634894371032715,
+      "ssim": 0.8969358156137347
+    },
+    {
+      "image": "0004.png",
+      "fp16_vs_onnx_max_absolute": 0.008345365524291992,
+      "fp16_vs_onnx_psnr_db": 71.00128650665283,
+      "psnr_db": 32.43037939071655,
+      "ssim": 0.9127397789032123
+    },
+    {
+      "image": "0005.png",
+      "fp16_vs_onnx_max_absolute": 0.008081287145614624,
+      "fp16_vs_onnx_psnr_db": 71.9131088256836,
+      "psnr_db": 33.92697095870972,
+      "ssim": 0.9057885259098356
+    },
+    {
+      "image": "0006.png",
+      "fp16_vs_onnx_max_absolute": 0.0037136077880859375,
+      "fp16_vs_onnx_psnr_db": 73.26630115509033,
+      "psnr_db": 33.28389883041382,
+      "ssim": 0.9097340205593153
+    },
+    {
+      "image": "0007.png",
+      "fp16_vs_onnx_max_absolute": 0.0029601454734802246,
+      "fp16_vs_onnx_psnr_db": 73.08260440826416,
+      "psnr_db": 33.81660223007202,
+      "ssim": 0.9010900791049595
+    },
+    {
+      "image": "0008.png",
+      "fp16_vs_onnx_max_absolute": 0.010924667119979858,
+      "fp16_vs_onnx_psnr_db": 69.57768440246582,
+      "psnr_db": 37.17167377471924,
+      "ssim": 0.9073998047501984
+    },
+    {
+      "image": "0009.png",
+      "fp16_vs_onnx_max_absolute": 0.010769933462142944,
+      "fp16_vs_onnx_psnr_db": 76.20623111724854,
+      "psnr_db": 36.294825077056885,
+      "ssim": 0.8820076398760793
+    },
+    {
+      "image": "0010.png",
+      "fp16_vs_onnx_max_absolute": 0.00867772102355957,
+      "fp16_vs_onnx_psnr_db": 71.64473533630371,
+      "psnr_db": 33.90988111495972,
+      "ssim": 0.8770076306078608
+    },
+    {
+      "image": "0011.png",
+      "fp16_vs_onnx_max_absolute": 0.007225334644317627,
+      "fp16_vs_onnx_psnr_db": 77.27654457092285,
+      "psnr_db": 36.25150203704834,
+      "ssim": 0.8775574629747854
+    },
+    {
+      "image": "0012.png",
+      "fp16_vs_onnx_max_absolute": 0.003194838762283325,
+      "fp16_vs_onnx_psnr_db": 70.38819789886475,
+      "psnr_db": 32.15527296066284,
+      "ssim": 0.9349524174543089
+    },
+    {
+      "image": "0013.png",
+      "fp16_vs_onnx_max_absolute": 0.00636175274848938,
+      "fp16_vs_onnx_psnr_db": 73.39715957641602,
+      "psnr_db": 35.51876783370972,
+      "ssim": 0.9005063279434884
+    },
+    {
+      "image": "0014.png",
+      "fp16_vs_onnx_max_absolute": 0.015491580590605736,
+      "fp16_vs_onnx_psnr_db": 76.05904579162598,
+      "psnr_db": 36.29100561141968,
+      "ssim": 0.8733695140569493
+    },
+    {
+      "image": "0015.png",
+      "fp16_vs_onnx_max_absolute": 0.0038005858659744263,
+      "fp16_vs_onnx_psnr_db": 80.47957420349121,
+      "psnr_db": 36.9653582572937,
+      "ssim": 0.8568500930804515
+    },
+    {
+      "image": "0016.png",
+      "fp16_vs_onnx_max_absolute": 0.004575490951538086,
+      "fp16_vs_onnx_psnr_db": 71.10433101654053,
+      "psnr_db": 33.46945285797119,
+      "ssim": 0.9107398859976694
+    },
+    {
+      "image": "0017.png",
+      "fp16_vs_onnx_max_absolute": 0.0031579136848449707,
+      "fp16_vs_onnx_psnr_db": 70.90308666229248,
+      "psnr_db": 30.752687454223633,
+      "ssim": 0.8933982335634999
+    },
+    {
+      "image": "0018.png",
+      "fp16_vs_onnx_max_absolute": 0.0074253082275390625,
+      "fp16_vs_onnx_psnr_db": 71.64110660552979,
+      "psnr_db": 34.00303602218628,
+      "ssim": 0.8852577695469552
+    },
+    {
+      "image": "0019.png",
+      "fp16_vs_onnx_max_absolute": 0.007419362664222717,
+      "fp16_vs_onnx_psnr_db": 72.98794746398926,
+      "psnr_db": 32.7203369140625,
+      "ssim": 0.904495279265854
+    },
+    {
+      "image": "0020.png",
+      "fp16_vs_onnx_max_absolute": 0.007228374481201172,
+      "fp16_vs_onnx_psnr_db": 73.12655925750732,
+      "psnr_db": 34.71709728240967,
+      "ssim": 0.9165239799038731
+    },
+    {
+      "image": "0021.png",
+      "fp16_vs_onnx_max_absolute": 0.005579948425292969,
+      "fp16_vs_onnx_psnr_db": 74.76934432983398,
+      "psnr_db": 35.11445760726929,
+      "ssim": 0.8950649787654334
+    },
+    {
+      "image": "0022.png",
+      "fp16_vs_onnx_max_absolute": 0.0047747790813446045,
+      "fp16_vs_onnx_psnr_db": 74.57501888275146,
+      "psnr_db": 35.24742364883423,
+      "ssim": 0.9108457976545613
+    },
+    {
+      "image": "0023.png",
+      "fp16_vs_onnx_max_absolute": 0.008129656314849854,
+      "fp16_vs_onnx_psnr_db": 74.1014289855957,
+      "psnr_db": 35.56153059005737,
+      "ssim": 0.8930531618544706
+    },
+    {
+      "image": "0024.png",
+      "fp16_vs_onnx_max_absolute": 0.0074901580810546875,
+      "fp16_vs_onnx_psnr_db": 72.65862941741943,
+      "psnr_db": 32.88266897201538,
+      "ssim": 0.8707418218019348
+    },
+    {
+      "image": "0025.png",
+      "fp16_vs_onnx_max_absolute": 0.007086813449859619,
+      "fp16_vs_onnx_psnr_db": 74.60318565368652,
+      "psnr_db": 35.62339544296265,
+      "ssim": 0.9014733918873193
+    },
+    {
+      "image": "0026.png",
+      "fp16_vs_onnx_max_absolute": 0.005642712116241455,
+      "fp16_vs_onnx_psnr_db": 71.8121337890625,
+      "psnr_db": 33.10069799423218,
+      "ssim": 0.899043489813825
+    },
+    {
+      "image": "0027.png",
+      "fp16_vs_onnx_max_absolute": 0.013934016227722168,
+      "fp16_vs_onnx_psnr_db": 73.10789108276367,
+      "psnr_db": 36.05698585510254,
+      "ssim": 0.9019754783577291
+    },
+    {
+      "image": "0028.png",
+      "fp16_vs_onnx_max_absolute": 0.010261386632919312,
+      "fp16_vs_onnx_psnr_db": 71.94733619689941,
+      "psnr_db": 34.95213985443115,
+      "ssim": 0.9043518467339214
+    },
+    {
+      "image": "0029.png",
+      "fp16_vs_onnx_max_absolute": 0.005108177661895752,
+      "fp16_vs_onnx_psnr_db": 72.59525775909424,
+      "psnr_db": 33.35704565048218,
+      "ssim": 0.9103642719173465
+    },
+    {
+      "image": "0030.png",
+      "fp16_vs_onnx_max_absolute": 0.008563399314880371,
+      "fp16_vs_onnx_psnr_db": 71.91176414489746,
+      "psnr_db": 33.62002372741699,
+      "ssim": 0.9047800886365307
+    },
+    {
+      "image": "0031.png",
+      "fp16_vs_onnx_max_absolute": 0.008343338966369629,
+      "fp16_vs_onnx_psnr_db": 72.20490455627441,
+      "psnr_db": 34.17184352874756,
+      "ssim": 0.8941973969379328
+    },
+    {
+      "image": "0032.png",
+      "fp16_vs_onnx_max_absolute": 0.004922538995742798,
+      "fp16_vs_onnx_psnr_db": 76.12006664276123,
+      "psnr_db": 37.1131706237793,
+      "ssim": 0.9153478158539489
+    },
+    {
+      "image": "0033.png",
+      "fp16_vs_onnx_max_absolute": 0.005057096481323242,
+      "fp16_vs_onnx_psnr_db": 76.20902061462402,
+      "psnr_db": 37.072272300720215,
+      "ssim": 0.9148976902130461
+    },
+    {
+      "image": "0034.png",
+      "fp16_vs_onnx_max_absolute": 0.005563408136367798,
+      "fp16_vs_onnx_psnr_db": 76.15659236907959,
+      "psnr_db": 37.163426876068115,
+      "ssim": 0.915624094275867
+    },
+    {
+      "image": "0035.png",
+      "fp16_vs_onnx_max_absolute": 0.006559908390045166,
+      "fp16_vs_onnx_psnr_db": 75.91591358184814,
+      "psnr_db": 37.14421272277832,
+      "ssim": 0.9148553096069051
+    },
+    {
+      "image": "0036.png",
+      "fp16_vs_onnx_max_absolute": 0.00544014573097229,
+      "fp16_vs_onnx_psnr_db": 76.04983806610107,
+      "psnr_db": 37.13513374328613,
+      "ssim": 0.9154087046854582
+    },
+    {
+      "image": "0037.png",
+      "fp16_vs_onnx_max_absolute": 0.0067164599895477295,
+      "fp16_vs_onnx_psnr_db": 76.09824657440186,
+      "psnr_db": 37.202205657958984,
+      "ssim": 0.9146594377279871
+    },
+    {
+      "image": "0038.png",
+      "fp16_vs_onnx_max_absolute": 0.00684008002281189,
+      "fp16_vs_onnx_psnr_db": 76.14698886871338,
+      "psnr_db": 37.08953619003296,
+      "ssim": 0.9155177605429502
+    },
+    {
+      "image": "0039.png",
+      "fp16_vs_onnx_max_absolute": 0.0056785643100738525,
+      "fp16_vs_onnx_psnr_db": 76.3130235671997,
+      "psnr_db": 37.20154285430908,
+      "ssim": 0.9155706595502052
+    },
+    {
+      "image": "0040.png",
+      "fp16_vs_onnx_max_absolute": 0.0049606263637542725,
+      "fp16_vs_onnx_psnr_db": 76.46596908569336,
+      "psnr_db": 37.198941707611084,
+      "ssim": 0.9155910310003064
+    },
+    {
+      "image": "0041.png",
+      "fp16_vs_onnx_max_absolute": 0.0041013360023498535,
+      "fp16_vs_onnx_psnr_db": 76.3173770904541,
+      "psnr_db": 37.19773769378662,
+      "ssim": 0.9161682212190473
+    },
+    {
+      "image": "0042.png",
+      "fp16_vs_onnx_max_absolute": 0.0062923431396484375,
+      "fp16_vs_onnx_psnr_db": 75.72864532470703,
+      "psnr_db": 37.17400789260864,
+      "ssim": 0.9154024098868336
+    },
+    {
+      "image": "0043.png",
+      "fp16_vs_onnx_max_absolute": 0.0058422088623046875,
+      "fp16_vs_onnx_psnr_db": 75.86733818054199,
+      "psnr_db": 37.111103534698486,
+      "ssim": 0.9165758943032701
+    },
+    {
+      "image": "0044.png",
+      "fp16_vs_onnx_max_absolute": 0.006411999464035034,
+      "fp16_vs_onnx_psnr_db": 76.11451148986816,
+      "psnr_db": 37.30714797973633,
+      "ssim": 0.9159453818944471
+    },
+    {
+      "image": "0045.png",
+      "fp16_vs_onnx_max_absolute": 0.007708132266998291,
+      "fp16_vs_onnx_psnr_db": 75.89906215667725,
+      "psnr_db": 37.17209815979004,
+      "ssim": 0.9149255265711553
+    },
+    {
+      "image": "0046.png",
+      "fp16_vs_onnx_max_absolute": 0.005483418703079224,
+      "fp16_vs_onnx_psnr_db": 76.21142387390137,
+      "psnr_db": 37.16490983963013,
+      "ssim": 0.9168112990152577
+    },
+    {
+      "image": "0047.png",
+      "fp16_vs_onnx_max_absolute": 0.004553794860839844,
+      "fp16_vs_onnx_psnr_db": 76.61319732666016,
+      "psnr_db": 37.15777635574341,
+      "ssim": 0.9154297224231058
+    },
+    {
+      "image": "0048.png",
+      "fp16_vs_onnx_max_absolute": 0.0103912353515625,
+      "fp16_vs_onnx_psnr_db": 76.05794429779053,
+      "psnr_db": 37.16511249542236,
+      "ssim": 0.9153422184531299
+    },
+    {
+      "image": "0049.png",
+      "fp16_vs_onnx_max_absolute": 0.0045268237590789795,
+      "fp16_vs_onnx_psnr_db": 76.32436752319336,
+      "psnr_db": 37.1884822845459,
+      "ssim": 0.9163235958547481
+    }
+  ],
+  "int8_quality_pass": false,
+  "scope": "quantization parity; not metric depth accuracy or scientific detail validation",
+  "mean_psnr_db": 35.38516116142273,
+  "mean_ssim": 0.9051813706299149,
+  "fp16_onnx_mean_psnr_db": 74.20415687561035,
+  "fp16_reference_pass": true
+}

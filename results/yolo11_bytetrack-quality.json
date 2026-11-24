@@ -1,0 +1,214 @@
+{
+  "project": "yolo11_bytetrack",
+  "validation_images": 50,
+  "expected_images": 50,
+  "rows": [
+    {
+      "image": "0000.png",
+      "fp16_vs_onnx_max_absolute": 0.2696819305419922
+    },
+    {
+      "image": "0001.png",
+      "fp16_vs_onnx_max_absolute": 0.2754850387573242
+    },
+    {
+      "image": "0002.png",
+      "fp16_vs_onnx_max_absolute": 0.2784848213195801
+    },
+    {
+      "image": "0003.png",
+      "fp16_vs_onnx_max_absolute": 0.6762599945068359
+    },
+    {
+      "image": "0004.png",
+      "fp16_vs_onnx_max_absolute": 0.5513896942138672
+    },
+    {
+      "image": "0005.png",
+      "fp16_vs_onnx_max_absolute": 0.880183219909668
+    },
+    {
+      "image": "0006.png",
+      "fp16_vs_onnx_max_absolute": 0.24763202667236328
+    },
+    {
+      "image": "0007.png",
+      "fp16_vs_onnx_max_absolute": 0.34517860412597656
+    },
+    {
+      "image": "0008.png",
+      "fp16_vs_onnx_max_absolute": 0.3691585063934326
+    },
+    {
+      "image": "0009.png",
+      "fp16_vs_onnx_max_absolute": 0.28279733657836914
+    },
+    {
+      "image": "0010.png",
+      "fp16_vs_onnx_max_absolute": 0.5602302551269531
+    },
+    {
+      "image": "0011.png",
+      "fp16_vs_onnx_max_absolute": 0.3908243179321289
+    },
+    {
+      "image": "0012.png",
+      "fp16_vs_onnx_max_absolute": 0.23209285736083984
+    },
+    {
+      "image": "0013.png",
+      "fp16_vs_onnx_max_absolute": 0.5039079189300537
+    },
+    {
+      "image": "0014.png",
+      "fp16_vs_onnx_max_absolute": 0.2892765998840332
+    },
+    {
+      "image": "0015.png",
+      "fp16_vs_onnx_max_absolute": 0.22847270965576172
+    },
+    {
+      "image": "0016.png",
+      "fp16_vs_onnx_max_absolute": 0.4501633644104004
+    },
+    {
+      "image": "0017.png",
+      "fp16_vs_onnx_max_absolute": 0.7052478790283203
+    },
+    {
+      "image": "0018.png",
+      "fp16_vs_onnx_max_absolute": 0.22293400764465332
+    },
+    {
+      "image": "0019.png",
+      "fp16_vs_onnx_max_absolute": 0.2728090286254883
+    },
+    {
+      "image": "0020.png",
+      "fp16_vs_onnx_max_absolute": 0.34717321395874023
+    },
+    {
+      "image": "0021.png",
+      "fp16_vs_onnx_max_absolute": 1.1275615692138672
+    },
+    {
+      "image": "0022.png",
+      "fp16_vs_onnx_max_absolute": 0.3918018341064453
+    },
+    {
+      "image": "0023.png",
+      "fp16_vs_onnx_max_absolute": 0.5944452285766602
+    },
+    {
+      "image": "0024.png",
+      "fp16_vs_onnx_max_absolute": 0.23839712142944336
+    },
+    {
+      "image": "0025.png",
+      "fp16_vs_onnx_max_absolute": 0.19878315925598145
+    },
+    {
+      "image": "0026.png",
+      "fp16_vs_onnx_max_absolute": 0.3282637596130371
+    },
+    {
+      "image": "0027.png",
+      "fp16_vs_onnx_max_absolute": 0.46049022674560547
+    },
+    {
+      "image": "0028.png",
+      "fp16_vs_onnx_max_absolute": 0.21376323699951172
+    },
+    {
+      "image": "0029.png",
+      "fp16_vs_onnx_max_absolute": 0.28377676010131836
+    },
+    {
+      "image": "0030.png",
+      "fp16_vs_onnx_max_absolute": 0.49025487899780273
+    },
+    {
+      "image": "0031.png",
+      "fp16_vs_onnx_max_absolute": 3.132113456726074
+    },
+    {
+      "image": "0032.png",
+      "fp16_vs_onnx_max_absolute": 0.43281257152557373
+    },
+    {
+      "image": "0033.png",
+      "fp16_vs_onnx_max_absolute": 0.5345869064331055
+    },
+    {
+      "image": "0034.png",
+      "fp16_vs_onnx_max_absolute": 0.41925716400146484
+    },
+    {
+      "image": "0035.png",
+      "fp16_vs_onnx_max_absolute": 0.4431648254394531
+    },
+    {
+      "image": "0036.png",
+      "fp16_vs_onnx_max_absolute": 0.41133713722229004
+    },
+    {
+      "image": "0037.png",
+      "fp16_vs_onnx_max_absolute": 0.5005948543548584
+    },
+    {
+      "image": "0038.png",
+      "fp16_vs_onnx_max_absolute": 0.5062460899353027
+    },
+    {
+      "image": "0039.png",
+      "fp16_vs_onnx_max_absolute": 0.5385394096374512
+    },
+    {
+      "image": "0040.png",
+      "fp16_vs_onnx_max_absolute": 0.3536548614501953
+    },
+    {
+      "image": "0041.png",
+      "fp16_vs_onnx_max_absolute": 0.5547599792480469
+    },
+    {
+      "image": "0042.png",
+      "fp16_vs_onnx_max_absolute": 0.3609120845794678
+    },
+    {
+      "image": "0043.png",
+      "fp16_vs_onnx_max_absolute": 0.39130353927612305
+    },
+    {
+      "image": "0044.png",
+      "fp16_vs_onnx_max_absolute": 0.31973564624786377
+    },
+    {
+      "image": "0045.png",
+      "fp16_vs_onnx_max_absolute": 0.5462915897369385
+    },
+    {
+      "image": "0046.png",
+      "fp16_vs_onnx_max_absolute": 0.38860034942626953
+    },
+    {
+      "image": "0047.png",
+      "fp16_vs_onnx_max_absolute": 0.619321346282959
+    },
+    {
+      "image": "0048.png",
+      "fp16_vs_onnx_max_absolute": 0.27494049072265625
+    },
+    {
+      "image": "0049.png",
+      "fp16_vs_onnx_max_absolute": 0.4623708724975586
+    }
+  ],
+  "int8_quality_pass": true,
+  "scope": "quantization parity; not metric depth accuracy or scientific detail validation",
+  "fp16_subset_map": 0.44131308821975795,
+  "int8_subset_map": 0.45711012572432425,
+  "map_scope": "COCO128 held-out subset only; not full COCO val2017",
+  "onnx_subset_map": 0.4406622419214111,
+  "fp16_reference_pass": true
+}

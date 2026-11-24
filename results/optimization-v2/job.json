@@ -1,0 +1,409 @@
+{
+  "stage": "complete",
+  "boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "cases": [
+    {
+      "name": "a1",
+      "baseline": true,
+      "project": "real_esrgan",
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 42.441,
+        "captured": 1166,
+        "inferred": 310,
+        "processed": 308,
+        "fps": 7.25714,
+        "raw_replaced": 856,
+        "results_replaced": 2,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 128.9,
+          "p95": 156.3,
+          "p99": 161.1,
+          "max": 194.58
+        },
+        "age_ms": {
+          "p50": 221,
+          "p95": 253.8,
+          "p99": 271.5,
+          "max": 520.142
+        },
+        "preprocess_ms": {
+          "p50": 0.1,
+          "p95": 0.3,
+          "p99": 0.4,
+          "max": 0.634
+        },
+        "postprocess_ms": {
+          "p50": 27.5,
+          "p95": 28.4,
+          "p99": 28.7,
+          "max": 273.548
+        },
+        "display_ms": {
+          "p50": 26,
+          "p95": 37.6,
+          "p99": 38.3,
+          "max": 38.715
+        },
+        "steady_processed_fps": 7.814640420278859,
+        "max_temperature_c": 44.384,
+        "rss_max_mib": 262.76171875,
+        "fds_min": 3,
+        "fds_max": 29,
+        "native_cpu_one_core_percent": 78.21225558090129,
+        "restoration_pass": true
+      }
+    },
+    {
+      "name": "b1",
+      "baseline": false,
+      "project": "real_esrgan",
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 42.4338,
+        "captured": 1192,
+        "inferred": 316,
+        "processed": 314,
+        "fps": 7.39977,
+        "raw_replaced": 876,
+        "results_replaced": 2,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 128.2,
+          "p95": 135.1,
+          "p99": 156.9,
+          "max": 196.525
+        },
+        "age_ms": {
+          "p50": 197.8,
+          "p95": 231.9,
+          "p99": 249.2,
+          "max": 511.253
+        },
+        "preprocess_ms": {
+          "p50": 0.2,
+          "p95": 0.2,
+          "p99": 0.4,
+          "max": 0.936
+        },
+        "postprocess_ms": {
+          "p50": 10.4,
+          "p95": 11.3,
+          "p99": 11.6,
+          "max": 266.358
+        },
+        "display_ms": {
+          "p50": 29,
+          "p95": 36.3,
+          "p99": 37.8,
+          "max": 39.056
+        },
+        "steady_processed_fps": 7.937391694865497,
+        "max_temperature_c": 45.307,
+        "rss_max_mib": 275.453125,
+        "fds_min": 4,
+        "fds_max": 30,
+        "native_cpu_one_core_percent": 65.5935582744296,
+        "restoration_pass": true
+      }
+    },
+    {
+      "name": "b2",
+      "baseline": false,
+      "project": "real_esrgan",
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 42.4748,
+        "captured": 1195,
+        "inferred": 317,
+        "processed": 315,
+        "fps": 7.41616,
+        "raw_replaced": 878,
+        "results_replaced": 2,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 127.6,
+          "p95": 131.2,
+          "p99": 156.7,
+          "max": 187.692
+        },
+        "age_ms": {
+          "p50": 189.7,
+          "p95": 221.9,
+          "p99": 237.7,
+          "max": 505.25
+        },
+        "preprocess_ms": {
+          "p50": 0.2,
+          "p95": 0.2,
+          "p99": 0.4,
+          "max": 1.116
+        },
+        "postprocess_ms": {
+          "p50": 10.4,
+          "p95": 11.3,
+          "p99": 11.5,
+          "max": 271.686
+        },
+        "display_ms": {
+          "p50": 26.3,
+          "p95": 36.2,
+          "p99": 37.2,
+          "max": 39.403
+        },
+        "steady_processed_fps": 7.937780912242569,
+        "max_temperature_c": 46.23,
+        "rss_max_mib": 281.43359375,
+        "fds_min": 4,
+        "fds_max": 30,
+        "native_cpu_one_core_percent": 65.36550940981128,
+        "restoration_pass": true
+      }
+    },
+    {
+      "name": "a2",
+      "baseline": true,
+      "project": "real_esrgan",
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 42.4143,
+        "captured": 1195,
+        "inferred": 304,
+        "processed": 302,
+        "fps": 7.12024,
+        "raw_replaced": 891,
+        "results_replaced": 2,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 129.4,
+          "p95": 156.9,
+          "p99": 163,
+          "max": 190.524
+        },
+        "age_ms": {
+          "p50": 222,
+          "p95": 255.3,
+          "p99": 274.7,
+          "max": 523.354
+        },
+        "preprocess_ms": {
+          "p50": 0.1,
+          "p95": 0.3,
+          "p99": 0.4,
+          "max": 0.922
+        },
+        "postprocess_ms": {
+          "p50": 27.4,
+          "p95": 28.3,
+          "p99": 28.8,
+          "max": 281.639
+        },
+        "display_ms": {
+          "p50": 30.4,
+          "p95": 37.7,
+          "p99": 38.3,
+          "max": 42.027
+        },
+        "steady_processed_fps": 7.593046092809744,
+        "max_temperature_c": 47.153,
+        "rss_max_mib": 278.27734375,
+        "fds_min": 4,
+        "fds_max": 30,
+        "native_cpu_one_core_percent": 80.749954432291,
+        "restoration_pass": true
+      }
+    },
+    {
+      "name": "stability",
+      "baseline": false,
+      "project": "real_esrgan",
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 182.467,
+        "captured": 5391,
+        "inferred": 1421,
+        "processed": 1419,
+        "fps": 7.77674,
+        "raw_replaced": 3970,
+        "results_replaced": 2,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 128.2,
+          "p95": 138,
+          "p99": 156.7,
+          "max": 184.983
+        },
+        "age_ms": {
+          "p50": 195.4,
+          "p95": 236.6,
+          "p99": 246.9,
+          "max": 505.213
+        },
+        "preprocess_ms": {
+          "p50": 0.2,
+          "p95": 0.2,
+          "p99": 0.5,
+          "max": 0.982
+        },
+        "postprocess_ms": {
+          "p50": 10.4,
+          "p95": 11.4,
+          "p99": 11.8,
+          "max": 269.685
+        },
+        "display_ms": {
+          "p50": 28.3,
+          "p95": 36.3,
+          "p99": 37.2,
+          "max": 38.678
+        },
+        "steady_processed_fps": 7.900619972118534,
+        "max_temperature_c": 49.0,
+        "rss_max_mib": 288.55859375,
+        "fds_min": 4,
+        "fds_max": 30,
+        "native_cpu_one_core_percent": 67.45171672666429,
+        "restoration_pass": true
+      }
+    },
+    {
+      "name": "yolo-regression",
+      "baseline": false,
+      "project": "yolo11_bytetrack",
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 32.2653,
+        "captured": 896,
+        "inferred": 895,
+        "processed": 885,
+        "fps": 27.4289,
+        "raw_replaced": 1,
+        "results_replaced": 10,
+        "out_of_order_results": 0,
+        "in": 1,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.5,
+          "p95": 27,
+          "p99": 28.7,
+          "max": 34.738
+        },
+        "age_ms": {
+          "p50": 71.4,
+          "p95": 85.4,
+          "p99": 90.4,
+          "max": 278.79
+        },
+        "preprocess_ms": {
+          "p50": 5.4,
+          "p95": 5.7,
+          "p99": 5.9,
+          "max": 9.77
+        },
+        "postprocess_ms": {
+          "p50": 3.8,
+          "p95": 13.3,
+          "p99": 13.8,
+          "max": 206.618
+        },
+        "display_ms": {
+          "p50": 13.3,
+          "p95": 17.6,
+          "p99": 18,
+          "max": 18.48
+        },
+        "steady_processed_fps": 29.998434846761754,
+        "max_temperature_c": 47.153,
+        "rss_max_mib": 166.7421875,
+        "fds_min": 3,
+        "fds_max": 39,
+        "native_cpu_one_core_percent": 79.62493233526124,
+        "restoration_pass": true
+      }
+    },
+    {
+      "name": "depth-regression",
+      "baseline": false,
+      "project": "depth_anything_v2",
+      "analysis": {
+        "project": "depth_anything_v2",
+        "seconds": 33.2879,
+        "captured": 896,
+        "inferred": 43,
+        "processed": 42,
+        "fps": 1.26172,
+        "raw_replaced": 853,
+        "results_replaced": 1,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 716.2,
+          "p95": 734.6,
+          "p99": 755.3,
+          "max": 755.271
+        },
+        "age_ms": {
+          "p50": 788.4,
+          "p95": 1086.1,
+          "p99": 2697.03,
+          "max": 2697.03
+        },
+        "preprocess_ms": {
+          "p50": 3.3,
+          "p95": 3.7,
+          "p99": 8.2,
+          "max": 8.166
+        },
+        "postprocess_ms": {
+          "p50": 27.5,
+          "p95": 79.4,
+          "p99": 1905.7,
+          "max": 1905.63
+        },
+        "display_ms": {
+          "p50": 9.9,
+          "p95": 16.9,
+          "p99": 17.4,
+          "max": 17.4
+        },
+        "steady_processed_fps": 1.4112936231866993,
+        "max_temperature_c": 48.076,
+        "rss_max_mib": 266.578125,
+        "fds_min": 4,
+        "fds_max": 32,
+        "native_cpu_one_core_percent": 46.911124145854664,
+        "restoration_pass": true
+      }
+    }
+  ],
+  "started": 1795497001.194101,
+  "current": "depth-regression",
+  "current_started": 1795497404.2720914,
+  "finished": 1795497440.5991573
+}

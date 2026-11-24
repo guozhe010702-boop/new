@@ -1,0 +1,2 @@
+# Preserve the exact tested source, runtime and model SHA256 values.
+* -text

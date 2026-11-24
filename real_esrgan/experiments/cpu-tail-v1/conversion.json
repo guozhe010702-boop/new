@@ -1,0 +1,44 @@
+{
+  "stage": "board_parity_passed_bounded_live_test",
+  "source_onnx_sha256": "92ffe7e2c655d45c9417599f063a01a744a1fdeb65c5559d2afcd7198262cd19",
+  "trunk_onnx_sha256": "1be950d65c0f6b5439ee61639ed47719723aced5143918c0dd465338ee4d6ab4",
+  "rknn_sha256": "ba249c2493fef1149ce1f389e1fab7f88a0f2d58916128937c1d240d3577f26a",
+  "learned_initializers_unchanged": true,
+  "onnx_equivalence": [
+    {
+      "seed": 17,
+      "onnx_max_abs_difference": 0.0
+    },
+    {
+      "seed": 23,
+      "onnx_max_abs_difference": 0.0
+    }
+  ],
+  "precision": "fp16",
+  "input": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "raw_output": [
+    1,
+    48,
+    256,
+    256
+  ],
+  "reconstructed_output": [
+    1,
+    3,
+    1024,
+    1024
+  ],
+  "seconds": 1.960765564988833,
+  "selected_as_default": true,
+  "validation_images": 50,
+  "max_float_difference": 0,
+  "max_gray_difference": 0,
+  "quality_receipt": "results/npu-bottleneck-v1/quality-native-tail/summary.json",
+  "live_receipt": "results/npu-bottleneck-v1/live-abba/job.json",
+  "long_stability_qualified": false
+}

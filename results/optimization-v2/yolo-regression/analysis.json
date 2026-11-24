@@ -1,0 +1,52 @@
+{
+  "project": "yolo11_bytetrack",
+  "seconds": 32.2653,
+  "captured": 896,
+  "inferred": 895,
+  "processed": 885,
+  "fps": 27.4289,
+  "raw_replaced": 1,
+  "results_replaced": 10,
+  "out_of_order_results": 0,
+  "in": 1,
+  "out": 0,
+  "error": false,
+  "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+  "inference_ms": {
+    "p50": 25.5,
+    "p95": 27,
+    "p99": 28.7,
+    "max": 34.738
+  },
+  "age_ms": {
+    "p50": 71.4,
+    "p95": 85.4,
+    "p99": 90.4,
+    "max": 278.79
+  },
+  "preprocess_ms": {
+    "p50": 5.4,
+    "p95": 5.7,
+    "p99": 5.9,
+    "max": 9.77
+  },
+  "postprocess_ms": {
+    "p50": 3.8,
+    "p95": 13.3,
+    "p99": 13.8,
+    "max": 206.618
+  },
+  "display_ms": {
+    "p50": 13.3,
+    "p95": 17.6,
+    "p99": 18,
+    "max": 18.48
+  },
+  "steady_processed_fps": 29.998434846761754,
+  "max_temperature_c": 47.153,
+  "rss_max_mib": 166.7421875,
+  "fds_min": 3,
+  "fds_max": 39,
+  "native_cpu_one_core_percent": 79.62493233526124,
+  "restoration_pass": true
+}

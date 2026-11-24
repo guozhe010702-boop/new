@@ -1,0 +1,6 @@
+{
+  "tested_system_path": "/usr/lib/aarch64-linux-gnu/librga.so.2.1.0",
+  "tested_system_sha256": "7cf9985d217dfe2d0bb5270e23f715aa7a6b7e084fcf27fa8b96829e9ad41f0c",
+  "previous_unused_private_sha256": "c9e3e02591d55c1054be3174536343164a34f079bb5244490df321813297db56",
+  "note": "DT_NEEDED librga.so.2 previously resolved to system. Package the exact tested bytes under both required names; do not modify the system library."
+}

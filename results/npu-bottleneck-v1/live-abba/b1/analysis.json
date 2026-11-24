@@ -1,0 +1,52 @@
+{
+  "project": "real_esrgan",
+  "seconds": 32.3352,
+  "captured": 895,
+  "inferred": 355,
+  "processed": 352,
+  "fps": 10.886,
+  "raw_replaced": 540,
+  "results_replaced": 3,
+  "out_of_order_results": 0,
+  "in": 0,
+  "out": 0,
+  "error": false,
+  "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+  "inference_ms": {
+    "p50": 83.2,
+    "p95": 88.7,
+    "p99": 104.3,
+    "max": 130.926
+  },
+  "age_ms": {
+    "p50": 157.7,
+    "p95": 175.7,
+    "p99": 191.2,
+    "max": 443.323
+  },
+  "preprocess_ms": {
+    "p50": 0.2,
+    "p95": 0.2,
+    "p99": 0.4,
+    "max": 0.51
+  },
+  "postprocess_ms": {
+    "p50": 10.5,
+    "p95": 11.3,
+    "p99": 11.7,
+    "max": 275.625
+  },
+  "display_ms": {
+    "p50": 30,
+    "p95": 36.2,
+    "p99": 36.6,
+    "max": 36.988
+  },
+  "steady_processed_fps": 11.894028000477213,
+  "max_temperature_c": 48.076,
+  "rss_max_mib": 228.41796875,
+  "fds_min": 3,
+  "fds_max": 30,
+  "native_cpu_one_core_percent": 78.90215817436227,
+  "restoration_pass": true
+}

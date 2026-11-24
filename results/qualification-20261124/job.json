@@ -1,0 +1,749 @@
+{
+  "stage": "interrupted_reboot",
+  "pid": 14392,
+  "boot_id": "ee411906-ff53-4e09-a4da-86d9db199a65",
+  "cases": [
+    {
+      "name": "yolo11_bytetrack-scan-single-core",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "int8",
+      "workers": 1,
+      "mask": 1,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 32.2473,
+        "captured": 894,
+        "inferred": 892,
+        "processed": 884,
+        "fps": 27.4131,
+        "raw_replaced": 2,
+        "results_replaced": 8,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 26,
+          "p95": 27.1,
+          "p99": 28.1,
+          "max": 29.662
+        },
+        "age_ms": {
+          "p50": 65.5,
+          "p95": 76.8,
+          "p99": 83.3,
+          "max": 266.321
+        },
+        "preprocess_ms": {
+          "p50": 5.6,
+          "p95": 5.9,
+          "p99": 6.6,
+          "max": 8.924
+        },
+        "postprocess_ms": {
+          "p50": 3.8,
+          "p95": 4,
+          "p99": 4.4,
+          "max": 210.846
+        },
+        "display_ms": {
+          "p50": 6.4,
+          "p95": 15.8,
+          "p99": 18.5,
+          "max": 18.966
+        },
+        "steady_processed_fps": 29.97601070765726,
+        "max_temperature_c": 41.615,
+        "rss_max_mib": 172.52734375,
+        "fds_min": 3,
+        "fds_max": 39,
+        "native_cpu_one_core_percent": 78.09281676751876,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-scan-three-core",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "int8",
+      "workers": 1,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 32.2528,
+        "captured": 895,
+        "inferred": 894,
+        "processed": 885,
+        "fps": 27.4395,
+        "raw_replaced": 1,
+        "results_replaced": 9,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.8,
+          "p95": 26.8,
+          "p99": 27.2,
+          "max": 33.719
+        },
+        "age_ms": {
+          "p50": 69.3,
+          "p95": 72.9,
+          "p99": 78.2,
+          "max": 227.869
+        },
+        "preprocess_ms": {
+          "p50": 5.5,
+          "p95": 5.8,
+          "p99": 6,
+          "max": 8.553
+        },
+        "postprocess_ms": {
+          "p50": 3.8,
+          "p95": 4.2,
+          "p99": 4.5,
+          "max": 177.139
+        },
+        "display_ms": {
+          "p50": 12.2,
+          "p95": 17,
+          "p99": 18.7,
+          "max": 19.589
+        },
+        "steady_processed_fps": 29.955858047453788,
+        "max_temperature_c": 42.538,
+        "rss_max_mib": 168.00390625,
+        "fds_min": 3,
+        "fds_max": 40,
+        "native_cpu_one_core_percent": 78.07754424993736,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-scan-three-context",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "int8",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 32.2388,
+        "captured": 895,
+        "inferred": 895,
+        "processed": 885,
+        "fps": 27.4514,
+        "raw_replaced": 0,
+        "results_replaced": 9,
+        "out_of_order_results": 1,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.6,
+          "p95": 29.9,
+          "p99": 32,
+          "max": 40.383
+        },
+        "age_ms": {
+          "p50": 50.7,
+          "p95": 67.6,
+          "p99": 84.3,
+          "max": 282.697
+        },
+        "preprocess_ms": {
+          "p50": 5.1,
+          "p95": 5.8,
+          "p99": 6.2,
+          "max": 9.176
+        },
+        "postprocess_ms": {
+          "p50": 3.6,
+          "p95": 4.2,
+          "p99": 13.2,
+          "max": 207.166
+        },
+        "display_ms": {
+          "p50": 8.6,
+          "p95": 17.1,
+          "p99": 19.1,
+          "max": 19.52
+        },
+        "steady_processed_fps": 29.99627949372086,
+        "max_temperature_c": 42.538,
+        "rss_max_mib": 204.97265625,
+        "fds_min": 4,
+        "fds_max": 69,
+        "native_cpu_one_core_percent": 72.1526685321164,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-repeat-1",
+      "returncode": 0,
+      "seconds_requested": 300,
+      "precision": "int8",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 302.257,
+        "captured": 8995,
+        "inferred": 8995,
+        "processed": 8985,
+        "fps": 29.7264,
+        "raw_replaced": 0,
+        "results_replaced": 10,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.7,
+          "p95": 31.2,
+          "p99": 33.2,
+          "max": 44.57
+        },
+        "age_ms": {
+          "p50": 54.7,
+          "p95": 65.2,
+          "p99": 73.1,
+          "max": 277.452
+        },
+        "preprocess_ms": {
+          "p50": 5,
+          "p95": 5.9,
+          "p99": 6.5,
+          "max": 23.201
+        },
+        "postprocess_ms": {
+          "p50": 3.7,
+          "p95": 4.3,
+          "p99": 6.1,
+          "max": 201.231
+        },
+        "display_ms": {
+          "p50": 11.1,
+          "p95": 18.2,
+          "p99": 19,
+          "max": 22.602
+        },
+        "steady_processed_fps": 29.994585778840673,
+        "max_temperature_c": 44.384,
+        "rss_max_mib": 211.45703125,
+        "fds_min": 3,
+        "fds_max": 69,
+        "native_cpu_one_core_percent": 73.34040681980271,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-repeat-2",
+      "returncode": 0,
+      "seconds_requested": 300,
+      "precision": "int8",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 302.253,
+        "captured": 8995,
+        "inferred": 8995,
+        "processed": 8981,
+        "fps": 29.7135,
+        "raw_replaced": 0,
+        "results_replaced": 12,
+        "out_of_order_results": 2,
+        "in": 1,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.6,
+          "p95": 30.3,
+          "p99": 32.1,
+          "max": 38
+        },
+        "age_ms": {
+          "p50": 54.1,
+          "p95": 64.2,
+          "p99": 75.8,
+          "max": 261.65
+        },
+        "preprocess_ms": {
+          "p50": 5.1,
+          "p95": 6,
+          "p99": 7.2,
+          "max": 18.527
+        },
+        "postprocess_ms": {
+          "p50": 3.7,
+          "p95": 4.3,
+          "p99": 5.9,
+          "max": 203.984
+        },
+        "display_ms": {
+          "p50": 10.2,
+          "p95": 17.4,
+          "p99": 18.6,
+          "max": 24.776
+        },
+        "steady_processed_fps": 29.979808281992078,
+        "max_temperature_c": 46.23,
+        "rss_max_mib": 223.453125,
+        "fds_min": 3,
+        "fds_max": 69,
+        "native_cpu_one_core_percent": 74.3334823934268,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-repeat-3",
+      "returncode": 0,
+      "seconds_requested": 300,
+      "precision": "int8",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 302.281,
+        "captured": 8996,
+        "inferred": 8996,
+        "processed": 8984,
+        "fps": 29.7207,
+        "raw_replaced": 0,
+        "results_replaced": 8,
+        "out_of_order_results": 4,
+        "in": 0,
+        "out": 1,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.7,
+          "p95": 28.8,
+          "p99": 31.7,
+          "max": 43.057
+        },
+        "age_ms": {
+          "p50": 53.6,
+          "p95": 64.1,
+          "p99": 77.2,
+          "max": 272.007
+        },
+        "preprocess_ms": {
+          "p50": 5,
+          "p95": 5.9,
+          "p99": 6.3,
+          "max": 22.194
+        },
+        "postprocess_ms": {
+          "p50": 3.7,
+          "p95": 4.3,
+          "p99": 12,
+          "max": 204.601
+        },
+        "display_ms": {
+          "p50": 10.9,
+          "p95": 17.7,
+          "p99": 18.8,
+          "max": 23.088
+        },
+        "steady_processed_fps": 29.991989811814,
+        "max_temperature_c": 46.23,
+        "rss_max_mib": 211.6875,
+        "fds_min": 4,
+        "fds_max": 69,
+        "native_cpu_one_core_percent": 73.56276394038862,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-stall",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "int8",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 32.2523,
+        "captured": 896,
+        "inferred": 890,
+        "processed": 879,
+        "fps": 27.2539,
+        "raw_replaced": 6,
+        "results_replaced": 9,
+        "out_of_order_results": 2,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.5,
+          "p95": 31.3,
+          "p99": 32,
+          "max": 33.594
+        },
+        "age_ms": {
+          "p50": 50.3,
+          "p95": 66.1,
+          "p99": 81.4,
+          "max": 349.56
+        },
+        "preprocess_ms": {
+          "p50": 5,
+          "p95": 5.8,
+          "p99": 7.2,
+          "max": 10.919
+        },
+        "postprocess_ms": {
+          "p50": 3.7,
+          "p95": 4.4,
+          "p99": 12.6,
+          "max": 200.663
+        },
+        "display_ms": {
+          "p50": 10.9,
+          "p95": 18.5,
+          "p99": 18.9,
+          "max": 19.007
+        },
+        "steady_processed_fps": 29.997183665225926,
+        "max_temperature_c": 47.153,
+        "rss_max_mib": 204.578125,
+        "fds_min": 4,
+        "fds_max": 69,
+        "native_cpu_one_core_percent": 72.43874028501246,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "yolo11_bytetrack-endurance",
+      "returncode": 0,
+      "seconds_requested": 1800,
+      "precision": "int8",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "yolo11_bytetrack",
+        "seconds": 1802.27,
+        "captured": 53995,
+        "inferred": 53995,
+        "processed": 53964,
+        "fps": 29.9423,
+        "raw_replaced": 0,
+        "results_replaced": 13,
+        "out_of_order_results": 18,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 25.8,
+          "p95": 30.6,
+          "p99": 33.8,
+          "max": 43.753
+        },
+        "age_ms": {
+          "p50": 55.4,
+          "p95": 67,
+          "p99": 76.6,
+          "max": 270.835
+        },
+        "preprocess_ms": {
+          "p50": 5.1,
+          "p95": 5.9,
+          "p99": 6.5,
+          "max": 21.289
+        },
+        "postprocess_ms": {
+          "p50": 3.6,
+          "p95": 4.2,
+          "p99": 6,
+          "max": 206.768
+        },
+        "display_ms": {
+          "p50": 11.2,
+          "p95": 18,
+          "p99": 18.9,
+          "max": 24.456
+        },
+        "steady_processed_fps": 29.98732333292334,
+        "max_temperature_c": 48.076,
+        "rss_max_mib": 247.328125,
+        "fds_min": 3,
+        "fds_max": 70,
+        "native_cpu_one_core_percent": 76.01769491115192,
+        "last_10min_rss_delta_mib": 0.0,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "real_esrgan-scan-single-core",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "fp16",
+      "workers": 1,
+      "mask": 1,
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 32.5384,
+        "captured": 895,
+        "inferred": 120,
+        "processed": 120,
+        "fps": 3.68795,
+        "raw_replaced": 775,
+        "results_replaced": 0,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 253.5,
+          "p95": 262.3,
+          "p99": 280.6,
+          "max": 280.943
+        },
+        "age_ms": {
+          "p50": 329.8,
+          "p95": 364.3,
+          "p99": 530.7,
+          "max": 607.399
+        },
+        "preprocess_ms": {
+          "p50": 0.3,
+          "p95": 0.3,
+          "p99": 0.8,
+          "max": 2.387
+        },
+        "postprocess_ms": {
+          "p50": 26.5,
+          "p95": 27.2,
+          "p99": 27.8,
+          "max": 281.586
+        },
+        "display_ms": {
+          "p50": 27.1,
+          "p95": 35.8,
+          "p99": 36.8,
+          "max": 36.986
+        },
+        "steady_processed_fps": 3.9889211140887446,
+        "max_temperature_c": 47.153,
+        "rss_max_mib": 263.3515625,
+        "fds_min": 3,
+        "fds_max": 30,
+        "native_cpu_one_core_percent": 55.599020246235746,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "real_esrgan-scan-three-core",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "fp16",
+      "workers": 1,
+      "mask": 7,
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 32.4635,
+        "captured": 894,
+        "inferred": 228,
+        "processed": 226,
+        "fps": 6.96167,
+        "raw_replaced": 666,
+        "results_replaced": 2,
+        "out_of_order_results": 0,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 129.6,
+          "p95": 158.1,
+          "p99": 161.5,
+          "max": 183.893
+        },
+        "age_ms": {
+          "p50": 214.7,
+          "p95": 249.4,
+          "p99": 266.1,
+          "max": 522.9
+        },
+        "preprocess_ms": {
+          "p50": 0.1,
+          "p95": 0.3,
+          "p99": 0.4,
+          "max": 0.681
+        },
+        "postprocess_ms": {
+          "p50": 27.4,
+          "p95": 28.5,
+          "p99": 30.1,
+          "max": 287.83
+        },
+        "display_ms": {
+          "p50": 30.3,
+          "p95": 37,
+          "p99": 38.1,
+          "max": 38.573
+        },
+        "steady_processed_fps": 7.6605443461856435,
+        "max_temperature_c": 49.923,
+        "rss_max_mib": 271.84375,
+        "fds_min": 4,
+        "fds_max": 30,
+        "native_cpu_one_core_percent": 79.51227022748465,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "real_esrgan-scan-three-context",
+      "returncode": 0,
+      "seconds_requested": 30,
+      "precision": "fp16",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 32.5733,
+        "captured": 895,
+        "inferred": 351,
+        "processed": 337,
+        "fps": 10.3459,
+        "raw_replaced": 544,
+        "results_replaced": 9,
+        "out_of_order_results": 5,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 251.7,
+          "p95": 265.8,
+          "p99": 268.5,
+          "max": 315.769
+        },
+        "age_ms": {
+          "p50": 354.6,
+          "p95": 394.7,
+          "p99": 409.8,
+          "max": 614.462
+        },
+        "preprocess_ms": {
+          "p50": 0.2,
+          "p95": 0.3,
+          "p99": 0.4,
+          "max": 0.799
+        },
+        "postprocess_ms": {
+          "p50": 27.5,
+          "p95": 28.6,
+          "p99": 29,
+          "max": 251.417
+        },
+        "display_ms": {
+          "p50": 34.6,
+          "p95": 37.9,
+          "p99": 38.4,
+          "max": 48.802
+        },
+        "steady_processed_fps": 11.329932928813063,
+        "max_temperature_c": 51.769,
+        "rss_max_mib": 503.8203125,
+        "fds_min": 3,
+        "fds_max": 40,
+        "native_cpu_one_core_percent": 101.26534071560555,
+        "restoration_pass": true
+      },
+      "pass": true
+    },
+    {
+      "name": "real_esrgan-repeat-1",
+      "returncode": 0,
+      "seconds_requested": 300,
+      "precision": "fp16",
+      "workers": 3,
+      "mask": 7,
+      "analysis": {
+        "project": "real_esrgan",
+        "seconds": 302.532,
+        "captured": 8994,
+        "inferred": 3505,
+        "processed": 3335,
+        "fps": 11.0236,
+        "raw_replaced": 5489,
+        "results_replaced": 147,
+        "out_of_order_results": 23,
+        "in": 0,
+        "out": 0,
+        "error": false,
+        "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+        "inference_ms": {
+          "p50": 254.6,
+          "p95": 263,
+          "p99": 265.7,
+          "max": 314.349
+        },
+        "age_ms": {
+          "p50": 356.7,
+          "p95": 398.1,
+          "p99": 413.1,
+          "max": 608.219
+        },
+        "preprocess_ms": {
+          "p50": 0.2,
+          "p95": 0.2,
+          "p99": 0.2,
+          "max": 2.914
+        },
+        "postprocess_ms": {
+          "p50": 27.3,
+          "p95": 28.3,
+          "p99": 28.8,
+          "max": 248.707
+        },
+        "display_ms": {
+          "p50": 34.5,
+          "p95": 37.9,
+          "p99": 38.3,
+          "max": 50.125
+        },
+        "steady_processed_fps": 11.123901203921271,
+        "max_temperature_c": 56.384,
+        "rss_max_mib": 503.73828125,
+        "fds_min": 4,
+        "fds_max": 39,
+        "native_cpu_one_core_percent": 107.37190119606574,
+        "restoration_pass": true
+      },
+      "pass": true
+    }
+  ],
+  "started_at": 1795491169.499855,
+  "round_seconds": 300,
+  "endurance_seconds": 1800,
+  "current": "real_esrgan-repeat-2",
+  "current_started": 1795494455.2515116,
+  "error": "Unexpected board reboot during real_esrgan-repeat-2; user confirmed no manual action. Cause unproven.",
+  "detected_boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "observed_boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "observed_process_running": false
+}

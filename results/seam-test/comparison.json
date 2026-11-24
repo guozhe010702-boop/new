@@ -1,0 +1,8 @@
+{
+  "psnr_db": 62.10843258270601,
+  "seam_band_mae_8bit": 0.0401327982544899,
+  "all_pixel_mae_8bit": 0.039989471435546875,
+  "max_error_8bit": 4.0,
+  "reference": "full 384x384 PyTorch FP32 vs tiled board FP16",
+  "passed": true
+}

@@ -1,0 +1,213 @@
+{
+  "real_esrgan": [
+    {
+      "operator": "ConvPRelu",
+      "calls": 33,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 66044,
+      "total_us": 66044,
+      "percent": 61.92
+    },
+    {
+      "operator": "ConvTranspose",
+      "calls": 1,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 33606,
+      "total_us": 33606,
+      "percent": 31.51
+    },
+    {
+      "operator": "Conv",
+      "calls": 2,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 2284,
+      "total_us": 2284,
+      "percent": 2.14
+    },
+    {
+      "operator": "Add",
+      "calls": 1,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 2174,
+      "total_us": 2174,
+      "percent": 2.04
+    },
+    {
+      "operator": "Resize",
+      "calls": 1,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 1866,
+      "total_us": 1866,
+      "percent": 1.75
+    },
+    {
+      "operator": "OutputOperator",
+      "calls": 1,
+      "cpu_us": 685,
+      "gpu_us": 0,
+      "npu_us": 0,
+      "total_us": 685,
+      "percent": 0.64
+    },
+    {
+      "operator": "InputOperator",
+      "calls": 1,
+      "cpu_us": 4,
+      "gpu_us": 0,
+      "npu_us": 0,
+      "total_us": 4,
+      "percent": 0.0
+    }
+  ],
+  "depth_anything_v2": [
+    {
+      "operator": "exSDPAttention",
+      "calls": 12,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 445369,
+      "total_us": 445369,
+      "percent": 69.16
+    },
+    {
+      "operator": "Resize",
+      "calls": 5,
+      "cpu_us": 64966,
+      "gpu_us": 0,
+      "npu_us": 93,
+      "total_us": 65059,
+      "percent": 10.1
+    },
+    {
+      "operator": "ConvExGelu",
+      "calls": 12,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 33568,
+      "total_us": 33568,
+      "percent": 5.21
+    },
+    {
+      "operator": "exNorm",
+      "calls": 28,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 29404,
+      "total_us": 29404,
+      "percent": 4.57
+    },
+    {
+      "operator": "ConvAdd",
+      "calls": 34,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 27850,
+      "total_us": 27850,
+      "percent": 4.32
+    },
+    {
+      "operator": "Conv",
+      "calls": 25,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 24926,
+      "total_us": 24926,
+      "percent": 3.87
+    },
+    {
+      "operator": "Split",
+      "calls": 12,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 7017,
+      "total_us": 7017,
+      "percent": 1.09
+    },
+    {
+      "operator": "ConvRelu",
+      "calls": 9,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 5515,
+      "total_us": 5515,
+      "percent": 0.86
+    },
+    {
+      "operator": "ConvTranspose",
+      "calls": 2,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 2557,
+      "total_us": 2557,
+      "percent": 0.4
+    },
+    {
+      "operator": "Relu",
+      "calls": 7,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 1041,
+      "total_us": 1041,
+      "percent": 0.16
+    },
+    {
+      "operator": "Slice",
+      "calls": 4,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 823,
+      "total_us": 823,
+      "percent": 0.13
+    },
+    {
+      "operator": "Reshape",
+      "calls": 30,
+      "cpu_us": 520,
+      "gpu_us": 0,
+      "npu_us": 49,
+      "total_us": 569,
+      "percent": 0.09
+    },
+    {
+      "operator": "Add",
+      "calls": 1,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 150,
+      "total_us": 150,
+      "percent": 0.02
+    },
+    {
+      "operator": "Concat",
+      "calls": 1,
+      "cpu_us": 0,
+      "gpu_us": 0,
+      "npu_us": 129,
+      "total_us": 129,
+      "percent": 0.02
+    },
+    {
+      "operator": "OutputOperator",
+      "calls": 1,
+      "cpu_us": 9,
+      "gpu_us": 0,
+      "npu_us": 0,
+      "total_us": 9,
+      "percent": 0.0
+    },
+    {
+      "operator": "InputOperator",
+      "calls": 1,
+      "cpu_us": 3,
+      "gpu_us": 0,
+      "npu_us": 0,
+      "total_us": 3,
+      "percent": 0.0
+    }
+  ]
+}

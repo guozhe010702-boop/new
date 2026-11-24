@@ -1,0 +1,19 @@
+{
+  "same_boot": true,
+  "boot_id": "033342b6-8591-4477-b0f4-4099656b5f2b",
+  "gdm_active": "active",
+  "camera_users": "",
+  "algorithm_service": "inactive",
+  "qualification_service": "inactive",
+  "binary_sha256": "ea46597445e209b4ce30f42a933fe9d87ff0a2e8798918631548e2dfb13c466b",
+  "trunk_model_sha256": "ba249c2493fef1149ce1f389e1fab7f88a0f2d58916128937c1d240d3577f26a",
+  "validation_input_hashes_pass": true,
+  "compiled_trunk_has_no_deconvolution": true,
+  "kernel_rga_map_error_lines": 14,
+  "source_manifest_pass": true,
+  "source_files_verified": 94,
+  "native_users": [],
+  "npu_idle_sample": "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+  "default_sr_tail": "cpu",
+  "long_stability_qualified": false
+}

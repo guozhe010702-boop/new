@@ -1,0 +1,17 @@
+{
+  "precision": "fp16",
+  "workers": 1,
+  "mask": 7,
+  "render": "vector",
+  "qualification": "results/npu-bottleneck-v1/live-abba/depth-regression",
+  "binary_sha256": "ea46597445e209b4ce30f42a933fe9d87ff0a2e8798918631548e2dfb13c466b",
+  "bounded_test_seconds_requested": 20,
+  "measured_fps": 1.4204923061063515,
+  "age_p95_ms": 1223.1,
+  "stability_validated": false,
+  "current_version_long_test": false,
+  "target_fps": 20,
+  "performance_target_met": false,
+  "reason": "Single context; parity checked and bounded live regression completed. Unexplained prior reboot and desktop RGA mapping messages remain unresolved.",
+  "sr_tail": "npu"
+}

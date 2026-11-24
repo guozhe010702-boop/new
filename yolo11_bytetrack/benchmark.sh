@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+root="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+exec python3 "$root/tools/control.py" run --project yolo11_bytetrack --seconds 300 "$@"

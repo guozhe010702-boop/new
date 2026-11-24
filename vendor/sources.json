@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "DepthAnything/Depth-Anything-V2",
+    "commit": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf"
+  },
+  {
+    "repository": "FoundationVision/ByteTrack",
+    "commit": "d1bf0191adff59bc8fcfeaa0b33d3d1642552a99"
+  }
+]

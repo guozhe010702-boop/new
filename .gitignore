@@ -1,0 +1,40 @@
+# Generated camera data, full logs and temporary state stay local.
+data/**
+!data/dataset.json
+results/**
+!results/README.md
+state/
+__pycache__/
+*.pyc
+*.pyo
+*.onnx
+*.rknn
+*.pth
+*.pt
+*.f32
+*.npy
+*.tgz
+*.tar.gz
+*.zip
+.env
+.env.*
+.ssh/
+*.pem
+*.key
+
+# Include the tested default models and original SR fallback.
+!depth_anything_v2/models/fp16.rknn
+!real_esrgan/models/fp16.rknn
+!real_esrgan/models/fp16-trunk.rknn
+!yolo11_bytetrack/models/int8.rknn
+
+# Keep only the tested ARM64 executables, not CMake's generated files.
+build/*
+!build/advanced_vision
+!build/model_batch
+!build/sr_tiled
+!build/npu_profile
+!build/sr_tail_check
+!build/hardware_tests
+!build/core_tests
+!build/render_tests

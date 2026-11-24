@@ -1,0 +1,11 @@
+{
+  "precision": "int8",
+  "workers": 3,
+  "mask": 7,
+  "qualification": "/userdata/av_dev/advanced algorithms/results/qualification-20261124",
+  "endurance_seconds": 1800,
+  "stability_validated": true,
+  "target_fps": 30,
+  "measured_fps": 29.98732333292334,
+  "performance_target_met": true
+}

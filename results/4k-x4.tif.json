@@ -1,0 +1,11 @@
+{
+  "input_width": 3840,
+  "input_height": 2160,
+  "output_width": 15360,
+  "output_height": 8640,
+  "tile": 256,
+  "halo": 40,
+  "tiles": 286,
+  "seconds": 42.4657,
+  "output_image_bytes": 398131200
+}

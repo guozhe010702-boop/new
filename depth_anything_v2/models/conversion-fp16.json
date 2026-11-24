@@ -1,0 +1,33 @@
+{
+  "project": "depth_anything_v2",
+  "precision": "fp16",
+  "board_validated": false,
+  "started": 1795489161.8557417,
+  "onnx_random_max_abs_error": 5.9604644775390625e-06,
+  "source_sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+  "onnx_sha256": "3abab33bdfd2788c2eba6b4e70159fd3eb8d02ba0187b828e33a89e4b765427d",
+  "input_size": 518,
+  "mean": [
+    123.675,
+    116.28,
+    103.53
+  ],
+  "std": [
+    58.395,
+    57.12,
+    57.375
+  ],
+  "outputs": [
+    {
+      "name": "output_0",
+      "shape": [
+        1,
+        518,
+        518
+      ]
+    }
+  ],
+  "stage": "converted_not_board_validated",
+  "rknn_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+  "seconds": 16.58690440398641
+}

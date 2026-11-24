@@ -1,0 +1,6 @@
+{
+  "stage": "failed",
+  "error": "RuntimeError('Qualification stopped or board restarted: running')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\dvsense_docker\\Desktop\\work\\RK3588\\av_dev\\advanced algorithms\\tools\\finalize_async.py\", line 94, in <module>\n    try:main()\n  File \"C:\\Users\\dvsense_docker\\Desktop\\work\\RK3588\\av_dev\\advanced algorithms\\tools\\finalize_async.py\", line 27, in main\n    if job['stage']!='running' or not job.get('observed_process_running') or job.get('observed_boot_id')!=job.get('boot_id'):raise RuntimeError('Qualification stopped or board restarted: '+str(job.get('stage')))\nRuntimeError: Qualification stopped or board restarted: running\n",
+  "at": 1795494487.5147657
+}

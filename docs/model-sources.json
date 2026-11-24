@@ -1,0 +1,17 @@
+[
+  {
+    "path": "yolo11_bytetrack/models/yolo11n.pt",
+    "source": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+  },
+  {
+    "path": "real_esrgan/models/realesr-general-x4v3.pth",
+    "source": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth",
+    "sha256": "8dc7edb9ac80ccdc30c3a5dca6616509367f05fbc184ad95b731f05bece96292"
+  },
+  {
+    "path": "depth_anything_v2/models/depth_anything_v2_vits.pth",
+    "source": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small/resolve/main/depth_anything_v2_vits.pth",
+    "sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378"
+  }
+]

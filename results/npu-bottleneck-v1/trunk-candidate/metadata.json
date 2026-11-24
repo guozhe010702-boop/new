@@ -1,0 +1,111 @@
+{
+    "model": "/userdata/av_dev/advanced algorithms/real_esrgan/models/fp16-trunk.rknn",
+    "input": "/userdata/av_dev/advanced algorithms/data/prepared/validation/real_esrgan/0000.png",
+    "mask": 7,
+    "init_flags": 0,
+    "mode": "cpu-tail",
+    "runs": 20,
+    "warmups": 3,
+    "init_ms": 2.2042000000000002e+01,
+    "sdk": "2.3.2 (429f97ae6b@2025-04-09T09:09:27)",
+    "driver": "0.9.8",
+    "memory_query_rc": 0,
+    "weight_bytes": 2438720.0,
+    "internal_bytes": 17170432.0,
+    "dma_bytes": 30855168.0,
+    "total_sram_bytes": 0.0,
+    "free_sram_bytes": 0.0,
+    "tensors": [
+        {
+            "kind": "input",
+            "index": 0,
+            "query_rc": 0,
+            "name": "images",
+            "type": "FP16",
+            "format": "NHWC",
+            "n_elems": 196608.0,
+            "bytes": 393216.0,
+            "bytes_with_stride": 393216.0,
+            "w_stride": 256,
+            "dims": [
+                1,
+                256,
+                256,
+                3
+            ]
+        },
+        {
+            "kind": "native_input",
+            "index": 0,
+            "query_rc": 0,
+            "name": "images",
+            "type": "FP16",
+            "format": "NHWC",
+            "n_elems": 196608.0,
+            "bytes": 393216.0,
+            "bytes_with_stride": 393216.0,
+            "w_stride": 256,
+            "dims": [
+                1,
+                256,
+                256,
+                3
+            ]
+        },
+        {
+            "kind": "output",
+            "index": 0,
+            "query_rc": 0,
+            "name": "/body.66/Conv_output_0",
+            "type": "FP16",
+            "format": "NCHW",
+            "n_elems": 3145728.0,
+            "bytes": 6291456.0,
+            "bytes_with_stride": 6291456.0,
+            "w_stride": 0,
+            "dims": [
+                1,
+                48,
+                256,
+                256
+            ]
+        },
+        {
+            "kind": "native_output",
+            "index": 0,
+            "query_rc": 0,
+            "name": "/body.66/Conv_output_0",
+            "type": "FP16",
+            "format": "NC1HWC2",
+            "n_elems": 3145728.0,
+            "bytes": 6291456.0,
+            "bytes_with_stride": 6291456.0,
+            "w_stride": 0,
+            "dims": [
+                1,
+                6,
+                256,
+                256,
+                8
+            ]
+        },
+        {
+            "kind": "native_nhwc_output",
+            "index": 0,
+            "query_rc": 0,
+            "name": "/body.66/Conv_output_0",
+            "type": "FP16",
+            "format": "NHWC",
+            "n_elems": 3145728.0,
+            "bytes": 6291456.0,
+            "bytes_with_stride": 6291456.0,
+            "w_stride": 0,
+            "dims": [
+                1,
+                256,
+                256,
+                48
+            ]
+        }
+    ]
+}

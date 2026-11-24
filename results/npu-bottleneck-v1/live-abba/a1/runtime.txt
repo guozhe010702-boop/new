@@ -1,0 +1,9 @@
+project=real_esrgan
+workers=1
+mask=7
+sr_tail=npu
+capture_memory=mmap
+capture_adapter=GStreamer NV12 map/copy + CSC selected from caps: RGA BT709-full with CPU range remap; CPU matrix for BT2020/limited; RGA RGB resize
+sdk=2.3.2 (429f97ae6b@2025-04-09T09:09:27) driver=0.9.8
+input=256x256
+1,3,1024,1024,

@@ -1,0 +1,106 @@
+{
+  "project": "yolo11_bytetrack",
+  "precision": "fp16",
+  "board_validated": false,
+  "started": 1795489134.9738681,
+  "onnx_random_max_abs_error": 6.67572021484375e-05,
+  "source_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+  "onnx_sha256": "35a5fbc66678ea00d485711024bffe790d0137facad1b3525f050b39133a5496",
+  "input_size": 640,
+  "mean": [
+    0,
+    0,
+    0
+  ],
+  "std": [
+    255,
+    255,
+    255
+  ],
+  "outputs": [
+    {
+      "name": "output_0",
+      "shape": [
+        1,
+        64,
+        80,
+        80
+      ]
+    },
+    {
+      "name": "output_1",
+      "shape": [
+        1,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "name": "output_2",
+      "shape": [
+        1,
+        1,
+        80,
+        80
+      ]
+    },
+    {
+      "name": "output_3",
+      "shape": [
+        1,
+        64,
+        40,
+        40
+      ]
+    },
+    {
+      "name": "output_4",
+      "shape": [
+        1,
+        80,
+        40,
+        40
+      ]
+    },
+    {
+      "name": "output_5",
+      "shape": [
+        1,
+        1,
+        40,
+        40
+      ]
+    },
+    {
+      "name": "output_6",
+      "shape": [
+        1,
+        64,
+        20,
+        20
+      ]
+    },
+    {
+      "name": "output_7",
+      "shape": [
+        1,
+        80,
+        20,
+        20
+      ]
+    },
+    {
+      "name": "output_8",
+      "shape": [
+        1,
+        1,
+        20,
+        20
+      ]
+    }
+  ],
+  "stage": "converted_not_board_validated",
+  "rknn_sha256": "7ad354d9ba57873c8dad377c249a6786753e64c627695a45db2ca0da1ec5f250",
+  "seconds": 3.823352942999918
+}
