@@ -1,0 +1,1327 @@
+{
+  "date": "2026-11-25",
+  "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+  "binary_sha256": "7725995824ebae89293848a1fa408eead4f3cae9a687fb49cb2594f56bd1db60",
+  "previous_binary_sha256": "ea46597445e209b4ce30f42a933fe9d87ff0a2e8798918631548e2dfb13c466b",
+  "preview_stopped": true,
+  "device_restored": true,
+  "ctest": "Test project /userdata/av_dev/advanced algorithms/build\n    Start 1: async_writer_contract\n1/4 Test #1: async_writer_contract ............   Passed    0.00 sec\n    Start 2: core_contracts\n2/4 Test #2: core_contracts ...................   Passed    0.01 sec\n    Start 3: rga_hardware\n3/4 Test #3: rga_hardware .....................   Passed    0.03 sec\n    Start 4: vector_render_parity\n4/4 Test #4: vector_render_parity .............   Passed    0.71 sec\n\n100% tests passed, 0 tests failed out of 4\n\nTotal Test time (real) =   0.76 sec\n",
+  "live_cases": {
+    "a1": {
+      "project": "depth_anything_v2",
+      "seconds": 33.0849,
+      "captured": 895,
+      "inferred": 43,
+      "processed": 39,
+      "fps": 1.17879,
+      "raw_replaced": 852,
+      "results_replaced": 4,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "inference_ms": {
+        "p50": 712.4,
+        "p95": 731.9,
+        "p99": 745.5,
+        "max": 745.422
+      },
+      "age_ms": {
+        "p50": 789.8,
+        "p95": 2702.6,
+        "p99": 2702.6,
+        "max": 2702.6
+      },
+      "preprocess_ms": {
+        "p50": 3.4,
+        "p95": 4.1,
+        "p99": 8.4,
+        "max": 8.386
+      },
+      "postprocess_ms": {
+        "p50": 27.4,
+        "p95": 1922.6,
+        "p99": 1924.4,
+        "max": 1924.4
+      },
+      "display_ms": {
+        "p50": 7.2,
+        "p95": 16.2,
+        "p99": 17.5,
+        "max": 17.415
+      },
+      "steady_processed_fps": 1.2893788904741534,
+      "max_temperature_c": 42.538,
+      "rss_max_mib": 270.578125,
+      "fds_min": 4,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 63.45716249611263,
+      "restoration_pass": true,
+      "first_frame_age_ms": 2702.6,
+      "flip_gap_p95_ms": 2616.509,
+      "flip_gap_max_ms": 2616.512
+    },
+    "b1": {
+      "project": "depth_anything_v2",
+      "seconds": 32.9603,
+      "captured": 894,
+      "inferred": 43,
+      "processed": 43,
+      "fps": 1.3046,
+      "raw_replaced": 851,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 5,
+      "save_jobs_written": 5,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 9598.09,
+      "save_wall_ms_max": 1933.39,
+      "inference_ms": {
+        "p50": 709.6,
+        "p95": 727.1,
+        "p99": 750.3,
+        "max": 750.285
+      },
+      "age_ms": {
+        "p50": 785.6,
+        "p95": 819.2,
+        "p99": 835.9,
+        "max": 835.851
+      },
+      "preprocess_ms": {
+        "p50": 3.3,
+        "p95": 4,
+        "p99": 8.1,
+        "max": 8.046
+      },
+      "postprocess_ms": {
+        "p50": 27.4,
+        "p95": 63,
+        "p99": 79.8,
+        "max": 79.726
+      },
+      "display_ms": {
+        "p50": 8.4,
+        "p95": 16.5,
+        "p99": 17.2,
+        "max": 17.184
+      },
+      "steady_processed_fps": 1.407778830989568,
+      "max_temperature_c": 43.461,
+      "rss_max_mib": 286.53125,
+      "fds_min": 3,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 69.43934002755364,
+      "restoration_pass": true,
+      "first_frame_age_ms": 820.349,
+      "flip_gap_p95_ms": 749.515,
+      "flip_gap_max_ms": 766.63
+    },
+    "b2": {
+      "project": "depth_anything_v2",
+      "seconds": 32.9874,
+      "captured": 895,
+      "inferred": 43,
+      "processed": 43,
+      "fps": 1.30353,
+      "raw_replaced": 852,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 5,
+      "save_jobs_written": 5,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 9566.45,
+      "save_wall_ms_max": 1937.85,
+      "inference_ms": {
+        "p50": 711.6,
+        "p95": 724.1,
+        "p99": 755,
+        "max": 754.936
+      },
+      "age_ms": {
+        "p50": 778.9,
+        "p95": 799,
+        "p99": 827.6,
+        "max": 827.592
+      },
+      "preprocess_ms": {
+        "p50": 3.4,
+        "p95": 3.8,
+        "p99": 8.6,
+        "max": 8.59
+      },
+      "postprocess_ms": {
+        "p50": 27.2,
+        "p95": 29.2,
+        "p99": 37.6,
+        "max": 37.548
+      },
+      "display_ms": {
+        "p50": 7.6,
+        "p95": 17.3,
+        "p99": 21.2,
+        "max": 21.157
+      },
+      "steady_processed_fps": 1.4087449416734017,
+      "max_temperature_c": 44.384,
+      "rss_max_mib": 285.85546875,
+      "fds_min": 4,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 69.43086387426416,
+      "restoration_pass": true,
+      "first_frame_age_ms": 827.592,
+      "flip_gap_p95_ms": 733.269,
+      "flip_gap_max_ms": 733.305
+    },
+    "a2": {
+      "project": "depth_anything_v2",
+      "seconds": 33.0017,
+      "captured": 890,
+      "inferred": 43,
+      "processed": 39,
+      "fps": 1.18176,
+      "raw_replaced": 847,
+      "results_replaced": 4,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "inference_ms": {
+        "p50": 712.1,
+        "p95": 728,
+        "p99": 733.6,
+        "max": 733.583
+      },
+      "age_ms": {
+        "p50": 781.4,
+        "p95": 2661.59,
+        "p99": 2661.59,
+        "max": 2661.59
+      },
+      "preprocess_ms": {
+        "p50": 3.3,
+        "p95": 3.7,
+        "p99": 7.7,
+        "max": 7.618
+      },
+      "postprocess_ms": {
+        "p50": 27.3,
+        "p95": 1879.8,
+        "p99": 1901.4,
+        "max": 1901.37
+      },
+      "display_ms": {
+        "p50": 6.6,
+        "p95": 17.2,
+        "p99": 17.2,
+        "max": 17.184
+      },
+      "steady_processed_fps": 1.2853559971725486,
+      "max_temperature_c": 44.384,
+      "rss_max_mib": 271.41015625,
+      "fds_min": 4,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 62.88430186276587,
+      "restoration_pass": true,
+      "first_frame_age_ms": 2661.59,
+      "flip_gap_p95_ms": 2566.565,
+      "flip_gap_max_ms": 2566.565
+    },
+    "depth-stability": {
+      "project": "depth_anything_v2",
+      "seconds": 183.443,
+      "captured": 5391,
+      "inferred": 253,
+      "processed": 253,
+      "fps": 1.37918,
+      "raw_replaced": 5138,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 13,
+      "save_jobs_written": 13,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 24875.2,
+      "save_wall_ms_max": 1960.91,
+      "inference_ms": {
+        "p50": 713.2,
+        "p95": 726.4,
+        "p99": 732.2,
+        "max": 745.697
+      },
+      "age_ms": {
+        "p50": 781.8,
+        "p95": 837.9,
+        "p99": 850.4,
+        "max": 1267.36
+      },
+      "preprocess_ms": {
+        "p50": 3.3,
+        "p95": 4,
+        "p99": 4.7,
+        "max": 8.041
+      },
+      "postprocess_ms": {
+        "p50": 27.1,
+        "p95": 65.5,
+        "p99": 80.8,
+        "max": 83.422
+      },
+      "display_ms": {
+        "p50": 9.7,
+        "p95": 16.4,
+        "p99": 17.3,
+        "max": 22.388
+      },
+      "steady_processed_fps": 1.4017799240763953,
+      "max_temperature_c": 46.23,
+      "rss_max_mib": 286.765625,
+      "fds_min": 3,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 55.6837647668045,
+      "restoration_pass": true,
+      "first_frame_age_ms": 848.628,
+      "flip_gap_p95_ms": 750.008,
+      "flip_gap_max_ms": 783.32
+    },
+    "writer-overload": {
+      "project": "depth_anything_v2",
+      "seconds": 16.5942,
+      "captured": 355,
+      "inferred": 18,
+      "processed": 18,
+      "fps": 1.08472,
+      "raw_replaced": 337,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 18,
+      "save_jobs_written": 8,
+      "save_jobs_replaced": 10,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 15388.2,
+      "save_wall_ms_max": 1961.5,
+      "inference_ms": {
+        "p50": 690.5,
+        "p95": 745.1,
+        "p99": 745.1,
+        "max": 745.038
+      },
+      "age_ms": {
+        "p50": 781.3,
+        "p95": 897.7,
+        "p99": 897.7,
+        "max": 897.683
+      },
+      "preprocess_ms": {
+        "p50": 3.3,
+        "p95": 8.2,
+        "p99": 8.2,
+        "max": 8.113
+      },
+      "postprocess_ms": {
+        "p50": 27.2,
+        "p95": 65.9,
+        "p99": 65.9,
+        "max": 65.872
+      },
+      "display_ms": {
+        "p50": 8.6,
+        "p95": 16.6,
+        "p99": 16.6,
+        "max": 16.553
+      },
+      "steady_processed_fps": 1.4515880857520824,
+      "max_temperature_c": 47.153,
+      "rss_max_mib": 312.22265625,
+      "fds_min": 4,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 123.23478021765268,
+      "restoration_pass": true,
+      "first_frame_age_ms": 840.33,
+      "flip_gap_p95_ms": 733.317,
+      "flip_gap_max_ms": 733.317
+    },
+    "no-save": {
+      "project": "depth_anything_v2",
+      "seconds": 15.267,
+      "captured": 354,
+      "inferred": 18,
+      "processed": 18,
+      "fps": 1.17902,
+      "raw_replaced": 336,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 716.3,
+        "p95": 728.9,
+        "p99": 728.9,
+        "max": 728.879
+      },
+      "age_ms": {
+        "p50": 782.3,
+        "p95": 1063.9,
+        "p99": 1063.9,
+        "max": 1063.87
+      },
+      "preprocess_ms": {
+        "p50": 3.4,
+        "p95": 3.8,
+        "p99": 3.8,
+        "max": 3.795
+      },
+      "postprocess_ms": {
+        "p50": 27.4,
+        "p95": 66.2,
+        "p99": 66.2,
+        "max": 66.171
+      },
+      "display_ms": {
+        "p50": 9.4,
+        "p95": 13.9,
+        "p99": 13.9,
+        "max": 13.829
+      },
+      "steady_processed_fps": 1.4667513862267352,
+      "max_temperature_c": 45.307,
+      "rss_max_mib": 259.59765625,
+      "fds_min": 4,
+      "fds_max": 31,
+      "native_cpu_one_core_percent": 39.06888004888487,
+      "restoration_pass": true,
+      "first_frame_age_ms": 814.215,
+      "flip_gap_p95_ms": 766.653,
+      "flip_gap_max_ms": 766.653
+    },
+    "yolo-regression": {
+      "project": "yolo11_bytetrack",
+      "seconds": 27.2683,
+      "captured": 746,
+      "inferred": 739,
+      "processed": 727,
+      "fps": 26.661,
+      "raw_replaced": 7,
+      "results_replaced": 12,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 8,
+      "save_jobs_written": 8,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 2469.23,
+      "save_wall_ms_max": 346.215,
+      "inference_ms": {
+        "p50": 25.5,
+        "p95": 27.3,
+        "p99": 30.3,
+        "max": 41.732
+      },
+      "age_ms": {
+        "p50": 66,
+        "p95": 84.1,
+        "p99": 100.6,
+        "max": 100.817
+      },
+      "preprocess_ms": {
+        "p50": 5.3,
+        "p95": 5.8,
+        "p99": 6.8,
+        "max": 10.055
+      },
+      "postprocess_ms": {
+        "p50": 3.9,
+        "p95": 13.5,
+        "p99": 14.6,
+        "max": 18.029
+      },
+      "display_ms": {
+        "p50": 9.5,
+        "p95": 16.4,
+        "p99": 18.1,
+        "max": 19.938
+      },
+      "steady_processed_fps": 29.593896619293073,
+      "max_temperature_c": 47.153,
+      "rss_max_mib": 187.96484375,
+      "fds_min": 3,
+      "fds_max": 40,
+      "native_cpu_one_core_percent": 91.64693551374772,
+      "restoration_pass": true,
+      "first_frame_age_ms": 89.176,
+      "flip_gap_p95_ms": 50.002,
+      "flip_gap_max_ms": 233.33
+    },
+    "sr-regression": {
+      "project": "real_esrgan",
+      "seconds": 27.3447,
+      "captured": 745,
+      "inferred": 294,
+      "processed": 294,
+      "fps": 10.7516,
+      "raw_replaced": 451,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 3,
+      "save_jobs_written": 3,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 1080.77,
+      "save_wall_ms_max": 387.68,
+      "inference_ms": {
+        "p50": 83.2,
+        "p95": 101.9,
+        "p99": 103.6,
+        "max": 134.407
+      },
+      "age_ms": {
+        "p50": 150.3,
+        "p95": 182.8,
+        "p99": 184.6,
+        "max": 232.917
+      },
+      "preprocess_ms": {
+        "p50": 0.2,
+        "p95": 0.4,
+        "p99": 0.4,
+        "max": 0.376
+      },
+      "postprocess_ms": {
+        "p50": 10.5,
+        "p95": 11.1,
+        "p99": 12,
+        "max": 51.842
+      },
+      "display_ms": {
+        "p50": 28.8,
+        "p95": 36.1,
+        "p99": 36.5,
+        "max": 36.851
+      },
+      "steady_processed_fps": 11.816250637017102,
+      "max_temperature_c": 49.923,
+      "rss_max_mib": 233.8046875,
+      "fds_min": 4,
+      "fds_max": 30,
+      "native_cpu_one_core_percent": 81.57411617123239,
+      "restoration_pass": true,
+      "first_frame_age_ms": 232.917,
+      "flip_gap_p95_ms": 99.998,
+      "flip_gap_max_ms": 116.719
+    }
+  },
+  "safety": {
+    "stage": "complete",
+    "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+    "checks": {
+      "fixed_image_input_prepared_tensor_depth_identical": true,
+      "real_io_error_propagated_and_restored": true,
+      "manual_stop_during_save_restored": true
+    },
+    "manual_stop_seconds": 2.7711283919998095,
+    "finished": 1795587566.7894368
+  },
+  "npu_candidates": {
+    "flash-board-20261125": {
+      "stage": "profiled_not_adopted",
+      "started": 1795585507.9464364,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+      "candidate_sha256": "4ab57c71b5982ee0ae8dd04960c9c5534dd0f0ec2089cdaa5efd2a030926cdf0",
+      "core_mask": 7,
+      "selected_as_default": false,
+      "board_quality_validated": false,
+      "live_pipeline_validated": false,
+      "cases": [
+        {
+          "name": "a1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "30538"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "30538"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1455,
+            "run_ms": 641.148,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6154999999999999,
+            "copy_ms": 0.0895,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 648.9739999999999,
+            "driver_run_ms": 641.145
+          }
+        },
+        {
+          "name": "b1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "30538"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "30538"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1295,
+            "run_ms": 643.2615000000001,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6165,
+            "copy_ms": 0.09,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 651.142,
+            "driver_run_ms": 643.2584999999999
+          }
+        },
+        {
+          "name": "b2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "30538"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "30538"
+          },
+          "medians": {
+            "inputs_set_ms": 7.131,
+            "run_ms": 641.6665,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6125,
+            "copy_ms": 0.0885,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 649.4939999999999,
+            "driver_run_ms": 641.664
+          }
+        },
+        {
+          "name": "a2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "31461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "31461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.114000000000001,
+            "run_ms": 642.4590000000001,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6125,
+            "copy_ms": 0.09,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 650.2885,
+            "driver_run_ms": 642.456
+          }
+        }
+      ],
+      "current": "a2",
+      "baseline_total_ms": 649.6312499999999,
+      "candidate_total_ms": 650.318,
+      "call_reduction_percent": -0.10571381841621985,
+      "worth_full_quality_check": false,
+      "finished": 1795585554.4853222
+    },
+    "head-groups-board-20261125": {
+      "stage": "profiled_not_adopted",
+      "started": 1795585859.4953296,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+      "candidate_sha256": "196945d80e3aaba7c5b0c2071a2c0797aa6fc551a6d5e7baa5ee6d8cebc1d5f2",
+      "core_mask": 7,
+      "selected_as_default": false,
+      "board_quality_validated": false,
+      "live_pipeline_validated": false,
+      "cases": [
+        {
+          "name": "a1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "34230"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "35153"
+          },
+          "medians": {
+            "inputs_set_ms": 7.128,
+            "run_ms": 641.5775000000001,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.622,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 649.4045000000001,
+            "driver_run_ms": 641.575
+          }
+        },
+        {
+          "name": "b1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "35153"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "34230"
+          },
+          "medians": {
+            "inputs_set_ms": 7.134,
+            "run_ms": 654.534,
+            "allocate_ms": 0.0005,
+            "outputs_get_ms": 0.633,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 662.4335,
+            "driver_run_ms": 654.532
+          }
+        },
+        {
+          "name": "b2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "35153"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "35153"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1545,
+            "run_ms": 654.767,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6285000000000001,
+            "copy_ms": 0.088,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 662.6355000000001,
+            "driver_run_ms": 654.7645
+          }
+        },
+        {
+          "name": "a2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "35153"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "35153"
+          },
+          "medians": {
+            "inputs_set_ms": 7.168,
+            "run_ms": 640.4855,
+            "allocate_ms": 0.0005,
+            "outputs_get_ms": 0.6165,
+            "copy_ms": 0.0875,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 648.3534999999999,
+            "driver_run_ms": 640.4835
+          }
+        }
+      ],
+      "current": "a2",
+      "baseline_total_ms": 648.879,
+      "candidate_total_ms": 662.5345,
+      "call_reduction_percent": -2.104475564781727,
+      "worth_full_quality_check": false,
+      "finished": 1795585906.0636916
+    },
+    "resize-matmul-board-20261125": {
+      "stage": "profiled_not_adopted",
+      "started": 1795585941.327053,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+      "candidate_sha256": "b1ed62a9f1c79722201c5bbc0044d996a79352bb20fb1b95eca04f45db571832",
+      "core_mask": 7,
+      "selected_as_default": false,
+      "board_quality_validated": false,
+      "live_pipeline_validated": false,
+      "cases": [
+        {
+          "name": "a1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1905,
+            "run_ms": 641.0815,
+            "allocate_ms": 0.001,
+            "outputs_get_ms": 0.6194999999999999,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 649.059,
+            "driver_run_ms": 641.079
+          }
+        },
+        {
+          "name": "b1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1594999999999995,
+            "run_ms": 1167.705,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.7805,
+            "copy_ms": 0.388,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 1176.005,
+            "driver_run_ms": 1167.7
+          }
+        },
+        {
+          "name": "b2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "medians": {
+            "inputs_set_ms": 7.17,
+            "run_ms": 1173.45,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.788,
+            "copy_ms": 0.374,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 1181.815,
+            "driver_run_ms": 1173.45
+          }
+        },
+        {
+          "name": "a2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "36076"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1375,
+            "run_ms": 644.163,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.622,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 651.9775,
+            "driver_run_ms": 644.1605
+          }
+        }
+      ],
+      "current": "a2",
+      "baseline_total_ms": 650.51825,
+      "candidate_total_ms": 1178.91,
+      "call_reduction_percent": -81.2262761267651,
+      "worth_full_quality_check": false,
+      "finished": 1795586004.3371239
+    },
+    "resize-gather-board-20261125": {
+      "stage": "profiled_not_adopted",
+      "started": 1795586220.114248,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+      "candidate_sha256": "914773a3e4a5baa9bc868ee2395551ce0e29e50c994555e90f27a758c61b2ce2",
+      "core_mask": 7,
+      "selected_as_default": false,
+      "board_quality_validated": false,
+      "live_pipeline_validated": false,
+      "cases": [
+        {
+          "name": "a1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1545000000000005,
+            "run_ms": 642.297,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6194999999999999,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 650.1845000000001,
+            "driver_run_ms": 642.2950000000001
+          }
+        },
+        {
+          "name": "b1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "medians": {
+            "inputs_set_ms": 28.869,
+            "run_ms": 654.937,
+            "allocate_ms": 0.001,
+            "outputs_get_ms": 1.709,
+            "copy_ms": 0.162,
+            "cpu_tail_ms": 0.001,
+            "release_ms": 0.0025,
+            "total_ms": 685.6845,
+            "driver_run_ms": 654.933
+          }
+        },
+        {
+          "name": "b2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "medians": {
+            "inputs_set_ms": 28.955,
+            "run_ms": 654.191,
+            "allocate_ms": 0.001,
+            "outputs_get_ms": 1.7105000000000001,
+            "copy_ms": 0.161,
+            "cpu_tail_ms": 0.001,
+            "release_ms": 0.003,
+            "total_ms": 685.1385,
+            "driver_run_ms": 654.1855
+          }
+        },
+        {
+          "name": "a2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "37923"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1805,
+            "run_ms": 644.3115,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.619,
+            "copy_ms": 0.0915,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 652.1765,
+            "driver_run_ms": 644.309
+          }
+        }
+      ],
+      "current": "a2",
+      "baseline_total_ms": 651.1805,
+      "candidate_total_ms": 685.4114999999999,
+      "call_reduction_percent": -5.256760606314215,
+      "worth_full_quality_check": false,
+      "finished": 1795586267.7746463
+    },
+    "gpu-fallback-board-20261125": {
+      "stage": "complete",
+      "started": 1795586141.998813,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "cases": [
+        {
+          "name": "a1",
+          "flag": 0,
+          "total_ms": 650.7850000000001
+        },
+        {
+          "name": "b1",
+          "flag": 1024,
+          "total_ms": 650.1
+        },
+        {
+          "name": "b2",
+          "flag": 1024,
+          "total_ms": 650.14
+        },
+        {
+          "name": "a2",
+          "flag": 0,
+          "total_ms": 651.0250000000001
+        },
+        {
+          "name": "gpu-layers",
+          "flag": 1032,
+          "total_ms": 654.989
+        }
+      ],
+      "finished": 1795586185.839285
+    },
+    "runtime25-board-20261125": {
+      "stage": "complete",
+      "started": 1795586419.552995,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "cases": [
+        {
+          "name": "a1",
+          "runtime": "2.3.2 (429f97ae6b@2025-04-09T09:09:27)",
+          "total_ms": 651.92
+        },
+        {
+          "name": "b1",
+          "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+          "total_ms": 651.1465000000001
+        },
+        {
+          "name": "b2",
+          "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+          "total_ms": 651.1045
+        },
+        {
+          "name": "a2",
+          "runtime": "2.3.2 (429f97ae6b@2025-04-09T09:09:27)",
+          "total_ms": 650.3865000000001
+        },
+        {
+          "name": "candidate-layers",
+          "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+          "total_ms": 654.8
+        }
+      ],
+      "finished": 1795586463.1835928
+    },
+    "auto-hybrid-board-20261125": {
+      "stage": "profiled_not_adopted",
+      "started": 1795587405.7359946,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+      "candidate_sha256": "dde7edc537cf55f0ae81081da1b72a777e565abecbb4bc858a049e7d37b5fcfb",
+      "core_mask": 7,
+      "selected_as_default": false,
+      "board_quality_validated": false,
+      "live_pipeline_validated": false,
+      "cases": [
+        {
+          "name": "a1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "44384"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1905,
+            "run_ms": 642.1324999999999,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6194999999999999,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 650.0125,
+            "driver_run_ms": 642.1305
+          }
+        },
+        {
+          "name": "b1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 0.2935,
+            "run_ms": 638.9955,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.589,
+            "copy_ms": 0.09,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 639.9794999999999,
+            "driver_run_ms": 638.992
+          }
+        },
+        {
+          "name": "b2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 0.292,
+            "run_ms": 637.481,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.59,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 638.4535000000001,
+            "driver_run_ms": 637.4780000000001
+          }
+        },
+        {
+          "name": "a2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.208,
+            "run_ms": 641.665,
+            "allocate_ms": 0.0005,
+            "outputs_get_ms": 0.6225,
+            "copy_ms": 0.0895,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 649.578,
+            "driver_run_ms": 641.6625
+          }
+        }
+      ],
+      "current": "a2",
+      "baseline_total_ms": 649.79525,
+      "candidate_total_ms": 639.2165,
+      "call_reduction_percent": 1.6280128240395708,
+      "worth_full_quality_check": false,
+      "finished": 1795587451.5242467
+    },
+    "head-single-flash-board-20261125": {
+      "stage": "profiled_not_adopted",
+      "started": 1795587472.1449065,
+      "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+      "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+      "candidate_sha256": "586373f8f58e6f56a67259a3eb8d5c8c704184d931bd8aa277a97c907be77d40",
+      "core_mask": 7,
+      "selected_as_default": false,
+      "board_quality_validated": false,
+      "live_pipeline_validated": false,
+      "cases": [
+        {
+          "name": "a1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "44384"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1925,
+            "run_ms": 642.0815,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6205,
+            "copy_ms": 0.09,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 650.027,
+            "driver_run_ms": 642.0795
+          }
+        },
+        {
+          "name": "b1",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1865000000000006,
+            "run_ms": 654.999,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.639,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 662.9590000000001,
+            "driver_run_ms": 654.9960000000001
+          }
+        },
+        {
+          "name": "b2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.1594999999999995,
+            "run_ms": 655.076,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6445000000000001,
+            "copy_ms": 0.09,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 662.9995,
+            "driver_run_ms": 655.0740000000001
+          }
+        },
+        {
+          "name": "a2",
+          "before": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "after": {
+            "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+            "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+            "/sys/class/thermal/thermal_zone0/temp": "43461"
+          },
+          "medians": {
+            "inputs_set_ms": 7.205500000000001,
+            "run_ms": 642.0305000000001,
+            "allocate_ms": 0.0,
+            "outputs_get_ms": 0.6225,
+            "copy_ms": 0.089,
+            "cpu_tail_ms": 0.0,
+            "release_ms": 0.001,
+            "total_ms": 649.9685,
+            "driver_run_ms": 642.028
+          }
+        }
+      ],
+      "current": "a2",
+      "baseline_total_ms": 649.99775,
+      "candidate_total_ms": 662.9792500000001,
+      "call_reduction_percent": -1.9971607594026386,
+      "worth_full_quality_check": false,
+      "finished": 1795587518.831116
+    }
+  },
+  "current_version_long_test": false,
+  "depth_model_unchanged": true,
+  "scope": "1080p30 camera, 1080p60 HDMI, not 4K60 MPP; internal age is not optical latency"
+}

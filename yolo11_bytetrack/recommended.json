@@ -3,16 +3,16 @@
   "workers": 1,
   "mask": 7,
   "render": "vector",
-  "qualification": "results/npu-bottleneck-v1/live-abba/yolo-regression",
-  "binary_sha256": "ea46597445e209b4ce30f42a933fe9d87ff0a2e8798918631548e2dfb13c466b",
-  "bounded_test_seconds_requested": 20,
-  "measured_fps": 29.99837065029524,
-  "age_p95_ms": 73.1,
+  "qualification": "docs/round4-validation.json",
+  "binary_sha256": "7725995824ebae89293848a1fa408eead4f3cae9a687fb49cb2594f56bd1db60",
+  "bounded_test_seconds_requested": 25,
+  "measured_fps": 29.593896619293073,
+  "age_p95_ms": 84.1,
   "stability_validated": false,
   "current_version_long_test": false,
   "target_fps": 30,
   "performance_target_met": true,
-  "reason": "Single context; parity checked and bounded live regression completed. Unexplained prior reboot and desktop RGA mapping messages remain unresolved.",
+  "reason": "Bounded async-save live regression and device restoration passed. Long qualification remains pending; previous unexplained reboot is unresolved.",
   "previous_version_validation": {
     "record": "results/qualification-20261124/job.json",
     "case": "yolo11_bytetrack-endurance",
@@ -22,5 +22,6 @@
     "measured_fps": 29.98732333292334,
     "scope": "Prior executable; not a long-run qualification of the current binary."
   },
-  "sr_tail": "npu"
+  "sr_tail": "npu",
+  "qualification_case": "yolo-regression"
 }

@@ -9,8 +9,8 @@ def main():
     for f in ROOT.rglob('*'):
         if not f.is_file():continue
         rel=f.relative_to(ROOT);parts=rel.parts
-        if parts[0] in ('results','data','build-from-stage','prebuilt','releases') or '__pycache__' in parts or f.suffix in ('.onnx','.pth','.pt','.pyc','.tgz','.zip') or f.name.endswith('.tar.gz'):continue
-        if parts[0]=='build' and rel.as_posix() not in ('build/advanced_vision','build/model_batch','build/sr_tiled','build/hardware_tests','build/core_tests','build/render_tests','build/npu_profile','build/sr_tail_check'):continue
+        if parts[0] in ('.git','state','results','data','build-from-stage','prebuilt','releases') or 'experiments' in parts or '__pycache__' in parts or f.suffix in ('.onnx','.pth','.pt','.pyc','.tgz','.zip') or f.name.endswith('.tar.gz'):continue
+        if parts[0]=='build' and rel.as_posix() not in ('build/advanced_vision','build/model_batch','build/sr_tiled','build/hardware_tests','build/core_tests','build/render_tests','build/npu_profile','build/sr_tail_check','build/async_writer_tests'):continue
         if f.name=='package-manifest.json':continue
         included.append(f)
     required=[ROOT/'build/advanced_vision',ROOT/'runtime/lib/librknnrt.so']+[ROOT/n/'models'/('int8.rknn' if n=='yolo11_bytetrack' else 'fp16.rknn') for n in ('yolo11_bytetrack','real_esrgan','depth_anything_v2')]

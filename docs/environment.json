@@ -8,12 +8,14 @@
   "gstreamer": "1.16.2",
   "libdrm": "2.4.102",
   "core_source_sha256": {
+    "common/async_writer.hpp": "3357ade3566566b10ea2fe38e9117a3c87389b60dc25fdc30029b51bb472053a",
+    "common/async_writer_tests.cpp": "8b95a7c9a7818c049306c7af3802e4a12cddd1367fb6901d13c082474895da0c",
     "common/batch.cpp": "e4c253e922d3b634050bd1242cfe1b60c4f358eeeb233a3c9f9ef97d9636a529",
     "common/camera.cpp": "f772360615c07d29ffd4e277b0535c64b4d2269b1f1506db727b6884f56175d0",
     "common/core.hpp": "3996192a808fb3a6d698a5a9bcb11491c3aaf85214f7433121d2a6d9e708a7d3",
     "common/display.cpp": "ee8f66df7c3f373ff15c4829a480ea8be8722a610036c39e81e0f070479db92d",
     "common/hardware_tests.cpp": "b02d8d3bf3a361cc71be8f23b6e9c2acda430a0d9aa8cce82ad0d6018d7f2f4f",
-    "common/main.cpp": "7baad2add2fab7dced490638b389dfa33923f9f9facd03c5c0ecec1cd3864697",
+    "common/main.cpp": "08c09f17b5e71f70b1ebff2e2d9ab9b5abd114c8469c12b4cb7a437d3ed8178a",
     "common/model.cpp": "365d7e6e155634b15fc5c3bb04148b0fd74c3e877755ec8a174da3489280c4c4",
     "common/npu_profile.cpp": "2c411e3b3b334f4b6a0b0ba3d9dd7d79380addcb8fd2a0021920a427d17e0fe6",
     "common/preprocess.cpp": "2340cf7bfb3b2ef4e8644e83cabeaaf0664dd84205d5f62ce0c629f4536e4631",
@@ -23,5 +25,7 @@
     "common/sr_tail_check.cpp": "27b38a4865b657f2974a8d3df7b3e5ab45a8d79dc9c57ae62ff67353377ecf96",
     "common/sr_tiled.cpp": "52b904eaf4640a42f76d4f85159638675e33967123102da07628aed968e5df8c",
     "common/tests.cpp": "ac6f1a9b1f6ca6e4f70832cb0d6e5d0f9f9bcbf2b0b0577e471da3748e8a5341"
-  }
+  },
+  "binary_sha256": "7725995824ebae89293848a1fa408eead4f3cae9a687fb49cb2594f56bd1db60",
+  "revision_receipt": "docs/round4-validation.json"
 }

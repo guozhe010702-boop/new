@@ -30,3 +30,4 @@ build/*
 !build/hardware_tests
 !build/core_tests
 !build/render_tests
+!build/async_writer_tests
