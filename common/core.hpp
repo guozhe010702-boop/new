@@ -26,7 +26,8 @@ public:
  double quantile(double q)const{if(!n)return 0;uint64_t target=std::max(uint64_t(1),uint64_t(std::ceil(q*n))),sum=0;for(size_t i=0;i<bins.size();++i){sum+=bins[i];if(sum>=target)return i==20000?maximum:i/10.;}return maximum;}
  double max()const{return maximum;}
 };
-struct Frame {uint64_t id=0;int64_t captured_us=0;cv::Mat rgb;};
+enum class CaptureMatrix {BT709,BT601,BT2020};
+struct Frame {uint64_t id=0;int64_t captured_us=0;cv::Mat rgb,nv12;CaptureMatrix matrix=CaptureMatrix::BT709;bool full_range=false;};
 template<class T> class Latest {
  std::mutex mu;std::condition_variable cv;std::shared_ptr<T> item;bool closed=false;uint64_t highest=0;
 public:
@@ -37,9 +38,10 @@ public:
 };
 struct Letterbox {cv::Mat rgb;double sx=1,sy=1;int x=0,y=0,w=0,h=0;};
 cv::Mat cpu_nv12_rgb(const cv::Mat&,int,int,double,double,bool);
-class RgaResize {struct Impl;std::unique_ptr<Impl> p;public:RgaResize();~RgaResize();cv::Mat resize(const cv::Mat&,int,int);cv::Mat nv12_rgb(const cv::Mat&,int,int);Letterbox letterbox(const cv::Mat&,int);};
+class RgaResize {struct Impl;std::unique_ptr<Impl> p;public:RgaResize();~RgaResize();cv::Mat resize(const cv::Mat&,int,int);cv::Mat nv12_rgb(const cv::Mat&,int,int);Letterbox letterbox(const cv::Mat&,int);Letterbox letterbox(const cv::Mat&,int,int);};
+void materialize_rgb(Frame&,RgaResize&);
 class Model {struct Impl;std::unique_ptr<Impl> p;public:int width=0,height=0;std::string sdk;std::vector<std::vector<uint32_t>> shapes;Model(const std::string&,int,bool sr_tail=false);~Model();std::vector<std::vector<float>> run(const cv::Mat&);};
-class Camera {struct Impl;std::unique_ptr<Impl> p;public:Camera(int,int,const std::string&);~Camera();std::shared_ptr<Frame> take();};
+class Camera {struct Impl;std::unique_ptr<Impl> p;public:Camera(int,int,const std::string&);~Camera();std::shared_ptr<Frame> take(bool defer_rgb=false);};
 class Display {struct Impl;std::unique_ptr<Impl> p;public:Display();~Display();int64_t show(const cv::Mat&);};
 struct Detection {cv::Rect2f box;float score;int label;};
 std::vector<Detection> decode_yolo(const std::vector<std::vector<float>>&,const Letterbox&,int,int,float);

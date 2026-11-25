@@ -16,6 +16,8 @@ def main():
     required=[ROOT/'build/advanced_vision',ROOT/'runtime/lib/librknnrt.so']+[ROOT/n/'models'/('int8.rknn' if n=='yolo11_bytetrack' else 'fp16.rknn') for n in ('yolo11_bytetrack','real_esrgan','depth_anything_v2')]
     profile=ROOT/'real_esrgan/recommended.json'
     if profile.exists() and json.loads(profile.read_text()).get('sr_tail')=='cpu':required.append(ROOT/'real_esrgan/models/fp16-trunk.rknn')
+    depth_profile=ROOT/'depth_anything_v2/recommended.json'
+    if depth_profile.exists() and json.loads(depth_profile.read_text()).get('depth_profile')=='camera-rect':required.append(ROOT/'depth_anything_v2/models/fp16-camera-518x294.rknn')
     assert all(p in included for p in required),'Missing runtime files'
     manifest={f.relative_to(ROOT).as_posix():hashlib.sha256(f.read_bytes()).hexdigest() for f in included};(ROOT/'package-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     a.output.parent.mkdir(parents=True,exist_ok=True)

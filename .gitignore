@@ -16,6 +16,7 @@ __pycache__/
 
 # Include the tested default models and original SR fallback.
 !depth_anything_v2/models/fp16.rknn
+!depth_anything_v2/models/fp16-camera-518x294.rknn
 !real_esrgan/models/fp16.rknn
 !real_esrgan/models/fp16-trunk.rknn
 !yolo11_bytetrack/models/int8.rknn

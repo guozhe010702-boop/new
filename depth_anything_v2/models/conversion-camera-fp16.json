@@ -1,0 +1,388 @@
+{
+  "stage": "bounded_board_validation_passed",
+  "target": "rk3588",
+  "precision": "fp16",
+  "input_width": 518,
+  "input_height": 294,
+  "source_sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+  "source_onnx_sha256": "3abab33bdfd2788c2eba6b4e70159fd3eb8d02ba0187b828e33a89e4b765427d",
+  "candidate_onnx_sha256": "b5b82f67a48e0002c084b735c557fd22319a44f6605148b0810d692d38cbcba8",
+  "baseline_rknn_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+  "teacher_agreement": {
+    "images": 18,
+    "median_spearman": 0.9975590569386008,
+    "minimum_spearman": 0.9962601286800835,
+    "teacher_agreement_pass": true
+  },
+  "torch_onnx_max_abs_difference": 5.0067901611328125e-06,
+  "selected_as_default": true,
+  "board_validation_passed": true,
+  "mean": [
+    123.675,
+    116.28,
+    103.53
+  ],
+  "std": [
+    58.395,
+    57.12,
+    57.375
+  ],
+  "validation": [
+    {
+      "file": "0000.png",
+      "prepared_sha256": "84d279ef928f51facf8c0c79093891f6a0af529448ea224f411b78f4e0a40789",
+      "source": "data/coco128/images/train2017/000000000529.jpg",
+      "source_sha256": "5d9958bdec3062b05090258293a19af01d231de69b943d1ff0bb4a7b943e6db3",
+      "camera_16_9": false
+    },
+    {
+      "file": "0001.png",
+      "prepared_sha256": "07412f3b60e3e49fb9d5131aff0316e5f522da8982d8e91f1036f1cd89ad09d0",
+      "source": "data/coco128/images/train2017/000000000531.jpg",
+      "source_sha256": "111bb407e512f23fcc14bbc51ad4b312b0797332aab86ecd9373808286ed30b1",
+      "camera_16_9": false
+    },
+    {
+      "file": "0002.png",
+      "prepared_sha256": "477ca44ac0affb3f1de07d5791ce89f5b8e2e2e32183c306e6ad1270cfe463a2",
+      "source": "data/coco128/images/train2017/000000000532.jpg",
+      "source_sha256": "60745e50cb857e4683d3622ac6c1e7ade63bd73ee458eb76a70455badaee2869",
+      "camera_16_9": false
+    },
+    {
+      "file": "0003.png",
+      "prepared_sha256": "1a7149ec529bb83474742045b370b1852073550c894f1ed37b90f20262a5bc8c",
+      "source": "data/coco128/images/train2017/000000000536.jpg",
+      "source_sha256": "745e538b3979ffa93f63bb294163e173d9a99413bce6cf3289215b541c9f1eb1",
+      "camera_16_9": false
+    },
+    {
+      "file": "0004.png",
+      "prepared_sha256": "dbb23204c357101363e57b6b0be98b9a5b71bb8d7155302e0f8548a8e149d8e1",
+      "source": "data/coco128/images/train2017/000000000540.jpg",
+      "source_sha256": "32099f009fcb436bad1bd59b5d48b3e5620fa667a83db5a09879e158dd346103",
+      "camera_16_9": false
+    },
+    {
+      "file": "0005.png",
+      "prepared_sha256": "3e422b7c7fcee2b3bc4e7ea85d03c59c95208a6d3a9034aac91ac4b90d316845",
+      "source": "data/coco128/images/train2017/000000000542.jpg",
+      "source_sha256": "ef93fd2248a41119a34a86d11478b87bd0c715ff3c2c65f3f5f54a3f31a3dedf",
+      "camera_16_9": false
+    },
+    {
+      "file": "0006.png",
+      "prepared_sha256": "df11c2303777984f55c7c739c4c399b0219d721c18d7d6df633e017f2650dc62",
+      "source": "data/coco128/images/train2017/000000000544.jpg",
+      "source_sha256": "f599082d9c87db6029fc3d6e468074d1294dc98a8755152ca7324811aa1d10cd",
+      "camera_16_9": false
+    },
+    {
+      "file": "0007.png",
+      "prepared_sha256": "1b2432a7d8223f2930ee1a82a38d243e8bf0eb075acfd5258bb8af354559c587",
+      "source": "data/coco128/images/train2017/000000000560.jpg",
+      "source_sha256": "96801af258ded041845af111c4535dcb12a512cf22f6fd9854e5723920532d60",
+      "camera_16_9": false
+    },
+    {
+      "file": "0008.png",
+      "prepared_sha256": "8d5d13428d263d15be0b9185872daef0e9eb2c2fe3027ecf9101507f88cf3cf7",
+      "source": "data/coco128/images/train2017/000000000562.jpg",
+      "source_sha256": "e31320272d768add7113d41a9c65407fd4868da1229f8658fc877e9b07c4c794",
+      "camera_16_9": false
+    },
+    {
+      "file": "0009.png",
+      "prepared_sha256": "a24139bd83e479660f62ba24fd84869de5bea3bdf4e2075e7635bd8461f80a00",
+      "source": "data/coco128/images/train2017/000000000564.jpg",
+      "source_sha256": "1f67bf49851ff43dba866f0cd6cc1b6f1d35ee75255a6092483550548584f477",
+      "camera_16_9": false
+    },
+    {
+      "file": "0010.png",
+      "prepared_sha256": "15b11292e05c0d1c2eb80d34e8d72661e518551605883302529f061060790114",
+      "source": "data/coco128/images/train2017/000000000569.jpg",
+      "source_sha256": "07655c58e2286ec5e8b74eee71a03841ccf732cbc502d6c380d894a14041ad5f",
+      "camera_16_9": false
+    },
+    {
+      "file": "0011.png",
+      "prepared_sha256": "fb33ceb751fb5e0c54906727522e3eba393be9427b133c137ebf5d6421c912b5",
+      "source": "data/coco128/images/train2017/000000000572.jpg",
+      "source_sha256": "b779e782a66c196373580de6ede5c4faacabf05fb521eab8df4d11b71d8d2770",
+      "camera_16_9": false
+    },
+    {
+      "file": "0012.png",
+      "prepared_sha256": "3e987b79e3b1e0da2d10c47b038a008551df6a480b0b54de5f69a002003ba195",
+      "source": "data/coco128/images/train2017/000000000575.jpg",
+      "source_sha256": "839789fe6192bbd5776761d675aa76017b67810b556f3e25e2f3a31acffd86f3",
+      "camera_16_9": false
+    },
+    {
+      "file": "0013.png",
+      "prepared_sha256": "06b6c9697ff80627c7905feac633552af1ce0ed83e79d481fc0e011a43fddb05",
+      "source": "data/coco128/images/train2017/000000000581.jpg",
+      "source_sha256": "60ad7a794ae3032c302c4e1d5111099921ce7e8df23df4401f60bdc74dc83bf1",
+      "camera_16_9": false
+    },
+    {
+      "file": "0014.png",
+      "prepared_sha256": "a2d006cc549e830b17a45a7ce62680ee30540234b52493be67345235f4fc6c50",
+      "source": "data/coco128/images/train2017/000000000584.jpg",
+      "source_sha256": "f1ae69b71470e4d4e88e342b69fa47187fe5c7a56882eac0e548107075f4716f",
+      "camera_16_9": false
+    },
+    {
+      "file": "0015.png",
+      "prepared_sha256": "994b8bd3802411cfe170a75f307b8797c0b95b544f6d50a71555846acb53bc1c",
+      "source": "data/coco128/images/train2017/000000000589.jpg",
+      "source_sha256": "b028805b2fb2c666ef72d4a7a01677bcf0ed56fb4d14cadc8646acdf379999c7",
+      "camera_16_9": false
+    },
+    {
+      "file": "0016.png",
+      "prepared_sha256": "15c95991e762a8940dbf7a98011b45b3d06317faad1bea89d489151e87c41f04",
+      "source": "data/coco128/images/train2017/000000000590.jpg",
+      "source_sha256": "dd687875b5ff4fd0a91dcc910690da36858271562ea908ff61661b4cec9b4cee",
+      "camera_16_9": false
+    },
+    {
+      "file": "0017.png",
+      "prepared_sha256": "cedad82030a2ad41398a9c4eea7c961f5ec95c8dc8d50f020ae2bfe92c5a91bd",
+      "source": "data/coco128/images/train2017/000000000595.jpg",
+      "source_sha256": "8152ff314326c47105e065ec16ef28e1baa9dd640f40475fe385b612d5e65cf1",
+      "camera_16_9": false
+    },
+    {
+      "file": "0018.png",
+      "prepared_sha256": "d829b550464e16e01fe0f07c5dc1e32ce2890dfa35c28920fdf994c9e902e321",
+      "source": "data/coco128/images/train2017/000000000597.jpg",
+      "source_sha256": "f611f233ff6657baa61f32f573a213ef1b1af031e892f8b4e287c21a856497e7",
+      "camera_16_9": false
+    },
+    {
+      "file": "0019.png",
+      "prepared_sha256": "1f6f8c75b368a753010a32e58179ea90cd55b390853c11a7173d9c7cb9ac6c66",
+      "source": "data/coco128/images/train2017/000000000599.jpg",
+      "source_sha256": "9d924b4353cca7295c149e3659866a18e78234f0dc701df119191152f4a31fec",
+      "camera_16_9": false
+    },
+    {
+      "file": "0020.png",
+      "prepared_sha256": "ff45265529ce01d22ba7c417bfb0c0a8460cfa4cea5acdbc5e043e3461ec4d0d",
+      "source": "data/coco128/images/train2017/000000000605.jpg",
+      "source_sha256": "9135dd0723240d2d4f64ce2173901a0f23a222dea98b72e1259c28f28fa2aab6",
+      "camera_16_9": false
+    },
+    {
+      "file": "0021.png",
+      "prepared_sha256": "f8ea922969e59b547c78d94592e668ca44daf4005b606c8830fa421bc90a30c0",
+      "source": "data/coco128/images/train2017/000000000612.jpg",
+      "source_sha256": "9ee977eaa2947ffa1508dfc8b6e3c179a9945ee3a55529f91ede04689f00e667",
+      "camera_16_9": false
+    },
+    {
+      "file": "0022.png",
+      "prepared_sha256": "928b994ed24dd778608ad84902f18754f735ad13d9fbbba5d9a2baef99a57b1d",
+      "source": "data/coco128/images/train2017/000000000620.jpg",
+      "source_sha256": "4c7d0e5b1ac23a287f95640c4aaab93a0e120c384558e3fff70b96f6f1eb80ce",
+      "camera_16_9": false
+    },
+    {
+      "file": "0023.png",
+      "prepared_sha256": "e41a3a6840a02624d7a7eb0cdf07cbff1706c86e598adde8e242327ff54acae6",
+      "source": "data/coco128/images/train2017/000000000623.jpg",
+      "source_sha256": "c11d16bc49acabc2a52b990174110753dbe3a9a71eb7aa37af8f5fc4c616fb20",
+      "camera_16_9": false
+    },
+    {
+      "file": "0024.png",
+      "prepared_sha256": "869e16df4e477cad9e230a87e935d7af959eca1b980c871d0ed19c48662cf7e7",
+      "source": "data/coco128/images/train2017/000000000625.jpg",
+      "source_sha256": "0938276afa762c367dac4968bc9a3d4abf9d83db1f4bea67262bff976568e24c",
+      "camera_16_9": false
+    },
+    {
+      "file": "0025.png",
+      "prepared_sha256": "7254f3cbd8ac8ac94ecdfee90826ea26625aee4fe86a20c5509f2ccb9171288b",
+      "source": "data/coco128/images/train2017/000000000626.jpg",
+      "source_sha256": "47b4a3b3fe24c6b1f77a9d89aa2e5d1a3b410b7ba611f54c252c2e13e975afc8",
+      "camera_16_9": false
+    },
+    {
+      "file": "0026.png",
+      "prepared_sha256": "ff0da57694752d02bf0db641cc6a1c6a522767d02f19c54e61f4ad641afe5dc6",
+      "source": "data/coco128/images/train2017/000000000629.jpg",
+      "source_sha256": "be76e3e5bed8c8a9a0d8081844bfca7ce013093e746b66aad13922373644ad32",
+      "camera_16_9": false
+    },
+    {
+      "file": "0027.png",
+      "prepared_sha256": "02c286db5742ba9a9c5642d303a65deb6bcd3506ce50940b438f50c4ce35b7ad",
+      "source": "data/coco128/images/train2017/000000000634.jpg",
+      "source_sha256": "d769636e9b9d22fa6fd4dcc2e683b2c95a5a9c247b3cc95df7367b1dba52f9bc",
+      "camera_16_9": false
+    },
+    {
+      "file": "0028.png",
+      "prepared_sha256": "c761ac31179ebac9e354bdc2dca6300f6fef9b1132a47e034c8991ac3d2c5771",
+      "source": "data/coco128/images/train2017/000000000636.jpg",
+      "source_sha256": "8e948d6888e7bf449e91883d3a2b0d61804308aada31fbf289add4da4dd978e8",
+      "camera_16_9": false
+    },
+    {
+      "file": "0029.png",
+      "prepared_sha256": "100bf0251a8f3be207e4e9df80c60bab983a09e79ce741e166aa0358c1b26f04",
+      "source": "data/coco128/images/train2017/000000000641.jpg",
+      "source_sha256": "8eae4239a000d602acb4c58801a3c070e4bf3da608e57e7a3dcbd5ef719895cc",
+      "camera_16_9": false
+    },
+    {
+      "file": "0030.png",
+      "prepared_sha256": "3e4f2ec2b333f2f00be5c4e8eea34454cb0fc58415ef854fe120dd884ae07ecf",
+      "source": "data/coco128/images/train2017/000000000643.jpg",
+      "source_sha256": "53d61e69ccf08b42a1cefa414c69a1c03d72aba2852e1fde35c4da3df8753b3f",
+      "camera_16_9": false
+    },
+    {
+      "file": "0031.png",
+      "prepared_sha256": "9e778ce563259f09a427aea478e9d453b246650b17705b552efa77dd2d36fc96",
+      "source": "data/coco128/images/train2017/000000000650.jpg",
+      "source_sha256": "9bb45795336c1d05189fe51a77e04270cd1da8929d62060926798f3dd2d25204",
+      "camera_16_9": false
+    },
+    {
+      "file": "0032.png",
+      "prepared_sha256": "e6ad4e6e4ef4b1be5cde5d798393013303b3444410f6aa181b6270328b5712be",
+      "source": "data/camera/a-frame-108.png",
+      "source_sha256": "405fde097d23dfb2d1be921b91f2a1f6c37e08bdcf65b0722f10c942a4a9186d",
+      "camera_16_9": true
+    },
+    {
+      "file": "0033.png",
+      "prepared_sha256": "2579e3458c61c88d78f7d7ba91f8f5107190cc677983a323c2701047c2e98725",
+      "source": "data/camera/a-frame-12.png",
+      "source_sha256": "c0bf13ee6f53098cbffceb030c61954084daff5db8f05ac0093ed64314b3c574",
+      "camera_16_9": true
+    },
+    {
+      "file": "0034.png",
+      "prepared_sha256": "6501f4c31b9a8dc90102e012c6fa46e027087815395e9d742161cf204b07682d",
+      "source": "data/camera/a-frame-126.png",
+      "source_sha256": "22d92fbb175b766eb394f3f75a8abc542f76493a38ca4e94245f8e8c3ee3f8b9",
+      "camera_16_9": true
+    },
+    {
+      "file": "0035.png",
+      "prepared_sha256": "6d42d649a7359c8b90ceca9766cbace6734e4863d873462e7434dddc159cbf1e",
+      "source": "data/camera/a-frame-138.png",
+      "source_sha256": "8ffcec5bfd8cce0df1bcb00847510c5f09b0e94f89d3917652a98ea471d804d0",
+      "camera_16_9": true
+    },
+    {
+      "file": "0036.png",
+      "prepared_sha256": "39798f79d6e03a7a143c85420ec7c6f9f0d2107d5b0f884b709ed613e886bbb4",
+      "source": "data/camera/a-frame-150.png",
+      "source_sha256": "4e9e59d17be689122e774902630b01617c7983e4c4e7be0ff877e14a8f16e7b2",
+      "camera_16_9": true
+    },
+    {
+      "file": "0037.png",
+      "prepared_sha256": "8dc25b8b1c5f238cbd963664c8a8105bd730167ec2223f090065099ae34e74a7",
+      "source": "data/camera/a-frame-162.png",
+      "source_sha256": "a9c3d0c216eabbd2789354b587cd55d96efb78b59ba897f4c8d8b51433a36948",
+      "camera_16_9": true
+    },
+    {
+      "file": "0038.png",
+      "prepared_sha256": "509e2e1890ea2b915a575607967ad05d546128513d303867f352ff521f420bce",
+      "source": "data/camera/a-frame-174.png",
+      "source_sha256": "23dd307c663565a06db118b68bfbe1b5bdb9438a6018ccca13987fb8dee1b18c",
+      "camera_16_9": true
+    },
+    {
+      "file": "0039.png",
+      "prepared_sha256": "f405dd67112f0ad5c26f2cd99de944049389ef8c0917fecfb4dfdaab4c90278c",
+      "source": "data/camera/a-frame-180.png",
+      "source_sha256": "297b6c9c2abc6161767b176a09256b98e8b109897b54fe9654d032e32b5f39b4",
+      "camera_16_9": true
+    },
+    {
+      "file": "0040.png",
+      "prepared_sha256": "d9b4d3bc14a35fd18f4f5fbcfb167769fb8f0047700b9801434fcff90f116ce6",
+      "source": "data/camera/a-frame-192.png",
+      "source_sha256": "f73197b18050fb311cde8653befb220b331253f75a9f8ce9b7531e89cb80a211",
+      "camera_16_9": true
+    },
+    {
+      "file": "0041.png",
+      "prepared_sha256": "e732b27eae61ad77efa632556d0be1d63c03120462692478163c1fb685432d18",
+      "source": "data/camera/a-frame-204.png",
+      "source_sha256": "c298ac1037a13ba0ad5214c62c0c5e827bb036b8384c3b9cc0e555317a8a6015",
+      "camera_16_9": true
+    },
+    {
+      "file": "0042.png",
+      "prepared_sha256": "fc41072ce63b26d80755f85a908df06c79878621a7c8915ab9f8bc64949f2b5c",
+      "source": "data/camera/a-frame-216.png",
+      "source_sha256": "4b6c52b895fb89fbe676e48d241a0d38672bd92038e13baed0b03f5831d7e6fe",
+      "camera_16_9": true
+    },
+    {
+      "file": "0043.png",
+      "prepared_sha256": "865974b4ff1ef256b02d89a7042ca51e8013d0a7a9fbbbaf5926ad52ecee4377",
+      "source": "data/camera/a-frame-228.png",
+      "source_sha256": "37b1c369afff57c472a719ec50cbff33c9dfef374d31c9fd3edf68ad178f9552",
+      "camera_16_9": true
+    },
+    {
+      "file": "0044.png",
+      "prepared_sha256": "711b0c38fc3f291aea024f4ce7c78c0d793e1bcee2ea682fd95c3512f3512c17",
+      "source": "data/camera/a-frame-24.png",
+      "source_sha256": "776e7f50d25d813f982c97a70260ffe68907303ac5da90aa8988e0f1b0013bbc",
+      "camera_16_9": true
+    },
+    {
+      "file": "0045.png",
+      "prepared_sha256": "919c7e642fefd9cd4f9a2f2a29e00009c2727fe6c2feacd5a82b62f97514d379",
+      "source": "data/camera/a-frame-246.png",
+      "source_sha256": "d490048b86268f91f882bf63bc51853dc77a5575e6593905ad8ff4674ec7a841",
+      "camera_16_9": true
+    },
+    {
+      "file": "0046.png",
+      "prepared_sha256": "a427224b446fe231026aa72eec5bb43b5ca2cbfe04bcae85b279d1fe85e8ae5a",
+      "source": "data/camera/a-frame-258.png",
+      "source_sha256": "154b7ac250e6f9121001282696ad1264a985ebdff30352a9e5d578e205991240",
+      "camera_16_9": true
+    },
+    {
+      "file": "0047.png",
+      "prepared_sha256": "10fd004ee7a3b89df4a4798e0a540deeb4a35c29370ae9e71d0cd370a9df51a4",
+      "source": "data/camera/a-frame-270.png",
+      "source_sha256": "17786cac6c3be55cec51ec25f925107186d98e95611224ec6ba66fc8dc8d8111",
+      "camera_16_9": true
+    },
+    {
+      "file": "0048.png",
+      "prepared_sha256": "c998c4fe85f4fb54fec79faa36b8419f804b88e0801efcf18780bfdc51034d2a",
+      "source": "data/camera/a-frame-282.png",
+      "source_sha256": "4e5f58e5ec44fc4a81d46d973d407106923576f46cf4f478ff9cd3d1c702889a",
+      "camera_16_9": true
+    },
+    {
+      "file": "0049.png",
+      "prepared_sha256": "d33353dbb1b243e246adac1d16485f3b18f5c222c17f2fc8325222f1b4a240b2",
+      "source": "data/camera/a-frame-294.png",
+      "source_sha256": "a91d7f281e19de001d2aea9a1544ff67d6e5e11a41b8f1b97166b2aba6e02aeb",
+      "camera_16_9": true
+    }
+  ],
+  "candidate_rknn_sha256": "20e6621f1fe51dfe009b2f791c9fb35e136de09a2b05357cfe7511b618350bc3",
+  "candidate_bytes": 56260983,
+  "performance_validated": true,
+  "board_quality_receipt": "docs/round5-validation.json",
+  "model_file": "fp16-camera-518x294.rknn",
+  "scope": "16:9 camera profile; same learned weights, different positional interpolation / padding context. Not bitwise equivalent to 518x518 or metric-depth validated."
+}

@@ -10,7 +10,7 @@ Camera::Camera(int w,int h,const std::string& memory):p(new Impl){
  GError* error=nullptr;p->pipe=gst_parse_launch(pipeline.c_str(),&error);if(error){std::string s=error->message;g_error_free(error);throw std::runtime_error(s);}require(p->pipe,"GStreamer pipeline missing");p->sink=GST_APP_SINK(gst_bin_get_by_name(GST_BIN(p->pipe),"frames"));require(p->sink,"appsink missing");require(gst_element_set_state(p->pipe,GST_STATE_PLAYING)!=GST_STATE_CHANGE_FAILURE,"camera GStreamer start failed");
 }
 Camera::~Camera()=default;
-std::shared_ptr<Frame> Camera::take(){
+std::shared_ptr<Frame> Camera::take(bool defer_rgb){
  GstSample* sample=gst_app_sink_try_pull_sample(p->sink,1000*GST_MSECOND);
  if(!sample){auto bus=gst_element_get_bus(p->pipe);auto msg=gst_bus_pop_filtered(bus,GST_MESSAGE_ERROR);gst_object_unref(bus);if(msg){GError* err=nullptr;gchar* debug=nullptr;gst_message_parse_error(msg,&err,&debug);std::string s=err?err->message:"GStreamer camera error";g_clear_error(&err);g_free(debug);gst_message_unref(msg);throw std::runtime_error(s);}return {};}
  GstVideoInfo info{};GstVideoFrame mapped{};bool valid=false;
@@ -24,11 +24,11 @@ std::shared_ptr<Frame> Camera::take(){
   gst_video_frame_unmap(&mapped);valid=false;gst_sample_unref(sample);sample=nullptr;
   bool full=info.colorimetry.range==GST_VIDEO_COLOR_RANGE_0_255;
   if(f->id==1){gchar* desc=gst_video_colorimetry_to_string(&info.colorimetry);std::cerr<<"CAPTURE colorimetry="<<(desc?desc:"unknown")<<" actual="<<w<<'x'<<h<<" CSC="<<(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT709&&full?"RGA709 + CPU range remap":"CPU matrix; RGA model resize")<<'\n';g_free(desc);}
-  if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT709&&full)f->rgb=p->color.nv12_rgb(nv12,w,h);
-  else if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT2020)f->rgb=cpu_nv12_rgb(nv12,w,h,.2627,.0593,full);
-  else if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT601)f->rgb=cpu_nv12_rgb(nv12,w,h,.299,.114,full);
-  else if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT709)f->rgb=cpu_nv12_rgb(nv12,w,h,.2126,.0722,full);
+  if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT709)f->matrix=CaptureMatrix::BT709;
+  else if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT2020)f->matrix=CaptureMatrix::BT2020;
+  else if(info.colorimetry.matrix==GST_VIDEO_COLOR_MATRIX_BT601)f->matrix=CaptureMatrix::BT601;
   else throw std::runtime_error("Camera matrix not supported; refusing guessed colors");
+  f->full_range=full;f->nv12=std::move(nv12);if(!defer_rgb)materialize_rgb(*f,p->color);
   return f;
  }catch(...){if(valid)gst_video_frame_unmap(&mapped);if(sample)gst_sample_unref(sample);throw;}
 }

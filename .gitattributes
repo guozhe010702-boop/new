@@ -1,5 +1,6 @@
 # Preserve the exact tested source, runtime and model SHA256 values.
 * -text
+depth_anything_v2/models/fp16-camera-518x294.rknn filter=lfs diff=lfs merge=lfs -text
 
 # Full camera datasets and binary experiment outputs; metadata stays readable.
 data/**/*.png filter=lfs diff=lfs merge=lfs -text

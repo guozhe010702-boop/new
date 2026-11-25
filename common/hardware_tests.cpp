@@ -9,6 +9,7 @@ int main(){try{
  }
  cv::Mat rgb(h,w,CV_8UC3,cv::Scalar(200,50,20));auto resized=rga.resize(rgb,518,292);require(resized.cols==518&&resized.rows==292&&resized.isContinuous(),"RGA aligned stride unpack");auto v=resized.at<cv::Vec3b>(100,100);require(std::abs(v[0]-200)<=1&&std::abs(v[1]-50)<=1,"RGA RGB ordering");
  auto lb=rga.letterbox(rgb,518);require(lb.rgb.cols==518&&lb.x==0&&lb.y>0,"letterbox geometry");
+ cv::Mat pattern(h,w,CV_8UC3);cv::randu(pattern,0,256);auto square=rga.letterbox(pattern,518);auto rectangle=rga.letterbox(pattern,518,294);require(rectangle.w==square.w&&rectangle.h==square.h&&rectangle.y+112==square.y,"camera padding geometry");require(cv::norm(square.rgb(cv::Rect(0,112,518,294)),rectangle.rgb,cv::NORM_INF)==0,"rectangular input changed sampled RGB pixels");
  cv::Mat red(h*3/2,w,CV_8U);red.rowRange(0,h).setTo(67);for(int y=h;y<h*3/2;++y)for(int x=0;x<w;x+=2){red.at<uint8_t>(y,x)=92;red.at<uint8_t>(y,x+1)=255;}auto bt2020=cpu_nv12_rgb(red,w,h,.2627,.0593,true);auto mean=cv::mean(bt2020);require(mean[0]>=250&&mean[1]<=4&&mean[2]<=4,"CPU BT2020 full range red");
  std::cout<<"RGA color, stride518, letterbox and CPU BT2020 passed\n";return 0;
  }catch(const std::exception&e){std::cerr<<e.what()<<'\n';return 1;}}

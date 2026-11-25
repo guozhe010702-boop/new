@@ -12,6 +12,13 @@ def main():
         print('Package checksums passed')
     if platform.system()!='Linux' or platform.machine()!='aarch64':raise SystemExit('Runtime requires RK3588 ARM64 Linux; Windows holds sources only')
     if os.geteuid()!=0:raise SystemExit('Run as root')
+    defaults=[ROOT/'depth_anything_v2/models/fp16.rknn',ROOT/'real_esrgan/models/fp16.rknn',ROOT/'yolo11_bytetrack/models/int8.rknn']
+    profile=ROOT/'depth_anything_v2/recommended.json'
+    if profile.exists() and json.loads(profile.read_text()).get('depth_profile')=='camera-rect':defaults.append(ROOT/'depth_anything_v2/models/fp16-camera-518x294.rknn')
+    for model in defaults:
+        if not model.is_file():raise SystemExit('Missing default model: '+str(model))
+        with model.open('rb') as stream:pointer=stream.read(64).startswith(b'version https://git-lfs.github.com/spec/v1')
+        if pointer:raise SystemExit('Model is a Git LFS pointer; run git lfs pull before startup: '+str(model))
     for p in ('/dev/video44','/dev/v4l-subdev2','/dev/dri/card0','/dev/dma_heap/system-dma32','/dev/rknpu'):
         if not Path(p).exists():
             if p=='/dev/rknpu':print('NPU device name varies by BSP; actual RKNN init still required')

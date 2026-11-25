@@ -19,6 +19,17 @@ struct Dma {
 };
 struct RgaResize::Impl{std::unique_ptr<Dma> src,dst,nv12,rgb;int sw=0,sh=0,dw=0,dh=0,cw=0,ch=0;};
 RgaResize::RgaResize():p(new Impl){}RgaResize::~RgaResize()=default;
+void materialize_rgb(Frame& frame,RgaResize& rga){
+ if(!frame.rgb.empty())return;
+ require(frame.nv12.type()==CV_8UC1&&frame.nv12.rows%3==0&&frame.nv12.cols%2==0,"invalid packed NV12 frame");
+ int w=frame.nv12.cols,h=frame.nv12.rows*2/3;bool full=frame.full_range;
+ if(frame.matrix==CaptureMatrix::BT709&&full)frame.rgb=rga.nv12_rgb(frame.nv12,w,h);
+ else if(frame.matrix==CaptureMatrix::BT2020)frame.rgb=cpu_nv12_rgb(frame.nv12,w,h,.2627,.0593,full);
+ else if(frame.matrix==CaptureMatrix::BT601)frame.rgb=cpu_nv12_rgb(frame.nv12,w,h,.299,.114,full);
+ else if(frame.matrix==CaptureMatrix::BT709)frame.rgb=cpu_nv12_rgb(frame.nv12,w,h,.2126,.0722,full);
+ else throw std::runtime_error("Unsupported capture color matrix");
+ frame.nv12.release();
+}
 cv::Mat RgaResize::nv12_rgb(const cv::Mat& image,int w,int h){
  if(p->cw!=w||p->ch!=h){p->nv12.reset(new Dma(size_t(w)*h*3/2));p->rgb.reset(new Dma(size_t(w)*h*3));p->cw=w;p->ch=h;}
  p->nv12->sync(false,true);auto dst=static_cast<uint8_t*>(p->nv12->data);auto src=image.data;size_t pixels=size_t(w)*h;
@@ -41,5 +52,6 @@ cv::Mat RgaResize::resize(const cv::Mat& image,int w,int h){
  auto status=imresize(src,dst);require(status==IM_STATUS_SUCCESS,std::string("RGA resize: ")+imStrError_t(status));
  p->dst->sync(false,false);cv::Mat output=cv::Mat(h,w,CV_8UC3,p->dst->data,ds*3).clone();p->dst->sync(true,false);return output;
 }
-Letterbox RgaResize::letterbox(const cv::Mat& im,int size){double scale=std::min(double(size)/im.cols,double(size)/im.rows);int w=std::max(1,int(std::round(im.cols*scale))),h=std::max(1,int(std::round(im.rows*scale)));Letterbox b;b.w=w;b.h=h;b.x=(size-w)/2;b.y=(size-h)/2;b.sx=double(w)/im.cols;b.sy=double(h)/im.rows;b.rgb=cv::Mat(size,size,CV_8UC3,cv::Scalar(114,114,114));resize(im,w,h).copyTo(b.rgb(cv::Rect(b.x,b.y,w,h)));return b;}
+Letterbox RgaResize::letterbox(const cv::Mat& im,int size){return letterbox(im,size,size);}
+Letterbox RgaResize::letterbox(const cv::Mat& im,int width,int height){double scale=std::min(double(width)/im.cols,double(height)/im.rows);int w=std::max(1,int(std::round(im.cols*scale))),h=std::max(1,int(std::round(im.rows*scale)));Letterbox b;b.w=w;b.h=h;b.x=(width-w)/2;b.y=(height-h)/2;b.sx=double(w)/im.cols;b.sy=double(h)/im.rows;b.rgb=cv::Mat(height,width,CV_8UC3,cv::Scalar(114,114,114));resize(im,w,h).copyTo(b.rgb(cv::Rect(b.x,b.y,w,h)));return b;}
 }

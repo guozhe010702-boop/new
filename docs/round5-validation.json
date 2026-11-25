@@ -1,0 +1,1933 @@
+{
+  "date": "2026-11-25",
+  "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+  "binary_sha256": "9eb034ff0e1ff1fc64a8f834de9774eb7305649e75fa984259cf7105bfe87699",
+  "binaries": {
+    "advanced_vision": "9eb034ff0e1ff1fc64a8f834de9774eb7305649e75fa984259cf7105bfe87699",
+    "model_batch": "b7058f95b0140dceac386848e70ed47aae2f9974ddb012dc93d36a5b578d1ac2",
+    "sr_tiled": "ae3a34ee3b2dbb2589dc386575949b3ed08368f937f3755599f9ac649e7d478f",
+    "hardware_tests": "8469b88258c08cd656d191808deb218914a95c65477d1dff5b96a0febc67d03d",
+    "core_tests": "ca78454e2fa2b42fa7946bbef702efa4ef7357f6477adfbb61d6c7a05706535c",
+    "render_tests": "9d0210be5a47a2938a58824ad3118f911c098cf536e7b8eab4a892082c895f7b",
+    "npu_profile": "1cf71120f02d040ab9d0c47b21b5c269968f37ded7ae690b087f352bd9a3f5a9",
+    "sr_tail_check": "498dfd6cac923cc592e9100222dca2f16625c99fb9d01651396ac54691d44d6a",
+    "async_writer_tests": "21bef4ff7edcc772fb0ac76a4739fb0152ee5382489901eb0df71fa58e4491d7"
+  },
+  "cpu_topology": {
+    "cpu7": {
+      "cpu_capacity": "1024",
+      "cpuinfo_max_freq": "2352000"
+    },
+    "cpu5": {
+      "cpu_capacity": "1024",
+      "cpuinfo_max_freq": "2352000"
+    },
+    "cpu3": {
+      "cpu_capacity": "405",
+      "cpuinfo_max_freq": "1800000"
+    },
+    "cpu1": {
+      "cpu_capacity": "405",
+      "cpuinfo_max_freq": "1800000"
+    },
+    "cpu6": {
+      "cpu_capacity": "1024",
+      "cpuinfo_max_freq": "2352000"
+    },
+    "cpu4": {
+      "cpu_capacity": "1024",
+      "cpuinfo_max_freq": "2352000"
+    },
+    "cpu2": {
+      "cpu_capacity": "405",
+      "cpuinfo_max_freq": "1800000"
+    },
+    "cpu0": {
+      "cpu_capacity": "405",
+      "cpuinfo_max_freq": "1800000"
+    }
+  },
+  "ctest": "Test project /userdata/av_dev/advanced algorithms/build\n    Start 1: async_writer_contract\n1/4 Test #1: async_writer_contract ............   Passed    0.01 sec\n    Start 2: core_contracts\n2/4 Test #2: core_contracts ...................   Passed    0.01 sec\n    Start 3: rga_hardware\n3/4 Test #3: rga_hardware .....................   Passed    0.04 sec\n    Start 4: vector_render_parity\n4/4 Test #4: vector_render_parity .............   Passed    0.73 sec\n\n100% tests passed, 0 tests failed out of 4\n\nTotal Test time (real) =   0.79 sec\n",
+  "live_cases": {
+    "a1": {
+      "project": "depth_anything_v2",
+      "seconds": 33.2971,
+      "captured": 895,
+      "inferred": 43,
+      "processed": 43,
+      "fps": 1.2914,
+      "raw_replaced": 852,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 715.2,
+        "p95": 724.6,
+        "p99": 755.3,
+        "max": 755.225
+      },
+      "age_ms": {
+        "p50": 782,
+        "p95": 865.6,
+        "p99": 1096.4,
+        "max": 1096.35
+      },
+      "preprocess_ms": {
+        "p50": 3.3,
+        "p95": 3.8,
+        "p99": 9.2,
+        "max": 9.125
+      },
+      "postprocess_ms": {
+        "p50": 27.2,
+        "p95": 78.8,
+        "p99": 82.4,
+        "max": 82.313
+      },
+      "display_ms": {
+        "p50": 9.8,
+        "p95": 17.2,
+        "p99": 18.2,
+        "max": 18.163
+      },
+      "steady_processed_fps": 1.413091672586175,
+      "max_temperature_c": 42.538,
+      "rss_max_mib": 256.8671875,
+      "fds_min": 4,
+      "fds_max": 31,
+      "native_cpu_one_core_percent": 41.714418487282586,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 766.656,
+      "first_frame_age_ms": 877.162,
+      "npu_mean_core_percent": [
+        77.32352941176471,
+        7.705882352941177,
+        7.794117647058823
+      ]
+    },
+    "b1": {
+      "project": "depth_anything_v2",
+      "seconds": 32.6491,
+      "captured": 896,
+      "inferred": 107,
+      "processed": 107,
+      "fps": 3.27727,
+      "raw_replaced": 789,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 272.1,
+        "p95": 274.4,
+        "p99": 275,
+        "max": 274.988
+      },
+      "age_ms": {
+        "p50": 345.8,
+        "p95": 366,
+        "p99": 383.9,
+        "max": 446.332
+      },
+      "preprocess_ms": {
+        "p50": 11,
+        "p95": 11.6,
+        "p99": 12.8,
+        "max": 13.436
+      },
+      "postprocess_ms": {
+        "p50": 26.9,
+        "p95": 27.3,
+        "p99": 28.2,
+        "max": 67.778
+      },
+      "display_ms": {
+        "p50": 9.6,
+        "p95": 15.5,
+        "p99": 17.4,
+        "max": 17.445
+      },
+      "steady_processed_fps": 3.5576245837680305,
+      "max_temperature_c": 43.461,
+      "rss_max_mib": 229.5234375,
+      "fds_min": 4,
+      "fds_max": 31,
+      "native_cpu_one_core_percent": 30.333220132494574,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 283.472,
+      "first_frame_age_ms": 372.648,
+      "npu_mean_core_percent": [
+        76.32352941176471,
+        11.676470588235293,
+        11.852941176470589
+      ]
+    },
+    "b2": {
+      "project": "depth_anything_v2",
+      "seconds": 32.6694,
+      "captured": 896,
+      "inferred": 107,
+      "processed": 107,
+      "fps": 3.27524,
+      "raw_replaced": 789,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 272.4,
+        "p95": 274.2,
+        "p99": 276,
+        "max": 275.991
+      },
+      "age_ms": {
+        "p50": 347.7,
+        "p95": 366.8,
+        "p99": 374.5,
+        "max": 447.761
+      },
+      "preprocess_ms": {
+        "p50": 11,
+        "p95": 11.3,
+        "p99": 13.1,
+        "max": 13.732
+      },
+      "postprocess_ms": {
+        "p50": 26.7,
+        "p95": 27.7,
+        "p99": 28.7,
+        "max": 72.631
+      },
+      "display_ms": {
+        "p50": 8.9,
+        "p95": 10.9,
+        "p99": 11.4,
+        "max": 11.422
+      },
+      "steady_processed_fps": 3.550512250154891,
+      "max_temperature_c": 44.384,
+      "rss_max_mib": 229.78125,
+      "fds_min": 4,
+      "fds_max": 31,
+      "native_cpu_one_core_percent": 31.681297502090224,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 283.392,
+      "first_frame_age_ms": 374.476,
+      "npu_mean_core_percent": [
+        76.3529411764706,
+        11.588235294117647,
+        11.647058823529411
+      ]
+    },
+    "a2": {
+      "project": "depth_anything_v2",
+      "seconds": 33.2945,
+      "captured": 895,
+      "inferred": 43,
+      "processed": 43,
+      "fps": 1.2915,
+      "raw_replaced": 852,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 715,
+        "p95": 729.6,
+        "p99": 754.9,
+        "max": 754.882
+      },
+      "age_ms": {
+        "p50": 792,
+        "p95": 825.6,
+        "p99": 1107.9,
+        "max": 1107.88
+      },
+      "preprocess_ms": {
+        "p50": 3.3,
+        "p95": 3.9,
+        "p99": 7.8,
+        "max": 7.707
+      },
+      "postprocess_ms": {
+        "p50": 27,
+        "p95": 65.2,
+        "p99": 77.6,
+        "max": 77.523
+      },
+      "display_ms": {
+        "p50": 7.3,
+        "p95": 16.7,
+        "p99": 17.6,
+        "max": 17.598
+      },
+      "steady_processed_fps": 1.412654502527461,
+      "max_temperature_c": 44.384,
+      "rss_max_mib": 257.2265625,
+      "fds_min": 3,
+      "fds_max": 31,
+      "native_cpu_one_core_percent": 41.20353754967868,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 750.01,
+      "first_frame_age_ms": 868.391,
+      "npu_mean_core_percent": [
+        77.8,
+        7.685714285714286,
+        7.771428571428571
+      ]
+    },
+    "dual": {
+      "project": "depth_anything_v2",
+      "seconds": 22.6894,
+      "captured": 596,
+      "inferred": 107,
+      "processed": 101,
+      "fps": 4.45143,
+      "raw_replaced": 489,
+      "results_replaced": 0,
+      "out_of_order_results": 6,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 361.1,
+        "p95": 396.2,
+        "p99": 402.1,
+        "max": 404.248
+      },
+      "age_ms": {
+        "p50": 439.7,
+        "p95": 473.8,
+        "p99": 474.3,
+        "max": 490.805
+      },
+      "preprocess_ms": {
+        "p50": 12.2,
+        "p95": 14.3,
+        "p99": 15.7,
+        "max": 22.078
+      },
+      "postprocess_ms": {
+        "p50": 28.1,
+        "p95": 29.1,
+        "p99": 31,
+        "max": 73.902
+      },
+      "display_ms": {
+        "p50": 8.2,
+        "p95": 16.8,
+        "p99": 19.2,
+        "max": 19.283
+      },
+      "steady_processed_fps": 5.067906523149033,
+      "max_temperature_c": 44.384,
+      "rss_max_mib": 329.21875,
+      "fds_min": 4,
+      "fds_max": 41,
+      "native_cpu_one_core_percent": 43.199227247874425,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 349.995,
+      "first_frame_age_ms": 447.511,
+      "npu_mean_core_percent": [
+        73.45833333333333,
+        73.58333333333333,
+        0
+      ]
+    },
+    "triple": {
+      "project": "depth_anything_v2",
+      "seconds": 22.6129,
+      "captured": 595,
+      "inferred": 135,
+      "processed": 122,
+      "fps": 5.39515,
+      "raw_replaced": 460,
+      "results_replaced": 3,
+      "out_of_order_results": 10,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 429.2,
+        "p95": 464.7,
+        "p99": 481.2,
+        "max": 486.017
+      },
+      "age_ms": {
+        "p50": 507.1,
+        "p95": 542.1,
+        "p99": 559.1,
+        "max": 573.351
+      },
+      "preprocess_ms": {
+        "p50": 14.1,
+        "p95": 16.9,
+        "p99": 19.7,
+        "max": 24.375
+      },
+      "postprocess_ms": {
+        "p50": 31.5,
+        "p95": 34.3,
+        "p99": 43,
+        "max": 74.964
+      },
+      "display_ms": {
+        "p50": 11.8,
+        "p95": 17.8,
+        "p99": 18.5,
+        "max": 22.015
+      },
+      "steady_processed_fps": 6.005623017596138,
+      "max_temperature_c": 46.23,
+      "rss_max_mib": 425.6171875,
+      "fds_min": 4,
+      "fds_max": 49,
+      "native_cpu_one_core_percent": 57.51623269730296,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 366.646,
+      "first_frame_age_ms": 485.893,
+      "npu_mean_core_percent": [
+        66.96,
+        66.52,
+        67.6
+      ]
+    },
+    "stability": {
+      "project": "depth_anything_v2",
+      "seconds": 182.482,
+      "captured": 5395,
+      "inferred": 638,
+      "processed": 638,
+      "fps": 3.49623,
+      "raw_replaced": 4757,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 32,
+      "save_jobs_written": 32,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 56978.9,
+      "save_wall_ms_max": 1828.68,
+      "inference_ms": {
+        "p50": 271.7,
+        "p95": 273.7,
+        "p99": 274.9,
+        "max": 277.43
+      },
+      "age_ms": {
+        "p50": 338.3,
+        "p95": 368.4,
+        "p99": 379.9,
+        "max": 406.622
+      },
+      "preprocess_ms": {
+        "p50": 10.9,
+        "p95": 11.4,
+        "p99": 12,
+        "max": 13.354
+      },
+      "postprocess_ms": {
+        "p50": 26.8,
+        "p95": 27.3,
+        "p99": 28,
+        "max": 60.907
+      },
+      "display_ms": {
+        "p50": 8.7,
+        "p95": 16.9,
+        "p99": 17.5,
+        "max": 17.759
+      },
+      "steady_processed_fps": 3.5419002363431633,
+      "max_temperature_c": 48.076,
+      "rss_max_mib": 258.109375,
+      "fds_min": 4,
+      "fds_max": 32,
+      "native_cpu_one_core_percent": 60.89027751045215,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 283.39,
+      "first_frame_age_ms": 335.515,
+      "npu_mean_core_percent": [
+        83.93989071038251,
+        12.934426229508198,
+        13.043715846994536
+      ]
+    },
+    "stall": {
+      "project": "depth_anything_v2",
+      "seconds": 22.5218,
+      "captured": 595,
+      "inferred": 70,
+      "processed": 70,
+      "fps": 3.10811,
+      "raw_replaced": 525,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 272.5,
+        "p95": 275.7,
+        "p99": 276.5,
+        "max": 276.45
+      },
+      "age_ms": {
+        "p50": 335.5,
+        "p95": 368.9,
+        "p99": 701.8,
+        "max": 701.73
+      },
+      "preprocess_ms": {
+        "p50": 10.9,
+        "p95": 11.6,
+        "p99": 13.4,
+        "max": 13.318
+      },
+      "postprocess_ms": {
+        "p50": 26.9,
+        "p95": 27.5,
+        "p99": 67.8,
+        "max": 67.784
+      },
+      "display_ms": {
+        "p50": 15.6,
+        "p95": 17.4,
+        "p99": 17.7,
+        "max": 17.606
+      },
+      "steady_processed_fps": 3.529216131341093,
+      "max_temperature_c": 47.153,
+      "rss_max_mib": 232.85546875,
+      "fds_min": 4,
+      "fds_max": 31,
+      "native_cpu_one_core_percent": 30.2944822983373,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 299.993,
+      "first_frame_age_ms": 376.755,
+      "npu_mean_core_percent": [
+        70.875,
+        10.875,
+        10.916666666666666
+      ]
+    },
+    "yolo-regression": {
+      "project": "yolo11_bytetrack",
+      "seconds": 22.2497,
+      "captured": 595,
+      "inferred": 594,
+      "processed": 594,
+      "fps": 26.697,
+      "raw_replaced": 1,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 26.2,
+        "p95": 27.1,
+        "p99": 27.4,
+        "max": 37.589
+      },
+      "age_ms": {
+        "p50": 62.4,
+        "p95": 79.7,
+        "p99": 80.1,
+        "max": 104.802
+      },
+      "preprocess_ms": {
+        "p50": 5.4,
+        "p95": 5.6,
+        "p99": 6.1,
+        "max": 9.215
+      },
+      "postprocess_ms": {
+        "p50": 3.7,
+        "p95": 12.7,
+        "p99": 12.9,
+        "max": 14.452
+      },
+      "display_ms": {
+        "p50": 5.1,
+        "p95": 15.5,
+        "p99": 18.2,
+        "max": 18.189
+      },
+      "steady_processed_fps": 29.93090959628878,
+      "max_temperature_c": 47.153,
+      "rss_max_mib": 163.296875,
+      "fds_min": 4,
+      "fds_max": 39,
+      "native_cpu_one_core_percent": 82.49470191250518,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 49.998,
+      "first_frame_age_ms": 80.334,
+      "npu_mean_core_percent": [
+        43.34782608695652,
+        4.173913043478261,
+        4.3478260869565215
+      ]
+    },
+    "sr-regression": {
+      "project": "real_esrgan",
+      "seconds": 22.3989,
+      "captured": 595,
+      "inferred": 235,
+      "processed": 235,
+      "fps": 10.4916,
+      "raw_replaced": 360,
+      "results_replaced": 0,
+      "out_of_order_results": 0,
+      "in": 0,
+      "out": 0,
+      "error": false,
+      "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+      "save_jobs_submitted": 0,
+      "save_jobs_written": 0,
+      "save_jobs_replaced": 0,
+      "save_jobs_failed": 0,
+      "save_jobs_discarded": 0,
+      "save_wall_ms_total": 0,
+      "save_wall_ms_max": 0,
+      "inference_ms": {
+        "p50": 82.7,
+        "p95": 103.9,
+        "p99": 104.5,
+        "max": 136.012
+      },
+      "age_ms": {
+        "p50": 151,
+        "p95": 184.4,
+        "p99": 200.5,
+        "max": 225.907
+      },
+      "preprocess_ms": {
+        "p50": 0.1,
+        "p95": 0.4,
+        "p99": 0.5,
+        "max": 0.708
+      },
+      "postprocess_ms": {
+        "p50": 10.4,
+        "p95": 11.3,
+        "p99": 12.2,
+        "max": 48.525
+      },
+      "display_ms": {
+        "p50": 29.3,
+        "p95": 36.4,
+        "p99": 36.9,
+        "max": 37.051
+      },
+      "steady_processed_fps": 11.823619700501633,
+      "max_temperature_c": 50.846,
+      "rss_max_mib": 198.81640625,
+      "fds_min": 3,
+      "fds_max": 29,
+      "native_cpu_one_core_percent": 75.67386451406716,
+      "restoration_pass": true,
+      "flip_gap_p95_ms": 100.013,
+      "first_frame_age_ms": 225.907,
+      "npu_mean_core_percent": [
+        71.56521739130434,
+        69.34782608695652,
+        69.34782608695652
+      ]
+    }
+  },
+  "lifecycle": {
+    "stage": "complete",
+    "checks": {
+      "manual_0": {
+        "stop_seconds": 2.5749164140015637,
+        "processed": 4
+      },
+      "manual_1": {
+        "stop_seconds": 2.6730249709999043,
+        "processed": 3
+      },
+      "wrong-aspect": {
+        "expected_error": true,
+        "restored": true
+      },
+      "display-error": {
+        "expected_error": true,
+        "restored": true
+      }
+    },
+    "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+    "finished": 1795595694.0924335
+  },
+  "quality": {
+    "rows": [
+      {
+        "file": "0000.png",
+        "fp16_onnx_spearman": 0.9997116015740369,
+        "max_abs_difference": 0.9123418927192688
+      },
+      {
+        "file": "0001.png",
+        "fp16_onnx_spearman": 0.9999014761955143,
+        "max_abs_difference": 0.2198634147644043
+      },
+      {
+        "file": "0002.png",
+        "fp16_onnx_spearman": 0.9999707775064406,
+        "max_abs_difference": 0.4166860580444336
+      },
+      {
+        "file": "0003.png",
+        "fp16_onnx_spearman": 0.9998496605659922,
+        "max_abs_difference": 0.18741130828857422
+      },
+      {
+        "file": "0004.png",
+        "fp16_onnx_spearman": 0.999950781302277,
+        "max_abs_difference": 0.3041954040527344
+      },
+      {
+        "file": "0005.png",
+        "fp16_onnx_spearman": 0.9998973969822973,
+        "max_abs_difference": 0.9812783002853394
+      },
+      {
+        "file": "0006.png",
+        "fp16_onnx_spearman": 0.9999733156125581,
+        "max_abs_difference": 0.6477370262145996
+      },
+      {
+        "file": "0007.png",
+        "fp16_onnx_spearman": 0.9999285595524149,
+        "max_abs_difference": 0.37647581100463867
+      },
+      {
+        "file": "0008.png",
+        "fp16_onnx_spearman": 0.9996195231798557,
+        "max_abs_difference": 0.39977169036865234
+      },
+      {
+        "file": "0009.png",
+        "fp16_onnx_spearman": 0.999853297080072,
+        "max_abs_difference": 0.6636896133422852
+      },
+      {
+        "file": "0010.png",
+        "fp16_onnx_spearman": 0.9999720456538425,
+        "max_abs_difference": 0.3051726818084717
+      },
+      {
+        "file": "0011.png",
+        "fp16_onnx_spearman": 0.9997719877676721,
+        "max_abs_difference": 0.2159266471862793
+      },
+      {
+        "file": "0012.png",
+        "fp16_onnx_spearman": 0.999951135053506,
+        "max_abs_difference": 0.19013381004333496
+      },
+      {
+        "file": "0013.png",
+        "fp16_onnx_spearman": 0.9999120939374806,
+        "max_abs_difference": 0.33281755447387695
+      },
+      {
+        "file": "0014.png",
+        "fp16_onnx_spearman": 0.9999702186129369,
+        "max_abs_difference": 0.2088489532470703
+      },
+      {
+        "file": "0015.png",
+        "fp16_onnx_spearman": 0.9999805426763034,
+        "max_abs_difference": 0.13535195589065552
+      },
+      {
+        "file": "0016.png",
+        "fp16_onnx_spearman": 0.9998748503478563,
+        "max_abs_difference": 0.32561445236206055
+      },
+      {
+        "file": "0017.png",
+        "fp16_onnx_spearman": 0.9999535924381939,
+        "max_abs_difference": 0.4304218292236328
+      },
+      {
+        "file": "0018.png",
+        "fp16_onnx_spearman": 0.9999571976876535,
+        "max_abs_difference": 0.11300605535507202
+      },
+      {
+        "file": "0019.png",
+        "fp16_onnx_spearman": 0.9997513195030281,
+        "max_abs_difference": 0.4965088367462158
+      },
+      {
+        "file": "0020.png",
+        "fp16_onnx_spearman": 0.9999752956324541,
+        "max_abs_difference": 0.6769874095916748
+      },
+      {
+        "file": "0021.png",
+        "fp16_onnx_spearman": 0.9999650634235018,
+        "max_abs_difference": 0.31952810287475586
+      },
+      {
+        "file": "0022.png",
+        "fp16_onnx_spearman": 0.9999343618154474,
+        "max_abs_difference": 0.26523828506469727
+      },
+      {
+        "file": "0023.png",
+        "fp16_onnx_spearman": 0.9999701781956171,
+        "max_abs_difference": 0.3001420497894287
+      },
+      {
+        "file": "0024.png",
+        "fp16_onnx_spearman": 0.9999211380320027,
+        "max_abs_difference": 0.289806604385376
+      },
+      {
+        "file": "0025.png",
+        "fp16_onnx_spearman": 0.9999838545922151,
+        "max_abs_difference": 0.25136280059814453
+      },
+      {
+        "file": "0026.png",
+        "fp16_onnx_spearman": 0.9999444073012247,
+        "max_abs_difference": 0.19302964210510254
+      },
+      {
+        "file": "0027.png",
+        "fp16_onnx_spearman": 0.9997353903457988,
+        "max_abs_difference": 0.2888033390045166
+      },
+      {
+        "file": "0028.png",
+        "fp16_onnx_spearman": 0.9996494519346598,
+        "max_abs_difference": 0.42008113861083984
+      },
+      {
+        "file": "0029.png",
+        "fp16_onnx_spearman": 0.9999738434812816,
+        "max_abs_difference": 0.5544171333312988
+      },
+      {
+        "file": "0030.png",
+        "fp16_onnx_spearman": 0.9998957068866294,
+        "max_abs_difference": 0.17975568771362305
+      },
+      {
+        "file": "0031.png",
+        "fp16_onnx_spearman": 0.9993599134284403,
+        "max_abs_difference": 0.2837311029434204
+      },
+      {
+        "file": "0032.png",
+        "fp16_onnx_spearman": 0.9999389218503754,
+        "max_abs_difference": 0.2807126045227051,
+        "teacher_spearman": 0.9969958250924241,
+        "affine_normalized_rmse": 0.026434723463733996,
+        "gradient_correlation": 0.8520300429697913
+      },
+      {
+        "file": "0033.png",
+        "fp16_onnx_spearman": 0.9999698293387632,
+        "max_abs_difference": 0.3587160110473633,
+        "teacher_spearman": 0.9971063053394833,
+        "affine_normalized_rmse": 0.01972403581599722,
+        "gradient_correlation": 0.929946542053657
+      },
+      {
+        "file": "0034.png",
+        "fp16_onnx_spearman": 0.9999416239614567,
+        "max_abs_difference": 0.2841324806213379,
+        "teacher_spearman": 0.9971107021167412,
+        "affine_normalized_rmse": 0.017309391216637444,
+        "gradient_correlation": 0.9315384749884933
+      },
+      {
+        "file": "0035.png",
+        "fp16_onnx_spearman": 0.9999232634546229,
+        "max_abs_difference": 0.26156938076019287,
+        "teacher_spearman": 0.9973561030456517,
+        "affine_normalized_rmse": 0.022869875224582115,
+        "gradient_correlation": 0.884468867237849
+      },
+      {
+        "file": "0036.png",
+        "fp16_onnx_spearman": 0.9999622697378033,
+        "max_abs_difference": 0.32535648345947266,
+        "teacher_spearman": 0.9979732044009543,
+        "affine_normalized_rmse": 0.02314850967887284,
+        "gradient_correlation": 0.9108429552655496
+      },
+      {
+        "file": "0037.png",
+        "fp16_onnx_spearman": 0.9999195019307269,
+        "max_abs_difference": 0.46415114402770996,
+        "teacher_spearman": 0.9981162862140478,
+        "affine_normalized_rmse": 0.0254204354520244,
+        "gradient_correlation": 0.9312859570683893
+      },
+      {
+        "file": "0038.png",
+        "fp16_onnx_spearman": 0.999952815503402,
+        "max_abs_difference": 0.3664975166320801,
+        "teacher_spearman": 0.9986977409088141,
+        "affine_normalized_rmse": 0.022101639502356916,
+        "gradient_correlation": 0.9461707650193194
+      },
+      {
+        "file": "0039.png",
+        "fp16_onnx_spearman": 0.9999395033158809,
+        "max_abs_difference": 0.3294510841369629,
+        "teacher_spearman": 0.99821835443916,
+        "affine_normalized_rmse": 0.024259240257119122,
+        "gradient_correlation": 0.9425855550653228
+      },
+      {
+        "file": "0040.png",
+        "fp16_onnx_spearman": 0.9999506836646493,
+        "max_abs_difference": 0.3099093437194824,
+        "teacher_spearman": 0.9978149183531551,
+        "affine_normalized_rmse": 0.025064346571652758,
+        "gradient_correlation": 0.9130018503808013
+      },
+      {
+        "file": "0041.png",
+        "fp16_onnx_spearman": 0.9999300760761745,
+        "max_abs_difference": 0.258426308631897,
+        "teacher_spearman": 0.9972307195151355,
+        "affine_normalized_rmse": 0.0230032721625193,
+        "gradient_correlation": 0.8855216091831256
+      },
+      {
+        "file": "0042.png",
+        "fp16_onnx_spearman": 0.9999360685671028,
+        "max_abs_difference": 0.28433656692504883,
+        "teacher_spearman": 0.9973944598062784,
+        "affine_normalized_rmse": 0.022466276110533645,
+        "gradient_correlation": 0.9342719019983772
+      },
+      {
+        "file": "0043.png",
+        "fp16_onnx_spearman": 0.9999332132271834,
+        "max_abs_difference": 0.29052555561065674,
+        "teacher_spearman": 0.9968150628885752,
+        "affine_normalized_rmse": 0.031258610899365144,
+        "gradient_correlation": 0.9329708676035909
+      },
+      {
+        "file": "0044.png",
+        "fp16_onnx_spearman": 0.999958964600496,
+        "max_abs_difference": 0.2665163278579712,
+        "teacher_spearman": 0.9978329000862135,
+        "affine_normalized_rmse": 0.020773311211236514,
+        "gradient_correlation": 0.9133871458974943
+      },
+      {
+        "file": "0045.png",
+        "fp16_onnx_spearman": 0.9999416701084399,
+        "max_abs_difference": 0.31606876850128174,
+        "teacher_spearman": 0.9987135316901024,
+        "affine_normalized_rmse": 0.025741085416058976,
+        "gradient_correlation": 0.9297175500180778
+      },
+      {
+        "file": "0046.png",
+        "fp16_onnx_spearman": 0.9999514971858019,
+        "max_abs_difference": 0.3478219509124756,
+        "teacher_spearman": 0.9975426750520479,
+        "affine_normalized_rmse": 0.028085925511242,
+        "gradient_correlation": 0.9344197805233752
+      },
+      {
+        "file": "0047.png",
+        "fp16_onnx_spearman": 0.999944806729116,
+        "max_abs_difference": 0.29802262783050537,
+        "teacher_spearman": 0.9979515625158927,
+        "affine_normalized_rmse": 0.02864253641453944,
+        "gradient_correlation": 0.9350850017737233
+      },
+      {
+        "file": "0048.png",
+        "fp16_onnx_spearman": 0.9999611752553764,
+        "max_abs_difference": 0.3225994110107422,
+        "teacher_spearman": 0.9977689262050922,
+        "affine_normalized_rmse": 0.025075080192632923,
+        "gradient_correlation": 0.9417926297411809
+      },
+      {
+        "file": "0049.png",
+        "fp16_onnx_spearman": 0.9999502824384299,
+        "max_abs_difference": 0.3181973695755005,
+        "teacher_spearman": 0.9981518229194978,
+        "affine_normalized_rmse": 0.023927483401998597,
+        "gradient_correlation": 0.9295358461381417
+      }
+    ],
+    "validation_images": 50,
+    "camera_images": 18,
+    "fp16_onnx_median_spearman": 0.9999416470349483,
+    "fp16_onnx_minimum_spearman": 0.9993599134284403,
+    "camera_teacher_median_spearman": 0.9977919222791236,
+    "camera_teacher_minimum_spearman": 0.9968150628885752,
+    "camera_affine_normalized_rmse_median": 0.02409336182955886,
+    "camera_affine_normalized_rmse_maximum": 0.031258610899365144,
+    "camera_gradient_correlation_median": 0.9306162495610232,
+    "camera_gradient_correlation_minimum": 0.8520300429697913,
+    "scope": "FP16 parity on 50 held-out images; camera agreement on 18 frames from one existing camera sequence. No metric-depth or broad-scene accuracy claim.",
+    "fp16_reference_pass": true,
+    "camera_teacher_agreement_pass": true,
+    "passed": true
+  },
+  "candidate": {
+    "stage": "compiled_board_pending",
+    "target": "rk3588",
+    "precision": "fp16",
+    "input_width": 518,
+    "input_height": 294,
+    "source_sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+    "source_onnx_sha256": "3abab33bdfd2788c2eba6b4e70159fd3eb8d02ba0187b828e33a89e4b765427d",
+    "candidate_onnx_sha256": "b5b82f67a48e0002c084b735c557fd22319a44f6605148b0810d692d38cbcba8",
+    "baseline_rknn_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+    "teacher_agreement": {
+      "images": 18,
+      "median_spearman": 0.9975590569386008,
+      "minimum_spearman": 0.9962601286800835,
+      "teacher_agreement_pass": true
+    },
+    "torch_onnx_max_abs_difference": 5.0067901611328125e-06,
+    "selected_as_default": false,
+    "board_validation_passed": false,
+    "mean": [
+      123.675,
+      116.28,
+      103.53
+    ],
+    "std": [
+      58.395,
+      57.12,
+      57.375
+    ],
+    "candidate_rknn_sha256": "20e6621f1fe51dfe009b2f791c9fb35e136de09a2b05357cfe7511b618350bc3",
+    "candidate_bytes": 56260983
+  },
+  "model_call_abba": {
+    "stage": "board_tensors_ready",
+    "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+    "cases": [
+      {
+        "name": "a1",
+        "fast": false,
+        "total_ms": 622.005,
+        "run_ms": 614.0039999999999
+      },
+      {
+        "name": "b1",
+        "fast": true,
+        "total_ms": 247.1565,
+        "run_ms": 242.74849999999998
+      },
+      {
+        "name": "b2",
+        "fast": true,
+        "total_ms": 247.5285,
+        "run_ms": 243.039
+      },
+      {
+        "name": "a2",
+        "fast": false,
+        "total_ms": 622.158,
+        "run_ms": 614.156
+      }
+    ],
+    "finished": 1795595116.7526581
+  },
+  "original_core_binding_probe": [
+    {
+      "mask": 7,
+      "returncode": 0,
+      "npu_load": "NPU load:  Core0: 92%, Core1:  7%, Core2:  7%,",
+      "median_ms": 685.6445
+    },
+    {
+      "mask": 1,
+      "returncode": 0,
+      "npu_load": "NPU load:  Core0: 85%, Core1:  0%, Core2:  0%,",
+      "median_ms": 722.435
+    },
+    {
+      "mask": 2,
+      "returncode": 0,
+      "npu_load": "NPU load:  Core0:  0%, Core1: 92%, Core2:  0%,",
+      "median_ms": 765.34
+    },
+    {
+      "mask": 4,
+      "returncode": 0,
+      "npu_load": "NPU load:  Core0:  0%, Core1:  0%, Core2: 92%,",
+      "median_ms": 766.6915
+    }
+  ],
+  "original_workers_scan": {
+    "stage": "complete",
+    "cases": [
+      {
+        "name": "single-all",
+        "workers": 1,
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 23.226,
+          "captured": 594,
+          "inferred": 29,
+          "processed": 29,
+          "fps": 1.2486,
+          "raw_replaced": 565,
+          "results_replaced": 0,
+          "out_of_order_results": 0,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 713.1,
+            "p95": 727.6,
+            "p99": 749.3,
+            "max": 749.231
+          },
+          "age_ms": {
+            "p50": 781.7,
+            "p95": 880.8,
+            "p99": 1045.6,
+            "max": 1045.58
+          },
+          "preprocess_ms": {
+            "p50": 3.3,
+            "p95": 3.9,
+            "p99": 7.7,
+            "max": 7.672
+          },
+          "postprocess_ms": {
+            "p50": 27,
+            "p95": 79.3,
+            "p99": 80.9,
+            "max": 80.83
+          },
+          "display_ms": {
+            "p50": 9.8,
+            "p95": 16.5,
+            "p99": 16.7,
+            "max": 16.612
+          },
+          "steady_processed_fps": 1.4268190618134706,
+          "max_temperature_c": 44.384,
+          "rss_max_mib": 260.203125,
+          "fds_min": 4,
+          "fds_max": 31,
+          "native_cpu_one_core_percent": 42.09854197715872,
+          "restoration_pass": true
+        },
+        "loads": [
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0: 60%, Core1:  5%, Core2:  5%,",
+          "NPU load:  Core0: 84%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 90%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 84%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 92%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 90%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 83%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 87%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 86%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 87%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 92%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 89%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 87%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 85%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 90%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 86%, Core1:  9%, Core2: 10%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0:  5%, Core1:  1%, Core2:  1%,"
+        ]
+      },
+      {
+        "name": "dual",
+        "workers": 2,
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 23.2455,
+          "captured": 596,
+          "inferred": 45,
+          "processed": 43,
+          "fps": 1.84982,
+          "raw_replaced": 551,
+          "results_replaced": 0,
+          "out_of_order_results": 2,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 881.8,
+            "p95": 986.2,
+            "p99": 1028,
+            "max": 1027.97
+          },
+          "age_ms": {
+            "p50": 971.8,
+            "p95": 1091.9,
+            "p99": 1096.5,
+            "max": 1096.47
+          },
+          "preprocess_ms": {
+            "p50": 4.3,
+            "p95": 5.7,
+            "p99": 8.8,
+            "max": 8.785
+          },
+          "postprocess_ms": {
+            "p50": 28.4,
+            "p95": 37.8,
+            "p99": 71.6,
+            "max": 71.538
+          },
+          "display_ms": {
+            "p50": 9.5,
+            "p95": 16.1,
+            "p99": 21.4,
+            "max": 21.331
+          },
+          "steady_processed_fps": 2.0894697465001384,
+          "max_temperature_c": 45.307,
+          "rss_max_mib": 369.41015625,
+          "fds_min": 4,
+          "fds_max": 38,
+          "native_cpu_one_core_percent": 48.82876976624047,
+          "restoration_pass": true
+        },
+        "loads": [
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0: 77%, Core1: 72%, Core2:  0%,",
+          "NPU load:  Core0: 85%, Core1: 90%, Core2:  0%,",
+          "NPU load:  Core0: 92%, Core1: 90%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 92%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 89%, Core1: 90%, Core2:  0%,",
+          "NPU load:  Core0: 88%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 94%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 90%, Core1: 90%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 90%, Core2:  0%,",
+          "NPU load:  Core0: 92%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 86%, Core1: 94%, Core2:  0%,",
+          "NPU load:  Core0: 89%, Core1: 87%, Core2:  0%,",
+          "NPU load:  Core0: 90%, Core1: 90%, Core2:  0%,",
+          "NPU load:  Core0: 92%, Core1: 94%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 92%, Core2:  0%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2:  0%,",
+          "NPU load:  Core0: 86%, Core1: 59%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,"
+        ]
+      },
+      {
+        "name": "triple",
+        "workers": 3,
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 23.1221,
+          "captured": 595,
+          "inferred": 56,
+          "processed": 52,
+          "fps": 2.24893,
+          "raw_replaced": 539,
+          "results_replaced": 0,
+          "out_of_order_results": 4,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 1080.5,
+            "p95": 1186,
+            "p99": 1197.1,
+            "max": 1197.02
+          },
+          "age_ms": {
+            "p50": 1150.3,
+            "p95": 1262.3,
+            "p99": 1295.6,
+            "max": 1295.54
+          },
+          "preprocess_ms": {
+            "p50": 5.4,
+            "p95": 7.9,
+            "p99": 10.1,
+            "max": 10.084
+          },
+          "postprocess_ms": {
+            "p50": 31.3,
+            "p95": 35,
+            "p99": 77.1,
+            "max": 77.091
+          },
+          "display_ms": {
+            "p50": 10.2,
+            "p95": 16.2,
+            "p99": 17.6,
+            "max": 17.561
+          },
+          "steady_processed_fps": 2.4431061651784076,
+          "max_temperature_c": 46.23,
+          "rss_max_mib": 478.0546875,
+          "fds_min": 3,
+          "fds_max": 45,
+          "native_cpu_one_core_percent": 59.63843892718861,
+          "restoration_pass": true
+        },
+        "loads": [
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0: 79%, Core1: 71%, Core2: 69%,",
+          "NPU load:  Core0: 90%, Core1: 90%, Core2: 91%,",
+          "NPU load:  Core0: 94%, Core1: 91%, Core2: 91%,",
+          "NPU load:  Core0: 91%, Core1: 94%, Core2: 94%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2: 91%,",
+          "NPU load:  Core0: 91%, Core1: 94%, Core2: 99%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2: 90%,",
+          "NPU load:  Core0: 89%, Core1: 91%, Core2: 94%,",
+          "NPU load:  Core0: 90%, Core1: 91%, Core2: 91%,",
+          "NPU load:  Core0: 91%, Core1: 98%, Core2: 89%,",
+          "NPU load:  Core0: 89%, Core1: 89%, Core2: 94%,",
+          "NPU load:  Core0: 92%, Core1: 91%, Core2: 89%,",
+          "NPU load:  Core0: 92%, Core1: 91%, Core2: 99%,",
+          "NPU load:  Core0: 90%, Core1: 91%, Core2: 90%,",
+          "NPU load:  Core0: 90%, Core1: 87%, Core2: 91%,",
+          "NPU load:  Core0: 94%, Core1: 90%, Core2: 91%,",
+          "NPU load:  Core0: 94%, Core1: 94%, Core2: 94%,",
+          "NPU load:  Core0: 91%, Core1: 92%, Core2: 91%,",
+          "NPU load:  Core0: 91%, Core1: 91%, Core2: 91%,",
+          "NPU load:  Core0: 91%, Core1: 96%, Core2: 97%,",
+          "NPU load:  Core0: 32%, Core1: 72%, Core2: 10%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,"
+        ]
+      },
+      {
+        "name": "single-all-repeat",
+        "workers": 1,
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 23.0224,
+          "captured": 594,
+          "inferred": 29,
+          "processed": 29,
+          "fps": 1.25964,
+          "raw_replaced": 565,
+          "results_replaced": 0,
+          "out_of_order_results": 0,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 709,
+            "p95": 716.4,
+            "p99": 717.8,
+            "max": 717.77
+          },
+          "age_ms": {
+            "p50": 785.4,
+            "p95": 823.7,
+            "p99": 838.5,
+            "max": 838.5
+          },
+          "preprocess_ms": {
+            "p50": 3.3,
+            "p95": 3.8,
+            "p99": 7.8,
+            "max": 7.798
+          },
+          "postprocess_ms": {
+            "p50": 26.8,
+            "p95": 59.7,
+            "p99": 79.8,
+            "max": 79.755
+          },
+          "display_ms": {
+            "p50": 13.3,
+            "p95": 16.9,
+            "p99": 17.7,
+            "max": 17.651
+          },
+          "steady_processed_fps": 1.4166410844897492,
+          "max_temperature_c": 45.307,
+          "rss_max_mib": 259.3671875,
+          "fds_min": 4,
+          "fds_max": 31,
+          "native_cpu_one_core_percent": 40.35763452802477,
+          "restoration_pass": true
+        },
+        "loads": [
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,",
+          "NPU load:  Core0: 17%, Core1:  2%, Core2:  2%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 83%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 92%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 90%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 85%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 84%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 92%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 91%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 87%, Core1: 10%, Core2: 10%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 89%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 88%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 92%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 84%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 92%, Core1:  8%, Core2:  8%,",
+          "NPU load:  Core0: 85%, Core1:  9%, Core2:  9%,",
+          "NPU load:  Core0: 91%, Core1:  8%, Core2:  9%,",
+          "NPU load:  Core0: 29%, Core1:  2%, Core2:  2%,",
+          "NPU load:  Core0:  0%, Core1:  0%, Core2:  0%,"
+        ]
+      }
+    ],
+    "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+    "current": "single-all-repeat",
+    "finished": 1795593623.2100663
+  },
+  "selected_conversion_abba": {
+    "stage": "complete",
+    "cases": [
+      {
+        "name": "a1",
+        "mode": "eager",
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 33.3185,
+          "captured": 895,
+          "inferred": 43,
+          "processed": 43,
+          "fps": 1.29057,
+          "raw_replaced": 852,
+          "results_replaced": 0,
+          "out_of_order_results": 0,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 715.1,
+            "p95": 728.9,
+            "p99": 737,
+            "max": 736.911
+          },
+          "age_ms": {
+            "p50": 794.7,
+            "p95": 846.4,
+            "p99": 1127.4,
+            "max": 1127.33
+          },
+          "preprocess_ms": {
+            "p50": 3.3,
+            "p95": 4,
+            "p99": 4.4,
+            "max": 4.393
+          },
+          "postprocess_ms": {
+            "p50": 27.2,
+            "p95": 79.4,
+            "p99": 80.3,
+            "max": 80.3
+          },
+          "display_ms": {
+            "p50": 11.8,
+            "p95": 16.2,
+            "p99": 16.7,
+            "max": 16.652
+          },
+          "steady_processed_fps": 1.4112045691417057,
+          "max_temperature_c": 47.153,
+          "rss_max_mib": 258.84375,
+          "fds_min": 3,
+          "fds_max": 31,
+          "native_cpu_one_core_percent": 40.581743559537486,
+          "restoration_pass": true,
+          "npu_mean_core_percent": [
+            77.65714285714286,
+            7.685714285714286,
+            7.685714285714286
+          ]
+        }
+      },
+      {
+        "name": "b1",
+        "mode": "selected",
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 33.216,
+          "captured": 895,
+          "inferred": 43,
+          "processed": 43,
+          "fps": 1.29456,
+          "raw_replaced": 852,
+          "results_replaced": 0,
+          "out_of_order_results": 0,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 706.9,
+            "p95": 711.3,
+            "p99": 718.1,
+            "max": 718.087
+          },
+          "age_ms": {
+            "p50": 797.7,
+            "p95": 844.5,
+            "p99": 1010.9,
+            "max": 1010.84
+          },
+          "preprocess_ms": {
+            "p50": 10.6,
+            "p95": 12,
+            "p99": 13.6,
+            "max": 13.551
+          },
+          "postprocess_ms": {
+            "p50": 62.3,
+            "p95": 66.9,
+            "p99": 70.3,
+            "max": 70.253
+          },
+          "display_ms": {
+            "p50": 7.9,
+            "p95": 16.5,
+            "p99": 17.5,
+            "max": 17.411
+          },
+          "steady_processed_fps": 1.411161269606473,
+          "max_temperature_c": 45.307,
+          "rss_max_mib": 254.26171875,
+          "fds_min": 4,
+          "fds_max": 31,
+          "native_cpu_one_core_percent": 27.249966987853792,
+          "restoration_pass": true,
+          "npu_mean_core_percent": [
+            78.70588235294117,
+            7.882352941176471,
+            7.911764705882353
+          ]
+        }
+      },
+      {
+        "name": "b2",
+        "mode": "selected",
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 33.1319,
+          "captured": 894,
+          "inferred": 43,
+          "processed": 43,
+          "fps": 1.29784,
+          "raw_replaced": 851,
+          "results_replaced": 0,
+          "out_of_order_results": 0,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 704.2,
+            "p95": 711.2,
+            "p99": 727.7,
+            "max": 727.683
+          },
+          "age_ms": {
+            "p50": 798.3,
+            "p95": 863.3,
+            "p99": 944.8,
+            "max": 944.799
+          },
+          "preprocess_ms": {
+            "p50": 10.6,
+            "p95": 12.9,
+            "p99": 43.3,
+            "max": 43.209
+          },
+          "postprocess_ms": {
+            "p50": 61.2,
+            "p95": 73.8,
+            "p99": 76.2,
+            "max": 76.19
+          },
+          "display_ms": {
+            "p50": 10.6,
+            "p95": 16.4,
+            "p99": 16.7,
+            "max": 16.623
+          },
+          "steady_processed_fps": 1.4139813343152021,
+          "max_temperature_c": 45.307,
+          "rss_max_mib": 255.12109375,
+          "fds_min": 3,
+          "fds_max": 31,
+          "native_cpu_one_core_percent": 26.55861375449274,
+          "restoration_pass": true,
+          "npu_mean_core_percent": [
+            75.70588235294117,
+            7.5,
+            7.5
+          ]
+        }
+      },
+      {
+        "name": "a2",
+        "mode": "eager",
+        "analysis": {
+          "project": "depth_anything_v2",
+          "seconds": 33.2607,
+          "captured": 893,
+          "inferred": 43,
+          "processed": 43,
+          "fps": 1.29282,
+          "raw_replaced": 850,
+          "results_replaced": 0,
+          "out_of_order_results": 0,
+          "in": 0,
+          "out": 0,
+          "error": false,
+          "latency_scope": "appsink retrieval to flip or processing completion; not optical",
+          "save_jobs_submitted": 0,
+          "save_jobs_written": 0,
+          "save_jobs_replaced": 0,
+          "save_jobs_failed": 0,
+          "save_jobs_discarded": 0,
+          "save_wall_ms_total": 0,
+          "save_wall_ms_max": 0,
+          "inference_ms": {
+            "p50": 714,
+            "p95": 724.4,
+            "p99": 725.8,
+            "max": 725.76
+          },
+          "age_ms": {
+            "p50": 781.3,
+            "p95": 862.1,
+            "p99": 1061.3,
+            "max": 1061.2
+          },
+          "preprocess_ms": {
+            "p50": 3.3,
+            "p95": 4,
+            "p99": 8.1,
+            "max": 8.024
+          },
+          "postprocess_ms": {
+            "p50": 27.2,
+            "p95": 67.8,
+            "p99": 76.3,
+            "max": 76.261
+          },
+          "display_ms": {
+            "p50": 9.5,
+            "p95": 17,
+            "p99": 17.5,
+            "max": 17.411
+          },
+          "steady_processed_fps": 1.413064059846089,
+          "max_temperature_c": 46.23,
+          "rss_max_mib": 258.48828125,
+          "fds_min": 3,
+          "fds_max": 31,
+          "native_cpu_one_core_percent": 41.79819196103059,
+          "restoration_pass": true,
+          "npu_mean_core_percent": [
+            80,
+            7.882352941176471,
+            7.9411764705882355
+          ]
+        }
+      }
+    ],
+    "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+    "current": "a2",
+    "finished": 1795593965.6583562
+  },
+  "big_cpu_affinity_abba": [
+    {
+      "name": "a1",
+      "affinity": null,
+      "median_total_ms": 652.115
+    },
+    {
+      "name": "b1",
+      "affinity": "4-7",
+      "median_total_ms": 620.8775
+    },
+    {
+      "name": "b2",
+      "affinity": "4-7",
+      "median_total_ms": 620.4365
+    },
+    {
+      "name": "a2",
+      "affinity": null,
+      "median_total_ms": 650.7265
+    }
+  ],
+  "unfused_attention": {
+    "stage": "profiled_not_adopted",
+    "started": 1795594016.0593576,
+    "boot_id": "1e7f6726-a0ea-4bf3-8285-a2932c8e32bc",
+    "baseline_sha256": "83fd4b4cb4d5a2b85cefc93c61de68ce82960cf09ed5582704d1a34a87f5c129",
+    "candidate_sha256": "820c929b443174928519d0c34f8cd9c3678d86e5f5682b4e9a3f8213f05989aa",
+    "core_mask": 7,
+    "selected_as_default": false,
+    "board_quality_validated": false,
+    "live_pipeline_validated": false,
+    "cases": [
+      {
+        "name": "a1",
+        "before": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "after": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "medians": {
+          "inputs_set_ms": 7.1775,
+          "run_ms": 642.289,
+          "allocate_ms": 0.0,
+          "outputs_get_ms": 0.6234999999999999,
+          "copy_ms": 0.09,
+          "cpu_tail_ms": 0.0,
+          "release_ms": 0.001,
+          "total_ms": 650.1635,
+          "driver_run_ms": 642.2855
+        }
+      },
+      {
+        "name": "b1",
+        "before": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "after": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "medians": {
+          "inputs_set_ms": 7.1645,
+          "run_ms": 642.8154999999999,
+          "allocate_ms": 0.0,
+          "outputs_get_ms": 0.6255,
+          "copy_ms": 0.0905,
+          "cpu_tail_ms": 0.0,
+          "release_ms": 0.001,
+          "total_ms": 650.6845000000001,
+          "driver_run_ms": 642.8125
+        }
+      },
+      {
+        "name": "b2",
+        "before": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "after": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "medians": {
+          "inputs_set_ms": 7.1955,
+          "run_ms": 641.8340000000001,
+          "allocate_ms": 0.0,
+          "outputs_get_ms": 0.626,
+          "copy_ms": 0.0905,
+          "cpu_tail_ms": 0.0,
+          "release_ms": 0.001,
+          "total_ms": 649.762,
+          "driver_run_ms": 641.831
+        }
+      },
+      {
+        "name": "a2",
+        "before": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "after": {
+          "/sys/class/devfreq/fdab0000.npu/cur_freq": "1000000000",
+          "/sys/class/devfreq/dmc/cur_freq": "2112000000",
+          "/sys/class/thermal/thermal_zone0/temp": "43461"
+        },
+        "medians": {
+          "inputs_set_ms": 7.1505,
+          "run_ms": 642.2775,
+          "allocate_ms": 0.0,
+          "outputs_get_ms": 0.6205,
+          "copy_ms": 0.0915,
+          "cpu_tail_ms": 0.0,
+          "release_ms": 0.001,
+          "total_ms": 650.194,
+          "driver_run_ms": 642.2755
+        }
+      }
+    ],
+    "current": "a2",
+    "baseline_total_ms": 650.17875,
+    "candidate_total_ms": 650.22325,
+    "call_reduction_percent": -0.006844271671435642,
+    "worth_full_quality_check": false,
+    "finished": 1795594062.2920399
+  },
+  "stall_recovery_frames": 1,
+  "current_version_long_test": false,
+  "scope": "1080p30 sampling and 1080p60 HDMI; internal appsink-to-flip age, not optical latency or 4K60 MPP validation"
+}
